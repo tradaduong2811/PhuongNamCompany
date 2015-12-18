@@ -1,0 +1,10 @@
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.exe.config
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.exe
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csprojResolveAssemblyReference.cache
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Properties.Resources.resources
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.exe
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Business.dll
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Business.pdb

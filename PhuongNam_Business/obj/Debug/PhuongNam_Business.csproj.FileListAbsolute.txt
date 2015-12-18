@@ -1,0 +1,7 @@
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.dll
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.csprojResolveAssemblyReference.cache
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.dll
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.dll
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\Đồ án nhóm\Project\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.pdb
