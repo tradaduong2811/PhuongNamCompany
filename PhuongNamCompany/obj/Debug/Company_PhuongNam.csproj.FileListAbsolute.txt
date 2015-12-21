@@ -17,3 +17,7 @@ E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_P
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Properties.Resources.resources
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_Chinh.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoDonDatHang.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DSDonDatHang.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietDonDatHang.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChonSanPham.resources

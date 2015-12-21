@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,10 +56,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MH_ChiTietDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_ChiTietDonDatHang.Designer.cs">
+      <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MH_ChonSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_ChonSanPham.Designer.cs">
+      <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MH_DSDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_DSDonDatHang.Designer.cs">
+      <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MH_TaoDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_TaoDonDatHang.Designer.cs">
+      <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MH_ChiTietDonDatHang.resx">
+      <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MH_ChonSanPham.resx">
+      <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MH_DSDonDatHang.resx">
+      <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MH_TaoDonDatHang.resx">
+      <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,6 +105,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,6 +119,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Image\chart.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\approve-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\remove-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\view-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\ICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Icon\product-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
