@@ -56,52 +56,52 @@
     <Compile Include="MH_Chinh.Designer.cs">
       <DependentUpon>MH_Chinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_ChiTietDonDatHang.cs">
+    <Compile Include="Don Dat Hang\MH_ChiTietDonDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_ChiTietDonDatHang.Designer.cs">
+    <Compile Include="Don Dat Hang\MH_ChiTietDonDatHang.Designer.cs">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_ChiTietSanPham.cs">
+    <Compile Include="San Pham\MH_ChiTietSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_ChiTietSanPham.Designer.cs">
+    <Compile Include="San Pham\MH_ChiTietSanPham.Designer.cs">
       <DependentUpon>MH_ChiTietSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_ChonSanPham.cs">
+    <Compile Include="Don Dat Hang\MH_ChonSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_ChonSanPham.Designer.cs">
+    <Compile Include="Don Dat Hang\MH_ChonSanPham.Designer.cs">
       <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_DanhSachSanPham.cs">
+    <Compile Include="San Pham\MH_DanhSachSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_DanhSachSanPham.Designer.cs">
+    <Compile Include="San Pham\MH_DanhSachSanPham.Designer.cs">
       <DependentUpon>MH_DanhSachSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_DSDonDatHang.cs">
+    <Compile Include="Don Dat Hang\MH_DSDonDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_DSDonDatHang.Designer.cs">
+    <Compile Include="Don Dat Hang\MH_DSDonDatHang.Designer.cs">
       <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_GiaSanPham.cs">
+    <Compile Include="San Pham\MH_GiaSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_GiaSanPham.Designer.cs">
+    <Compile Include="San Pham\MH_GiaSanPham.Designer.cs">
       <DependentUpon>MH_GiaSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_TaoDonDatHang.cs">
+    <Compile Include="Don Dat Hang\MH_TaoDonDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_TaoDonDatHang.Designer.cs">
+    <Compile Include="Don Dat Hang\MH_TaoDonDatHang.Designer.cs">
       <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="MH_TaoSanPham.cs">
+    <Compile Include="San Pham\MH_TaoSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MH_TaoSanPham.Designer.cs">
+    <Compile Include="San Pham\MH_TaoSanPham.Designer.cs">
       <DependentUpon>MH_TaoSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -109,28 +109,28 @@
     <EmbeddedResource Include="MH_Chinh.resx">
       <DependentUpon>MH_Chinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_ChiTietDonDatHang.resx">
+    <EmbeddedResource Include="Don Dat Hang\MH_ChiTietDonDatHang.resx">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_ChiTietSanPham.resx">
+    <EmbeddedResource Include="San Pham\MH_ChiTietSanPham.resx">
       <DependentUpon>MH_ChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_ChonSanPham.resx">
+    <EmbeddedResource Include="Don Dat Hang\MH_ChonSanPham.resx">
       <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_DanhSachSanPham.resx">
+    <EmbeddedResource Include="San Pham\MH_DanhSachSanPham.resx">
       <DependentUpon>MH_DanhSachSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_DSDonDatHang.resx">
+    <EmbeddedResource Include="Don Dat Hang\MH_DSDonDatHang.resx">
       <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_GiaSanPham.resx">
+    <EmbeddedResource Include="San Pham\MH_GiaSanPham.resx">
       <DependentUpon>MH_GiaSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_TaoDonDatHang.resx">
+    <EmbeddedResource Include="Don Dat Hang\MH_TaoDonDatHang.resx">
       <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MH_TaoSanPham.resx">
+    <EmbeddedResource Include="San Pham\MH_TaoSanPham.resx">
       <DependentUpon>MH_TaoSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
