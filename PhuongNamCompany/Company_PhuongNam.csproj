@@ -50,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MH_Chinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MH_Chinh.Designer.cs">
+      <DependentUpon>MH_Chinh.cs</DependentUpon>
     </Compile>
     <Compile Include="MH_ChiTietDonDatHang.cs">
       <SubType>Form</SubType>
@@ -62,11 +62,23 @@
     <Compile Include="MH_ChiTietDonDatHang.Designer.cs">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="MH_ChiTietSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_ChiTietSanPham.Designer.cs">
+      <DependentUpon>MH_ChiTietSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="MH_ChonSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MH_ChonSanPham.Designer.cs">
       <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MH_DanhSachSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_DanhSachSanPham.Designer.cs">
+      <DependentUpon>MH_DanhSachSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="MH_DSDonDatHang.cs">
       <SubType>Form</SubType>
@@ -74,28 +86,52 @@
     <Compile Include="MH_DSDonDatHang.Designer.cs">
       <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="MH_GiaSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_GiaSanPham.Designer.cs">
+      <DependentUpon>MH_GiaSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="MH_TaoDonDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MH_TaoDonDatHang.Designer.cs">
       <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="MH_TaoSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_TaoSanPham.Designer.cs">
+      <DependentUpon>MH_TaoSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MH_Chinh.resx">
+      <DependentUpon>MH_Chinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MH_ChiTietDonDatHang.resx">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MH_ChiTietSanPham.resx">
+      <DependentUpon>MH_ChiTietSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MH_ChonSanPham.resx">
       <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MH_DanhSachSanPham.resx">
+      <DependentUpon>MH_DanhSachSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MH_DSDonDatHang.resx">
       <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MH_GiaSanPham.resx">
+      <DependentUpon>MH_GiaSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MH_TaoDonDatHang.resx">
       <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MH_TaoSanPham.resx">
+      <DependentUpon>MH_TaoSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

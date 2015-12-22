@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PhuongNamCompany
 {
-    public partial class MH_Chinh : Form
+    public partial class MH_ChiTietSanPham : Form
     {
-        public MH_Chinh()
+        public MH_ChiTietSanPham()
         {
             InitializeComponent();
         }

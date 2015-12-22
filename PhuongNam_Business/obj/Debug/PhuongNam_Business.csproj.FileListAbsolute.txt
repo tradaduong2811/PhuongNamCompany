@@ -4,3 +4,9 @@ E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongN
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.exe
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.pdb
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.csprojResolveAssemblyReference.cache
+D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe.config
+D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe
+D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.pdb
+D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.csprojResolveAssemblyReference.cache
+D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.exe
+D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.pdb
