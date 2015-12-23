@@ -16,7 +16,7 @@ namespace PhuongNam_Data
             DataTable dt = qg.displayCountry();
             foreach (DataRow item in dt.Rows)
 	        {
-                Console.WriteLine(item["TenQG"]);
+                Console.WriteLine(item["MaDDH"]);
 	        }
         }
     }
