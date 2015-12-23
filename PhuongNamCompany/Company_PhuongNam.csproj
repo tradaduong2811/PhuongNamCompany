@@ -62,6 +62,30 @@
     <Compile Include="Don Dat Hang\MH_ChiTietDonDatHang.Designer.cs">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nha Cung Cap\MH_ChiTietNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_ChiTietNhaCungCap.Designer.cs">
+      <DependentUpon>MH_ChiTietNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_DanhSachNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_DanhSachNhaCungCap.Designer.cs">
+      <DependentUpon>MH_DanhSachNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_TaoNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_TaoNhaCungCap.Designer.cs">
+      <DependentUpon>MH_TaoNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_XemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_XemSanPham.Designer.cs">
+      <DependentUpon>MH_XemSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="San Pham\MH_ChiTietSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +135,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Don Dat Hang\MH_ChiTietDonDatHang.resx">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nha Cung Cap\MH_ChiTietNhaCungCap.resx">
+      <DependentUpon>MH_ChiTietNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nha Cung Cap\MH_DanhSachNhaCungCap.resx">
+      <DependentUpon>MH_DanhSachNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nha Cung Cap\MH_TaoNhaCungCap.resx">
+      <DependentUpon>MH_TaoNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nha Cung Cap\MH_XemSanPham.resx">
+      <DependentUpon>MH_XemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="San Pham\MH_ChiTietSanPham.resx">
       <DependentUpon>MH_ChiTietSanPham.cs</DependentUpon>
