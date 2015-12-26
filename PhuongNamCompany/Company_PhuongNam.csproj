@@ -62,6 +62,12 @@
     <Compile Include="Don Dat Hang\MH_ChiTietDonDatHang.Designer.cs">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nha Cung Cap\MH_BoPhanMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nha Cung Cap\MH_BoPhanMuaHang.Designer.cs">
+      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nha Cung Cap\MH_ChiTietNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Don Dat Hang\MH_ChiTietDonDatHang.resx">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nha Cung Cap\MH_BoPhanMuaHang.resx">
+      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nha Cung Cap\MH_ChiTietNhaCungCap.resx">
       <DependentUpon>MH_ChiTietNhaCungCap.cs</DependentUpon>
@@ -221,6 +230,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Icon\product-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -50,7 +50,8 @@ namespace PhuongNamCompany
 
         private void btn_XemGia_Click(object sender, EventArgs e)
         {
-
+            MH_XemSanPham MH_XemSanPham = new MH_XemSanPham();
+            MH_XemSanPham.Show();
         }
     }
 }
