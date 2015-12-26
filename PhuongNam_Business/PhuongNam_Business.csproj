@@ -42,12 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\PurchaseOrdersController.cs" />
+    <Compile Include="Models\DonDatHang.cs" />
+    <Compile Include="Models\NhaCungCap.cs" />
+    <Compile Include="Models\SanPham.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controller\VendorsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhuongNam_Data\PhuongNam_Data.csproj">
+      <Project>{b04c1a7d-7681-4faa-a3f4-d367bc7cd42b}</Project>
+      <Name>PhuongNam_Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

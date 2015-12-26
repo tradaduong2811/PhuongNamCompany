@@ -13,10 +13,14 @@ namespace PhuongNam_Data
         {
             QuocGia_Data qg = new QuocGia_Data();
 
+            DonDatHang_Data ddh = new DonDatHang_Data();
+            
             DataTable dt = qg.displayCountry();
-            foreach (DataRow item in dt.Rows)
+
+            DataTable tbDDH = ddh.displayPurchaseOrders();
+            foreach (DataRow item in tbDDH.Rows)
 	        {
-                Console.WriteLine(item["maDDH"]);
+                Console.WriteLine(item["TenCongTy"]);
 	        }
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhuongNam_Business.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,16 @@ namespace PhuongNamCompany
         public MH_DSDonDatHang()
         {
             InitializeComponent();
+            initPurchaseOrders();
         }
+
+        /// <summary>
+        /// Khai báo sử dụng Tầng Nghiệp vụ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        PurchaseOrdersController PurchaseOrdersController = new PurchaseOrdersController();
 
         private void SBtnThemMoi_Click(object sender, EventArgs e)
         {
@@ -46,6 +56,16 @@ namespace PhuongNamCompany
             MH_ChiTietDonDatHang MH_XemChiTiet = new MH_ChiTietDonDatHang();
             MH_XemChiTiet.Show();
             // disable tất cả các fields
+        }
+
+
+        public void initPurchaseOrders()
+        {
+            // ganws
+            DGVDonHang.DataSource = PurchaseOrdersController.displayVendors();
+        }
+        private void MH_DSDonDatHang_Load(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -39,7 +39,6 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.SBtnThemMoi = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.SBtnChinhSua = new System.Windows.Forms.ToolStripButton();
             this.SBtnXemChiTiet = new System.Windows.Forms.ToolStripButton();
             this.SBtnXoa = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -54,13 +53,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGVDonHang = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVDonHang)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -121,7 +120,6 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SBtnThemMoi,
             this.toolStripSeparator3,
-            this.SBtnChinhSua,
             this.SBtnXemChiTiet,
             this.SBtnXoa,
             this.toolStripSeparator1,
@@ -147,15 +145,6 @@
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 42);
-            // 
-            // SBtnChinhSua
-            // 
-            this.SBtnChinhSua.Image = global::PhuongNamCompany.Properties.Resources.edit_icon;
-            this.SBtnChinhSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SBtnChinhSua.Name = "SBtnChinhSua";
-            this.SBtnChinhSua.Size = new System.Drawing.Size(99, 39);
-            this.SBtnChinhSua.Text = "Chỉnh sửa";
-            this.SBtnChinhSua.Click += new System.EventHandler(this.SBtnChinhSua_Click);
             // 
             // SBtnXemChiTiet
             // 
@@ -273,7 +262,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.DGVDonHang);
             this.groupBox1.Location = new System.Drawing.Point(17, 142);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(961, 528);
@@ -281,13 +270,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Đơn hàng";
             // 
-            // dataGridView1
+            // DGVDonHang
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(927, 492);
-            this.dataGridView1.TabIndex = 0;
+            this.DGVDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVDonHang.Location = new System.Drawing.Point(15, 20);
+            this.DGVDonHang.Name = "DGVDonHang";
+            this.DGVDonHang.Size = new System.Drawing.Size(927, 492);
+            this.DGVDonHang.TabIndex = 0;
             // 
             // MH_DSDonDatHang
             // 
@@ -302,6 +291,7 @@
             this.Name = "MH_DSDonDatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách đơn đặt hàng";
+            this.Load += new System.EventHandler(this.MH_DSDonDatHang_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -310,7 +300,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVDonHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,7 +317,6 @@
         private System.Windows.Forms.ToolStripMenuItem actionsToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton SBtnThemMoi;
-        private System.Windows.Forms.ToolStripButton SBtnChinhSua;
         private System.Windows.Forms.ToolStripButton SBtnInBaoCao;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -341,7 +330,7 @@
         private System.Windows.Forms.ToolStripButton SBtnXacNhan;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGVDonHang;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton SBtnXemChiTiet;
     }

@@ -53,5 +53,10 @@ namespace PhuongNamCompany
             MH_XemSanPham MH_XemSanPham = new MH_XemSanPham();
             MH_XemSanPham.Show();
         }
+
+        private void MH_DanhSachNhaCungCap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

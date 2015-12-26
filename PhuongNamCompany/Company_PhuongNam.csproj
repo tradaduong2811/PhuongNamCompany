@@ -234,6 +234,16 @@
   <ItemGroup>
     <None Include="Resources\product.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhuongNam_Business\PhuongNam_Business.csproj">
+      <Project>{72d9f3e0-1d7b-41f3-800a-bed46db919f3}</Project>
+      <Name>PhuongNam_Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhuongNam_Data\PhuongNam_Data.csproj">
+      <Project>{b04c1a7d-7681-4faa-a3f4-d367bc7cd42b}</Project>
+      <Name>PhuongNam_Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

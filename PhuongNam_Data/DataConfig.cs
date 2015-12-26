@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.SqlServer.Server;
 
 namespace PhuongNam_Data
 {    
@@ -15,6 +16,8 @@ namespace PhuongNam_Data
         /// Dữ liệu trong thư mục bin\Debug
         /// </summary>
         static string strConnect = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|PhuongNamDB.mdf; Integrated Security=True";
+
+        //public string otherStringConnection = @"Data Source=.\; AttachDbFilename=|DataDirectory|PhuongNamDB.mdf; Integrated Security=True";
         //khởi tạo mặc định
         public DataConfig()
         {
