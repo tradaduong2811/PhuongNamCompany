@@ -20,7 +20,7 @@ namespace PhuongNam_Data
         {
             DataTable Countries = new DataTable();
             string strSQL;
-            strSQL = "Select * From QuocGia"; // Chuỗi SQL
+            strSQL = "Select * From DonDatHang"; // Chuỗi SQL
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
             da_header.Fill(Countries);
             return Countries; // trả ra dữ liệu tương ứng với DataTable
