@@ -29,11 +29,12 @@ namespace PhuongNamCompany.Nha_Cung_Cap
                 NewTaoNhaCungCap.Show();
                 this.Close();
                 // tạo lại nhà cung cấp
+            }
         }
-    }
 
         private void btn_Huy_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+    }
 }

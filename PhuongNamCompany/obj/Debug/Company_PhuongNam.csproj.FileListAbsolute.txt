@@ -60,3 +60,7 @@ D:\Study\4th year\PTTK HTTT\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\
 D:\Study\4th year\PTTK HTTT\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache
 D:\Study\4th year\PTTK HTTT\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.exe
 D:\Study\4th year\PTTK HTTT\Project\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Nha_Cung_Cap.MH_ChiTietNhaCungCap.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Nha_Cung_Cap.MH_DanhSachNhaCungCap.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Nha_Cung_Cap.MH_TaoNhaCungCap.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Nha_Cung_Cap.MH_XemSanPham.resources
