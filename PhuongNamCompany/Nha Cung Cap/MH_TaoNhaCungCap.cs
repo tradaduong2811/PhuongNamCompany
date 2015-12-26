@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PhuongNamCompany.Nha_Cung_Cap
+namespace PhuongNamCompany
 {
     public partial class MH_TaoNhaCungCap : Form
     {
@@ -29,11 +29,12 @@ namespace PhuongNamCompany.Nha_Cung_Cap
                 NewTaoNhaCungCap.Show();
                 this.Close();
                 // tạo lại nhà cung cấp
+            }
         }
-    }
 
         private void btn_Huy_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+    }
 }

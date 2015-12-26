@@ -1,4 +1,4 @@
-﻿namespace PhuongNamCompany.Nha_Cung_Cap
+﻿namespace PhuongNamCompany
 {
     partial class MH_XemSanPham
     {
