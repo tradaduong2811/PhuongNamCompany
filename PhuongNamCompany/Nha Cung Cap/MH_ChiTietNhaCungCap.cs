@@ -21,5 +21,11 @@ namespace PhuongNamCompany
         {
             this.Close();
         }
+
+        private void btn_XemSanPham_Click(object sender, EventArgs e)
+        {
+            MH_XemSanPham MH_XemSanPham = new MH_XemSanPham();
+            MH_XemSanPham.Show();
+        }
     }
 }

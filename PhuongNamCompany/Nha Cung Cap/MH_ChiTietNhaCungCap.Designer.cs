@@ -38,11 +38,9 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.SBtnChinhSua = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_MaNhaCungCap = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_Huy = new System.Windows.Forms.Button();
             this.btn_CapNhat = new System.Windows.Forms.Button();
             this.txt_NguoiDaiDien = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -58,6 +56,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.btn_XemSanPham = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -120,8 +119,8 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(35, 35);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SBtnChinhSua,
-            this.toolStripSeparator1,
-            this.toolStripSeparator2});
+            this.btn_XemSanPham,
+            this.toolStripSeparator1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(847, 42);
@@ -141,17 +140,10 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 42);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 42);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txt_MaNhaCungCap);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.btn_Huy);
-            this.groupBox1.Controls.Add(this.btn_CapNhat);
             this.groupBox1.Controls.Add(this.txt_NguoiDaiDien);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label6);
@@ -167,7 +159,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 94);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(820, 203);
+            this.groupBox1.Size = new System.Drawing.Size(820, 154);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Sản Phẩm";
@@ -188,20 +180,9 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Mã Nhà Cung Cấp";
             // 
-            // btn_Huy
-            // 
-            this.btn_Huy.Location = new System.Drawing.Point(572, 158);
-            this.btn_Huy.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(64, 24);
-            this.btn_Huy.TabIndex = 21;
-            this.btn_Huy.Text = "Hủy ";
-            this.btn_Huy.UseVisualStyleBackColor = true;
-            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
-            // 
             // btn_CapNhat
             // 
-            this.btn_CapNhat.Location = new System.Drawing.Point(274, 158);
+            this.btn_CapNhat.Location = new System.Drawing.Point(730, 265);
             this.btn_CapNhat.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CapNhat.Name = "btn_CapNhat";
             this.btn_CapNhat.Size = new System.Drawing.Size(69, 24);
@@ -252,7 +233,7 @@
             // 
             this.txt_DiaChi.Location = new System.Drawing.Point(162, 114);
             this.txt_DiaChi.Name = "txt_DiaChi";
-            this.txt_DiaChi.Size = new System.Drawing.Size(339, 20);
+            this.txt_DiaChi.Size = new System.Drawing.Size(237, 20);
             this.txt_DiaChi.TabIndex = 6;
             // 
             // txt_SDT
@@ -325,14 +306,24 @@
             this.label16.TabIndex = 26;
             this.label16.Text = "NHÀ CUNG CẤP";
             // 
+            // btn_XemSanPham
+            // 
+            this.btn_XemSanPham.Image = global::PhuongNamCompany.Properties.Resources.product;
+            this.btn_XemSanPham.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XemSanPham.Name = "btn_XemSanPham";
+            this.btn_XemSanPham.Size = new System.Drawing.Size(126, 39);
+            this.btn_XemSanPham.Text = "Xem Sản Phẩm";
+            this.btn_XemSanPham.Click += new System.EventHandler(this.btn_XemSanPham_Click);
+            // 
             // MH_ChiTietNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 311);
+            this.ClientSize = new System.Drawing.Size(847, 303);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.btn_CapNhat);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MH_ChiTietNhaCungCap";
             this.Text = "MH_ChiTietNhaCungCap";
@@ -359,11 +350,9 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton SBtnChinhSua;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_MaNhaCungCap;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btn_Huy;
         private System.Windows.Forms.Button btn_CapNhat;
         private System.Windows.Forms.TextBox txt_NguoiDaiDien;
         private System.Windows.Forms.Button button1;
@@ -379,5 +368,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ToolStripButton btn_XemSanPham;
     }
 }

@@ -36,17 +36,17 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.SBtnLamMoi = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_MaNhaCungCap = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_Huy = new System.Windows.Forms.Button();
-            this.btn_CapNhat = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
             this.txt_NguoiDaiDien = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.txt_TaiKhoanNganHang = new System.Windows.Forms.TextBox();
             this.txt_MaSoThue = new System.Windows.Forms.TextBox();
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
             this.txt_SDT = new System.Windows.Forms.TextBox();
@@ -56,8 +56,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_TaiKhoanNganHang = new System.Windows.Forms.TextBox();
-            this.SBtnLamMoi = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -127,6 +125,15 @@
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // SBtnLamMoi
+            // 
+            this.SBtnLamMoi.Image = global::PhuongNamCompany.Properties.Resources.refresh_icon1;
+            this.SBtnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SBtnLamMoi.Name = "SBtnLamMoi";
+            this.SBtnLamMoi.Size = new System.Drawing.Size(93, 39);
+            this.SBtnLamMoi.Text = "Làm mới";
+            this.SBtnLamMoi.Click += new System.EventHandler(this.SBtnLamMoi_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
@@ -147,9 +154,6 @@
             // 
             this.groupBox1.Controls.Add(this.txt_MaNhaCungCap);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.btn_Huy);
-            this.groupBox1.Controls.Add(this.btn_CapNhat);
-            this.groupBox1.Controls.Add(this.btn_Them);
             this.groupBox1.Controls.Add(this.txt_NguoiDaiDien);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label6);
@@ -165,7 +169,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 94);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(820, 203);
+            this.groupBox1.Size = new System.Drawing.Size(820, 161);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhà Cung Cấp";
@@ -186,30 +190,9 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Mã Nhà Cung Cấp";
             // 
-            // btn_Huy
-            // 
-            this.btn_Huy.Location = new System.Drawing.Point(572, 158);
-            this.btn_Huy.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(64, 24);
-            this.btn_Huy.TabIndex = 21;
-            this.btn_Huy.Text = "Hủy ";
-            this.btn_Huy.UseVisualStyleBackColor = true;
-            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
-            // 
-            // btn_CapNhat
-            // 
-            this.btn_CapNhat.Location = new System.Drawing.Point(381, 158);
-            this.btn_CapNhat.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_CapNhat.Name = "btn_CapNhat";
-            this.btn_CapNhat.Size = new System.Drawing.Size(69, 24);
-            this.btn_CapNhat.TabIndex = 20;
-            this.btn_CapNhat.Text = "Cập Nhật";
-            this.btn_CapNhat.UseVisualStyleBackColor = true;
-            // 
             // btn_Them
             // 
-            this.btn_Them.Location = new System.Drawing.Point(196, 158);
+            this.btn_Them.Location = new System.Drawing.Point(726, 271);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(63, 24);
@@ -242,6 +225,13 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Người Đại Diện";
             // 
+            // txt_TaiKhoanNganHang
+            // 
+            this.txt_TaiKhoanNganHang.Location = new System.Drawing.Point(629, 87);
+            this.txt_TaiKhoanNganHang.Name = "txt_TaiKhoanNganHang";
+            this.txt_TaiKhoanNganHang.Size = new System.Drawing.Size(177, 20);
+            this.txt_TaiKhoanNganHang.TabIndex = 7;
+            // 
             // txt_MaSoThue
             // 
             this.txt_MaSoThue.Location = new System.Drawing.Point(628, 61);
@@ -253,7 +243,7 @@
             // 
             this.txt_DiaChi.Location = new System.Drawing.Point(162, 114);
             this.txt_DiaChi.Name = "txt_DiaChi";
-            this.txt_DiaChi.Size = new System.Drawing.Size(339, 20);
+            this.txt_DiaChi.Size = new System.Drawing.Size(237, 20);
             this.txt_DiaChi.TabIndex = 6;
             // 
             // txt_SDT
@@ -315,29 +305,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Công Ty";
             // 
-            // txt_TaiKhoanNganHang
-            // 
-            this.txt_TaiKhoanNganHang.Location = new System.Drawing.Point(629, 87);
-            this.txt_TaiKhoanNganHang.Name = "txt_TaiKhoanNganHang";
-            this.txt_TaiKhoanNganHang.Size = new System.Drawing.Size(177, 20);
-            this.txt_TaiKhoanNganHang.TabIndex = 7;
-            // 
-            // SBtnLamMoi
-            // 
-            this.SBtnLamMoi.Image = global::PhuongNamCompany.Properties.Resources.refresh_icon1;
-            this.SBtnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SBtnLamMoi.Name = "SBtnLamMoi";
-            this.SBtnLamMoi.Size = new System.Drawing.Size(93, 39);
-            this.SBtnLamMoi.Text = "Làm mới";
-            this.SBtnLamMoi.Click += new System.EventHandler(this.SBtnLamMoi_Click);
-            // 
             // MH_TaoNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 403);
+            this.ClientSize = new System.Drawing.Size(846, 303);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label16);
+            this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MH_TaoNhaCungCap";
@@ -369,8 +344,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_MaNhaCungCap;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btn_Huy;
-        private System.Windows.Forms.Button btn_CapNhat;
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.TextBox txt_NguoiDaiDien;
         private System.Windows.Forms.Button button1;

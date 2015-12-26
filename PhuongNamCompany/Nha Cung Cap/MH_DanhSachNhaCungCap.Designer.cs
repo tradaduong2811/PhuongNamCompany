@@ -37,17 +37,17 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btn_ThemMoi = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_ChinhSua = new System.Windows.Forms.ToolStripButton();
+            this.btn_XemChiTiet = new System.Windows.Forms.ToolStripButton();
+            this.btn_XemSanPham = new System.Windows.Forms.ToolStripButton();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_ThemMoi = new System.Windows.Forms.ToolStripButton();
-            this.btn_ChinhSua = new System.Windows.Forms.ToolStripButton();
-            this.btn_XemChiTiet = new System.Windows.Forms.ToolStripButton();
-            this.btn_XemSanPham = new System.Windows.Forms.ToolStripButton();
-            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -79,25 +79,25 @@
             // fileToolStripMenuItem1
             // 
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.fileToolStripMenuItem1.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.saveAsToolStripMenuItem.Text = "Save as...";
             // 
             // actionsToolStripMenuItem
@@ -124,10 +124,55 @@
             this.toolStrip1.TabIndex = 18;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // btn_ThemMoi
+            // 
+            this.btn_ThemMoi.Image = global::PhuongNamCompany.Properties.Resources.add_icon;
+            this.btn_ThemMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_ThemMoi.Name = "btn_ThemMoi";
+            this.btn_ThemMoi.Size = new System.Drawing.Size(101, 39);
+            this.btn_ThemMoi.Text = "Thêm mới";
+            this.btn_ThemMoi.Click += new System.EventHandler(this.btn_ThemMoi_Click);
+            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 42);
+            // 
+            // btn_ChinhSua
+            // 
+            this.btn_ChinhSua.Image = global::PhuongNamCompany.Properties.Resources.edit_icon;
+            this.btn_ChinhSua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_ChinhSua.Name = "btn_ChinhSua";
+            this.btn_ChinhSua.Size = new System.Drawing.Size(99, 39);
+            this.btn_ChinhSua.Text = "Chỉnh sửa";
+            this.btn_ChinhSua.Click += new System.EventHandler(this.btn_ChinhSua_Click);
+            // 
+            // btn_XemChiTiet
+            // 
+            this.btn_XemChiTiet.Image = global::PhuongNamCompany.Properties.Resources.view_icon;
+            this.btn_XemChiTiet.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XemChiTiet.Name = "btn_XemChiTiet";
+            this.btn_XemChiTiet.Size = new System.Drawing.Size(109, 39);
+            this.btn_XemChiTiet.Text = "Xem chi tiết";
+            this.btn_XemChiTiet.Click += new System.EventHandler(this.btn_XemChiTiet_Click);
+            // 
+            // btn_XemSanPham
+            // 
+            this.btn_XemSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemSanPham.Image")));
+            this.btn_XemSanPham.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XemSanPham.Name = "btn_XemSanPham";
+            this.btn_XemSanPham.Size = new System.Drawing.Size(126, 39);
+            this.btn_XemSanPham.Text = "Xem Sản Phẩm";
+            this.btn_XemSanPham.Click += new System.EventHandler(this.btn_XemGia_Click);
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.Image = global::PhuongNamCompany.Properties.Resources.remove_icon;
+            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(66, 39);
+            this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // toolStripSeparator1
             // 
@@ -168,51 +213,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(713, 244);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // btn_ThemMoi
-            // 
-            this.btn_ThemMoi.Image = global::PhuongNamCompany.Properties.Resources.add_icon;
-            this.btn_ThemMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_ThemMoi.Name = "btn_ThemMoi";
-            this.btn_ThemMoi.Size = new System.Drawing.Size(101, 39);
-            this.btn_ThemMoi.Text = "Thêm mới";
-            this.btn_ThemMoi.Click += new System.EventHandler(this.btn_ThemMoi_Click);
-            // 
-            // btn_ChinhSua
-            // 
-            this.btn_ChinhSua.Image = global::PhuongNamCompany.Properties.Resources.edit_icon;
-            this.btn_ChinhSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_ChinhSua.Name = "btn_ChinhSua";
-            this.btn_ChinhSua.Size = new System.Drawing.Size(99, 39);
-            this.btn_ChinhSua.Text = "Chỉnh sửa";
-            this.btn_ChinhSua.Click += new System.EventHandler(this.btn_ChinhSua_Click);
-            // 
-            // btn_XemChiTiet
-            // 
-            this.btn_XemChiTiet.Image = global::PhuongNamCompany.Properties.Resources.view_icon;
-            this.btn_XemChiTiet.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_XemChiTiet.Name = "btn_XemChiTiet";
-            this.btn_XemChiTiet.Size = new System.Drawing.Size(109, 39);
-            this.btn_XemChiTiet.Text = "Xem chi tiết";
-            this.btn_XemChiTiet.Click += new System.EventHandler(this.btn_XemChiTiet_Click);
-            // 
-            // btn_XemSanPham
-            // 
-            this.btn_XemSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemSanPham.Image")));
-            this.btn_XemSanPham.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_XemSanPham.Name = "btn_XemSanPham";
-            this.btn_XemSanPham.Size = new System.Drawing.Size(126, 39);
-            this.btn_XemSanPham.Text = "Xem Sản Phẩm";
-            this.btn_XemSanPham.Click += new System.EventHandler(this.btn_XemGia_Click);
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Image = global::PhuongNamCompany.Properties.Resources.remove_icon;
-            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(66, 39);
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // MH_DanhSachNhaCungCap
             // 
