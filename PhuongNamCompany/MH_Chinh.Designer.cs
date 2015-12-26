@@ -37,7 +37,7 @@
             // btn_BoPhanBanHang
             // 
             this.btn_BoPhanBanHang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_BoPhanBanHang.Location = new System.Drawing.Point(757, 216);
+            this.btn_BoPhanBanHang.Location = new System.Drawing.Point(757, 525);
             this.btn_BoPhanBanHang.Margin = new System.Windows.Forms.Padding(5);
             this.btn_BoPhanBanHang.Name = "btn_BoPhanBanHang";
             this.btn_BoPhanBanHang.Padding = new System.Windows.Forms.Padding(5);
@@ -50,7 +50,7 @@
             // btn_BoPhanKho
             // 
             this.btn_BoPhanKho.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_BoPhanKho.Location = new System.Drawing.Point(757, 319);
+            this.btn_BoPhanKho.Location = new System.Drawing.Point(757, 317);
             this.btn_BoPhanKho.Margin = new System.Windows.Forms.Padding(5);
             this.btn_BoPhanKho.Name = "btn_BoPhanKho";
             this.btn_BoPhanKho.Padding = new System.Windows.Forms.Padding(5);
@@ -63,7 +63,7 @@
             // btn_Marketing
             // 
             this.btn_Marketing.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Marketing.Location = new System.Drawing.Point(757, 422);
+            this.btn_Marketing.Location = new System.Drawing.Point(757, 421);
             this.btn_Marketing.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Marketing.Name = "btn_Marketing";
             this.btn_Marketing.Padding = new System.Windows.Forms.Padding(5);
@@ -76,7 +76,7 @@
             // btn_BoPhanMuaHang
             // 
             this.btn_BoPhanMuaHang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_BoPhanMuaHang.Location = new System.Drawing.Point(757, 525);
+            this.btn_BoPhanMuaHang.Location = new System.Drawing.Point(757, 213);
             this.btn_BoPhanMuaHang.Margin = new System.Windows.Forms.Padding(5);
             this.btn_BoPhanMuaHang.Name = "btn_BoPhanMuaHang";
             this.btn_BoPhanMuaHang.Padding = new System.Windows.Forms.Padding(5);

@@ -16,7 +16,11 @@ namespace PhuongNamCompany
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new MH_ChiTietDonDatHang());
+=======
+            Application.Run(new MH_ChiTietSanPham());
+>>>>>>> 9433400b305fa957714df11086dd44845576039a
         }
     }
 }

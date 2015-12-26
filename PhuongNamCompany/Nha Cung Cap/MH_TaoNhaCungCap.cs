@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PhuongNamCompany.Nha_Cung_Cap
+namespace PhuongNamCompany
 {
     public partial class MH_TaoNhaCungCap : Form
     {
