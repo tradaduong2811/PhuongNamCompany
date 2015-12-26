@@ -71,3 +71,7 @@ D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoN
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DanhSachNhaCungCap.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietNhaCungCap.resources
 >>>>>>> 9433400b305fa957714df11086dd44845576039a
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietNhaCungCap.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DanhSachNhaCungCap.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoNhaCungCap.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_XemSanPham.resources
