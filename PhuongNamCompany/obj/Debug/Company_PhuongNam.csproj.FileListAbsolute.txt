@@ -24,3 +24,29 @@ E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNam
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.exe
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.exe.config
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Business.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Data.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Business.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Data.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csprojResolveAssemblyReference.cache
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_Chinh.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietDonDatHang.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_BoPhanMuaHang.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietNhaCungCap.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DanhSachNhaCungCap.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoNhaCungCap.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_XemSanPham.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietSanPham.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChonSanPham.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DanhSachSanPham.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DSDonDatHang.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_GiaSanPham.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoDonDatHang.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoSanPham.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Properties.Resources.resources
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache

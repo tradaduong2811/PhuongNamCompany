@@ -12,3 +12,5 @@ D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.exe
 D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.pdb
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.exe
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.pdb
+D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.exe
+D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.pdb
