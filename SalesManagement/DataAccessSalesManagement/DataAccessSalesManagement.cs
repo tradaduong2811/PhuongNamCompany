@@ -12,7 +12,7 @@ namespace DataAccessSalesManagement
     public class DataAccess
     {
         private SqlConnection con; //khai báo biến connect
-        public string strConnect = @"Data Source=.\ ;Initial Catalog=SALES_MANAGEMENT;Integrated Security=True;Database=DB1"; //chuỗi kết nối
+        public string strConnect = @"Data Source=.\ ;Initial Catalog=SALES_MANAGEMENT;Integrated Security=True;Database=SALE_MANAGEMENT"; //chuỗi kết nối
 
         //khởi tạo mặc định
         public DataAccess()

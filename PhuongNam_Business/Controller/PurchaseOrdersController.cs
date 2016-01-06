@@ -24,12 +24,23 @@ namespace PhuongNam_Business.Controller
                 order.NhaCungCap = (string)dr["TenCongTy"];
                 order.DiaChi = (string)dr["DiaChi"];
                 order.NguoiDaiDien = (string)dr["NguoiDaiDien"];
-                order.NgayGiao = dr["NgayGiao"].ToString();
+                order.NgayGiao = (DateTime)dr["NgayGiao"];
+                order.NgayGiao.ToString("dd/MM/yyyy");
                 order.TongTien = (decimal)dr["TongTien"];
                 order.TongTienVAT = (decimal)dr["TongTienVAT"];
+                order.XacNhan = dr["XacNhan"].ToString();
+                if (order.XacNhan == "True")
+                    order.XacNhan = "Đã xác nhận";
+                else
+                    order.XacNhan = "Chưa xác nhận";
                 listOrders.Add(order);
             }
             return listOrders;
+        }
+
+        public bool approvePurchaseOrder(string id)
+        {
+            return data.approvePurchaseOrder(id);
         }
     }
 }

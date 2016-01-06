@@ -26,7 +26,7 @@ namespace PhuongNam_Data
             DataTable Vendors = new DataTable();
             string strSQL;
 
-            strSQL = "select ddh.MaDDH, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT " +
+            strSQL = "select ddh.MaDDH, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT, ddh.XacNhan " +
                         " from DonDatHang ddh, NhaCungCap ncc " +
                         " where ncc.MaNhaCungCap = ddh.NhaCungCap";
             
@@ -34,6 +34,34 @@ namespace PhuongNam_Data
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
             da_header.Fill(Vendors);
             return Vendors; // trả ra dữ liệu tương ứng với DataTable
+        }
+
+
+        public bool approvePurchaseOrder(string id)
+        {
+            string strSQL;
+            int OrderId;
+            int.TryParse(id, out OrderId);
+
+            strSQL = "UPDATE DonDatHang " +
+                     "SET XacNhan = 'True' " +
+                     "WHERE MaDDH = @IdDDH and XacNhan = 'False'";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = dc.con;
+            if (dc.con.State == ConnectionState.Closed)
+                dc.con.Open(); // mở kết nối
+            cmd.Parameters.AddWithValue("@IdDDH", OrderId);
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = strSQL;
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

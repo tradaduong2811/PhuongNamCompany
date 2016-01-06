@@ -79,8 +79,7 @@ namespace InterfaceSalesManagement
                 {
                     No = InvoiceNo_Temp;
                     InvoiceCard.ShowDialog();
-                }
-                
+                } 
             }
         }
     }
