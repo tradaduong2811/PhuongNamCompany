@@ -30,24 +30,23 @@
         {
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_Huy = new System.Windows.Forms.Button();
             this.btn_CapNhat = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_Price = new System.Windows.Forms.TextBox();
-            this.txt_FullDes = new System.Windows.Forms.TextBox();
             this.txt_TinyDes = new System.Windows.Forms.TextBox();
             this.txt_TenSanPham = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.SBtnChinhSua = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,8 +63,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.SBtnChinhSua = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -83,6 +80,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(261, 22);
             this.textBox2.TabIndex = 23;
+            this.textBox2.Text = "1001";
             // 
             // label7
             // 
@@ -94,19 +92,10 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Mã Sản Phẩm";
             // 
-            // btn_Huy
-            // 
-            this.btn_Huy.Enabled = false;
-            this.btn_Huy.Location = new System.Drawing.Point(668, 195);
-            this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(85, 30);
-            this.btn_Huy.TabIndex = 21;
-            this.btn_Huy.Text = "Hủy ";
-            this.btn_Huy.UseVisualStyleBackColor = true;
-            // 
             // btn_CapNhat
             // 
-            this.btn_CapNhat.Location = new System.Drawing.Point(409, 195);
+            this.btn_CapNhat.Enabled = false;
+            this.btn_CapNhat.Location = new System.Drawing.Point(1095, 183);
             this.btn_CapNhat.Name = "btn_CapNhat";
             this.btn_CapNhat.Size = new System.Drawing.Size(92, 30);
             this.btn_CapNhat.TabIndex = 20;
@@ -117,19 +106,21 @@
             // 
             this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(810, 108);
+            this.comboBox1.Location = new System.Drawing.Point(927, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(260, 24);
             this.comboBox1.TabIndex = 18;
+            this.comboBox1.Text = "1";
             // 
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(810, 41);
+            this.textBox1.Location = new System.Drawing.Point(926, 41);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(261, 22);
             this.textBox1.TabIndex = 17;
+            this.textBox1.Text = "1";
             // 
             // button1
             // 
@@ -145,7 +136,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(679, 45);
+            this.label6.Location = new System.Drawing.Point(764, 46);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 17);
@@ -155,20 +146,12 @@
             // txt_Price
             // 
             this.txt_Price.Enabled = false;
-            this.txt_Price.Location = new System.Drawing.Point(810, 75);
+            this.txt_Price.Location = new System.Drawing.Point(926, 75);
             this.txt_Price.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(261, 22);
             this.txt_Price.TabIndex = 7;
-            // 
-            // txt_FullDes
-            // 
-            this.txt_FullDes.Enabled = false;
-            this.txt_FullDes.Location = new System.Drawing.Point(216, 140);
-            this.txt_FullDes.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_FullDes.Name = "txt_FullDes";
-            this.txt_FullDes.Size = new System.Drawing.Size(396, 22);
-            this.txt_FullDes.TabIndex = 6;
+            this.txt_Price.Text = "4590000";
             // 
             // txt_TinyDes
             // 
@@ -178,6 +161,7 @@
             this.txt_TinyDes.Name = "txt_TinyDes";
             this.txt_TinyDes.Size = new System.Drawing.Size(261, 22);
             this.txt_TinyDes.TabIndex = 5;
+            this.txt_TinyDes.Text = "Màu trắng 16GB";
             // 
             // txt_TenSanPham
             // 
@@ -187,11 +171,12 @@
             this.txt_TenSanPham.Name = "txt_TenSanPham";
             this.txt_TenSanPham.Size = new System.Drawing.Size(261, 22);
             this.txt_TenSanPham.TabIndex = 4;
+            this.txt_TenSanPham.Text = "iphone4s";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(684, 111);
+            this.label5.Location = new System.Drawing.Point(764, 111);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 17);
@@ -201,7 +186,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(679, 78);
+            this.label4.Location = new System.Drawing.Point(764, 78);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 17);
@@ -214,19 +199,9 @@
             this.label3.Location = new System.Drawing.Point(46, 112);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 17);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Mô Tả Nhỏ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 144);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Mô Tả Đầy Đủ";
+            this.label3.Text = "Mô Tả";
             // 
             // label1
             // 
@@ -254,20 +229,17 @@
             // 
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.btn_Huy);
             this.groupBox1.Controls.Add(this.btn_CapNhat);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txt_Price);
-            this.groupBox1.Controls.Add(this.txt_FullDes);
             this.groupBox1.Controls.Add(this.txt_TinyDes);
             this.groupBox1.Controls.Add(this.txt_TenSanPham);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(13, 147);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -289,6 +261,19 @@
             this.toolStrip1.Size = new System.Drawing.Size(1712, 42);
             this.toolStrip1.TabIndex = 30;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // SBtnChinhSua
+            // 
+            this.SBtnChinhSua.Image = global::PhuongNamCompany.Properties.Resources.edit_icon;
+            this.SBtnChinhSua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SBtnChinhSua.Name = "SBtnChinhSua";
+            this.SBtnChinhSua.Size = new System.Drawing.Size(112, 39);
+            this.SBtnChinhSua.Text = "Chỉnh sửa";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 42);
             // 
             // menuStrip1
             // 
@@ -446,19 +431,6 @@
             this.label15.TabIndex = 0;
             this.label15.Text = "Tạo ghi chú ở đây";
             // 
-            // SBtnChinhSua
-            // 
-            this.SBtnChinhSua.Image = global::PhuongNamCompany.Properties.Resources.edit_icon;
-            this.SBtnChinhSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SBtnChinhSua.Name = "SBtnChinhSua";
-            this.SBtnChinhSua.Size = new System.Drawing.Size(112, 39);
-            this.SBtnChinhSua.Text = "Chỉnh sửa";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 42);
-            // 
             // MH_ChiTietSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -470,6 +442,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "MH_ChiTietSanPham";
             this.Text = "Chi Tiết Sản Phẩm";
             this.groupBox1.ResumeLayout(false);
@@ -493,20 +466,17 @@
 
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btn_Huy;
         private System.Windows.Forms.Button btn_CapNhat;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_Price;
-        private System.Windows.Forms.TextBox txt_FullDes;
         private System.Windows.Forms.TextBox txt_TinyDes;
         private System.Windows.Forms.TextBox txt_TenSanPham;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox1;

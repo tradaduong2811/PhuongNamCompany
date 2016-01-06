@@ -233,6 +233,26 @@ namespace PhuongNamCompany.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sale {
+            get {
+                object obj = ResourceManager.GetObject("sale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart {
+            get {
+                object obj = ResourceManager.GetObject("shopping_cart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Taskbar {
             get {
                 object obj = ResourceManager.GetObject("Taskbar", resourceCulture);
@@ -266,6 +286,26 @@ namespace PhuongNamCompany.Properties {
         internal static System.Drawing.Bitmap view_icon {
             get {
                 object obj = ResourceManager.GetObject("view-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap volume_down {
+            get {
+                object obj = ResourceManager.GetObject("volume-down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Warehouse_icon {
+            get {
+                object obj = ResourceManager.GetObject("Warehouse-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
