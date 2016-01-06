@@ -189,6 +189,7 @@
             this.SBtnXacNhan.Name = "SBtnXacNhan";
             this.SBtnXacNhan.Size = new System.Drawing.Size(95, 39);
             this.SBtnXacNhan.Text = "Xác nhận";
+            this.SBtnXacNhan.Click += new System.EventHandler(this.SBtnXacNhan_Click);
             // 
             // label16
             // 

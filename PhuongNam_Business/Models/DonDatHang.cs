@@ -13,32 +13,45 @@ namespace PhuongNam_Business.Models
         private string _DiaChi;
         private string _NguoiDaiDien;
 
-        public string NguoiDaiDien
+        public int MaDDH
         {
-            get { return _NguoiDaiDien; }
-            set { _NguoiDaiDien = value; }
+            get { return _MaDDH; }
+            set { _MaDDH = value; }
+        }
+        public string NhaCungCap
+        {
+            get { return _NhaCungCap; }
+            set { _NhaCungCap = value; }
         }
         public string DiaChi
         {
             get { return _DiaChi; }
             set { _DiaChi = value; }
         }
-        private string _NgayGiao;
+        public string NguoiDaiDien
+        {
+            get { return _NguoiDaiDien; }
+            set { _NguoiDaiDien = value; }
+        }
+       
+        private DateTime _NgayGiao;
         private int _MaNV;
         private decimal _TongTien;
         private decimal _TongTienVAT;
-
-        public decimal TongTienVAT
-        {
-            get { return _TongTienVAT; }
-            set { _TongTienVAT = value; }
-        }
+        private string _XacNhan;
 
         public decimal TongTien
         {
             get { return _TongTien; }
             set { _TongTien = value; }
         }
+        public decimal TongTienVAT
+        {
+            get { return _TongTienVAT; }
+            set { _TongTienVAT = value; }
+        }
+
+
 
         public int MaNV
         {
@@ -46,22 +59,18 @@ namespace PhuongNam_Business.Models
             set { _MaNV = value; }
         }
 
-        public string NgayGiao
+        public DateTime NgayGiao
         {
             get { return _NgayGiao; }
             set { _NgayGiao = value; }
         }
 
-        public string NhaCungCap
+        public string XacNhan
         {
-            get { return _NhaCungCap; }
-            set { _NhaCungCap = value; }
+            get { return _XacNhan; }
+            set { _XacNhan = value; }
         }
 
-        public int MaDDH
-        {
-            get { return _MaDDH; }
-            set { _MaDDH = value; }
-        }
+
     }
 }

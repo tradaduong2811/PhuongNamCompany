@@ -54,20 +54,20 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.SBtnLamMoi = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.SBtnSanPham = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -76,21 +76,24 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SBtnSanPham = new System.Windows.Forms.ToolStripButton();
-            this.SBtnLamMoi = new System.Windows.Forms.ToolStripButton();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -322,6 +325,15 @@
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // SBtnLamMoi
+            // 
+            this.SBtnLamMoi.Image = global::PhuongNamCompany.Properties.Resources.refresh_icon1;
+            this.SBtnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SBtnLamMoi.Name = "SBtnLamMoi";
+            this.SBtnLamMoi.Size = new System.Drawing.Size(93, 39);
+            this.SBtnLamMoi.Text = "Làm mới";
+            this.SBtnLamMoi.Click += new System.EventHandler(this.SBtnLamMoi_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
@@ -338,6 +350,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sản phẩm";
             // 
+            // toolStrip2
+            // 
+            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(35, 35);
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SBtnSanPham,
+            this.toolStripSeparator1});
+            this.toolStrip2.Location = new System.Drawing.Point(3, 16);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(960, 42);
+            this.toolStrip2.TabIndex = 3;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // SBtnSanPham
+            // 
+            this.SBtnSanPham.Image = global::PhuongNamCompany.Properties.Resources.product_icon;
+            this.SBtnSanPham.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SBtnSanPham.Name = "SBtnSanPham";
+            this.SBtnSanPham.Size = new System.Drawing.Size(99, 39);
+            this.SBtnSanPham.Text = "Sản phẩm";
+            this.SBtnSanPham.Click += new System.EventHandler(this.SBtnSanPham_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 42);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -346,36 +384,14 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5});
+            this.Column5,
+            this.SL,
+            this.Gia,
+            this.TTien});
             this.dataGridView1.Location = new System.Drawing.Point(18, 74);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(942, 106);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên SP";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Xuất Xứ";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Mô tả";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Hệ điều hành";
-            this.Column5.Name = "Column5";
             // 
             // groupBox3
             // 
@@ -436,6 +452,15 @@
             this.label9.Size = new System.Drawing.Size(100, 13);
             this.label9.TabIndex = 1;
             this.label9.Text = "Tổng đơn đặt hàng";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PhuongNamCompany.Properties.Resources.chart;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 154);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(247, 223);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label13
             // 
@@ -513,49 +538,45 @@
             this.label16.TabIndex = 12;
             this.label16.Text = "ĐƠN ĐẶT HÀNG";
             // 
-            // toolStrip2
+            // Column1
             // 
-            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(35, 35);
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SBtnSanPham,
-            this.toolStripSeparator1});
-            this.toolStrip2.Location = new System.Drawing.Point(3, 16);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(960, 42);
-            this.toolStrip2.TabIndex = 3;
-            this.toolStrip2.Text = "toolStrip2";
+            this.Column1.HeaderText = "Mã";
+            this.Column1.Name = "Column1";
             // 
-            // toolStripSeparator1
+            // Column2
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 42);
+            this.Column2.HeaderText = "Tên SP";
+            this.Column2.Name = "Column2";
             // 
-            // pictureBox1
+            // Column3
             // 
-            this.pictureBox1.Image = global::PhuongNamCompany.Properties.Resources.chart;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 154);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 223);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Column3.HeaderText = "Xuất Xứ";
+            this.Column3.Name = "Column3";
             // 
-            // SBtnSanPham
+            // Column4
             // 
-            this.SBtnSanPham.Image = global::PhuongNamCompany.Properties.Resources.product_icon;
-            this.SBtnSanPham.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SBtnSanPham.Name = "SBtnSanPham";
-            this.SBtnSanPham.Size = new System.Drawing.Size(99, 39);
-            this.SBtnSanPham.Text = "Sản phẩm";
-            this.SBtnSanPham.Click += new System.EventHandler(this.SBtnSanPham_Click);
+            this.Column4.HeaderText = "Mô tả";
+            this.Column4.Name = "Column4";
             // 
-            // SBtnLamMoi
+            // Column5
             // 
-            this.SBtnLamMoi.Image = global::PhuongNamCompany.Properties.Resources.refresh_icon1;
-            this.SBtnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SBtnLamMoi.Name = "SBtnLamMoi";
-            this.SBtnLamMoi.Size = new System.Drawing.Size(93, 39);
-            this.SBtnLamMoi.Text = "Làm mới";
-            this.SBtnLamMoi.Click += new System.EventHandler(this.SBtnLamMoi_Click);
+            this.Column5.HeaderText = "Hệ điều hành";
+            this.Column5.Name = "Column5";
+            // 
+            // SL
+            // 
+            this.SL.HeaderText = "Số lượng";
+            this.SL.Name = "SL";
+            // 
+            // Gia
+            // 
+            this.Gia.HeaderText = "Giá Tiền";
+            this.Gia.Name = "Gia";
+            // 
+            // TTien
+            // 
+            this.TTien.HeaderText = "Thành tiền";
+            this.TTien.Name = "TTien";
             // 
             // MH_TaoDonDatHang
             // 
@@ -587,15 +608,15 @@
             this.toolStrip1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -645,16 +666,19 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ToolStripButton SBtnLamMoi;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton SBtnSanPham;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TTien;
     }
 }
