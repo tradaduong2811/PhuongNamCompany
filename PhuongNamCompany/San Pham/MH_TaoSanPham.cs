@@ -36,5 +36,10 @@ namespace PhuongNamCompany
         {
 
         }
+
+        private void txt_FullDes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

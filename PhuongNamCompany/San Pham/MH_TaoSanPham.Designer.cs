@@ -42,12 +42,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txt_Price = new System.Windows.Forms.TextBox();
             this.txt_FullDes = new System.Windows.Forms.TextBox();
-            this.txt_TinyDes = new System.Windows.Forms.TextBox();
             this.txt_TenSanPham = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -122,17 +120,15 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txt_Price);
             this.groupBox1.Controls.Add(this.txt_FullDes);
-            this.groupBox1.Controls.Add(this.txt_TinyDes);
             this.groupBox1.Controls.Add(this.txt_TenSanPham);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 153);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1288, 250);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
@@ -141,7 +137,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(221, 42);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(261, 22);
             this.textBox2.TabIndex = 23;
@@ -179,7 +175,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(895, 42);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(261, 22);
             this.textBox1.TabIndex = 17;
@@ -187,7 +183,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(485, 39);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 28);
             this.button1.TabIndex = 16;
@@ -207,31 +203,24 @@
             // txt_Price
             // 
             this.txt_Price.Location = new System.Drawing.Point(895, 75);
-            this.txt_Price.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Price.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(261, 22);
             this.txt_Price.TabIndex = 7;
             // 
             // txt_FullDes
             // 
-            this.txt_FullDes.Location = new System.Drawing.Point(221, 140);
-            this.txt_FullDes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_FullDes.Location = new System.Drawing.Point(221, 112);
+            this.txt_FullDes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_FullDes.Name = "txt_FullDes";
-            this.txt_FullDes.Size = new System.Drawing.Size(396, 22);
+            this.txt_FullDes.Size = new System.Drawing.Size(261, 22);
             this.txt_FullDes.TabIndex = 6;
-            // 
-            // txt_TinyDes
-            // 
-            this.txt_TinyDes.Location = new System.Drawing.Point(221, 109);
-            this.txt_TinyDes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_TinyDes.Name = "txt_TinyDes";
-            this.txt_TinyDes.Size = new System.Drawing.Size(261, 22);
-            this.txt_TinyDes.TabIndex = 5;
+            this.txt_FullDes.TextChanged += new System.EventHandler(this.txt_FullDes_TextChanged);
             // 
             // txt_TenSanPham
             // 
             this.txt_TenSanPham.Location = new System.Drawing.Point(221, 75);
-            this.txt_TenSanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_TenSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenSanPham.Name = "txt_TenSanPham";
             this.txt_TenSanPham.Size = new System.Drawing.Size(261, 22);
             this.txt_TenSanPham.TabIndex = 4;
@@ -264,19 +253,9 @@
             this.label3.Location = new System.Drawing.Point(51, 112);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 17);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Mô Tả Nhỏ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 143);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Mô Tả Đầy Đủ";
+            this.label3.Text = "Mô Tả";
             // 
             // label1
             // 
@@ -487,12 +466,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_Price;
         private System.Windows.Forms.TextBox txt_FullDes;
-        private System.Windows.Forms.TextBox txt_TinyDes;
         private System.Windows.Forms.TextBox txt_TenSanPham;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
