@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PhuongNam_Data;
 
 namespace PhuongNamCompany
 {
     public partial class MH_DanhSachNhaCungCap : Form
     {
+
         public MH_DanhSachNhaCungCap()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace PhuongNamCompany
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            DialogResult dialogresult = MessageBox.Show("Bạn có muốn nhà cung cấp " + "Mã nhà cung cấp " + "không?",
+            DialogResult dialogresult = MessageBox.Show("Bạn có muốn xóa nhà cung cấp " + "Mã nhà cung cấp " + "không?",
                                                "Xóa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
                                                MessageBoxDefaultButton.Button2);
             if (dialogresult == DialogResult.OK)
@@ -56,7 +59,10 @@ namespace PhuongNamCompany
 
         private void MH_DanhSachNhaCungCap_Load(object sender, EventArgs e)
         {
+            NhaCungCap_Data nhacungcap = new NhaCungCap_Data();
+            dataGridView1.DataSource = nhacungcap.displayVendor();
+       }
 
-        }
+
     }
 }
