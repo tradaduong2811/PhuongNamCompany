@@ -247,6 +247,27 @@
   <ItemGroup>
     <None Include="Resources\Coin_stack_icon_GOLD-01.svg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taskbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leftcolumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taskbar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taskbar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightcolumn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightcolumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activities.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
