@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbSoLuong = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.CBBMaSanPham = new System.Windows.Forms.ComboBox();
             this.TBMoTa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -37,8 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbSoLuong = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbSoLuong)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +68,22 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sản phẩm";
+            // 
+            // tbSoLuong
+            // 
+            this.tbSoLuong.Location = new System.Drawing.Point(119, 191);
+            this.tbSoLuong.Name = "tbSoLuong";
+            this.tbSoLuong.Size = new System.Drawing.Size(84, 20);
+            this.tbSoLuong.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 191);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Số lượng";
             // 
             // CBBMaSanPham
             // 
@@ -128,22 +144,6 @@
             this.button1.Text = "Chọn";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 191);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Số lượng";
-            // 
-            // tbSoLuong
-            // 
-            this.tbSoLuong.Location = new System.Drawing.Point(119, 191);
-            this.tbSoLuong.Name = "tbSoLuong";
-            this.tbSoLuong.Size = new System.Drawing.Size(84, 20);
-            this.tbSoLuong.TabIndex = 7;
-            // 
             // MH_ChonSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +154,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MH_ChonSanPham";
             this.Text = "Chọn sản phẩm";
+            this.Load += new System.EventHandler(this.MH_ChonSanPham_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbSoLuong)).EndInit();

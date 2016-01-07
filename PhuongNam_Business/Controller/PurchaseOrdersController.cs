@@ -28,6 +28,7 @@ namespace PhuongNam_Business.Controller
                 order.NgayGiao.ToString("dd/MM/yyyy");
                 order.TongTien = (decimal)dr["TongTien"];
                 order.TongTienVAT = (decimal)dr["TongTienVAT"];
+                order.MaNV = (int)dr["MaNV"];
                 order.SDT = (string)dr["SDT"];
                 order.XacNhan = dr["XacNhan"].ToString();
                 if (order.XacNhan == "True")
@@ -75,5 +76,25 @@ namespace PhuongNam_Business.Controller
             }
             return PurOrder;
         }
+
+        public List<ChiTietDonDatHang> displayOrderLines(string id)
+        {
+            List<ChiTietDonDatHang> listOrderLines = new List<ChiTietDonDatHang>();
+            DataTable tbOrderLines = new DataTable();
+            tbOrderLines = data.displayOrderLines(id);
+            foreach (DataRow dr in tbOrderLines.Rows)
+            {
+                ChiTietDonDatHang OrderLine = new ChiTietDonDatHang();
+                OrderLine.MaSP = (int)dr["MaSP"];
+                OrderLine.TenSP = (string)dr["TenSP"];
+                OrderLine.DonGia = (decimal)dr["DonGia"];
+                OrderLine.SoLuong = (int)dr["SoLuongDat"];
+                OrderLine.ThanhTien = OrderLine.DonGia * OrderLine.SoLuong;
+                
+                listOrderLines.Add(OrderLine);
+            }
+            return listOrderLines;
+        }
+
     }
 }

@@ -17,8 +17,19 @@ namespace PhuongNam_Business.Models
         private string _KichThuoc;
         private string _MoTa;
         private int _TrongLuong;
+<<<<<<< HEAD
         private decimal _DonGia;
         private string _LoaiSP;
+=======
+        private decimal _GiaTien;
+        private string _MoTaThem;
+
+        public string MoTaThem
+        {
+            get { return _MoTaThem; }
+            set { _MoTaThem = value; }
+        }
+>>>>>>> origin/master
 
       
 
@@ -88,7 +99,15 @@ namespace PhuongNam_Business.Models
             set { _XuatXu = value; }
         }
 
+<<<<<<< HEAD
 
+=======
+        public decimal GiaTien
+        {
+            get { return _GiaTien; }
+            set { _GiaTien = value; }
+        }
+>>>>>>> origin/master
 
     }
 }

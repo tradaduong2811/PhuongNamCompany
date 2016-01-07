@@ -107,7 +107,7 @@
             // 
             // btn_SanPham
             // 
-            this.btn_SanPham.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_SanPham.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_SanPham.Image = global::PhuongNamCompany.Properties.Resources.product_icon1;
             this.btn_SanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_SanPham.Location = new System.Drawing.Point(62, 320);
@@ -121,7 +121,7 @@
             // 
             // btn_NhaCungCap
             // 
-            this.btn_NhaCungCap.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_NhaCungCap.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_NhaCungCap.Image = global::PhuongNamCompany.Properties.Resources.vendors_icon1;
             this.btn_NhaCungCap.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_NhaCungCap.Location = new System.Drawing.Point(62, 186);
@@ -135,7 +135,7 @@
             // 
             // btn_DonHang
             // 
-            this.btn_DonHang.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DonHang.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DonHang.Image = global::PhuongNamCompany.Properties.Resources.resource_icon_case_studies1;
             this.btn_DonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_DonHang.Location = new System.Drawing.Point(62, 52);

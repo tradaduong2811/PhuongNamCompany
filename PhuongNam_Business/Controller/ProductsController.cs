@@ -27,6 +27,7 @@ namespace PhuongNam_Business
             return listProducts;
         }
 
+<<<<<<< HEAD
         //NAM
         public List<SanPham> getProducts()
         {
@@ -75,6 +76,20 @@ namespace PhuongNam_Business
                 listProducts.Add(sp);
             }
 
+=======
+        public List<SanPham> displayProduct(string VendorId)
+        {
+            List<SanPham> listProducts = new List<SanPham>();
+            DataTable dt = new DataTable();
+            dt = data.displayProduct(VendorId);
+            foreach (DataRow dr in dt.Rows)
+            {
+                SanPham product = new SanPham();
+                product.MaSP = (int)dr["MaSP"];
+                product.MoTaThem = product.MaSP + " | " + (string)dr["TenSP"];
+                listProducts.Add(product);
+            }
+>>>>>>> origin/master
             return listProducts;
         }
     }
