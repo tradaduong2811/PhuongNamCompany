@@ -97,7 +97,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::PhuongNamCompany.Properties.Resources.AAEAAQAAAAAAAALjAAAAJDVlZDJmMDYwLTQyNjMtNDc5ZS1hOWJhLTA5Mzk0OWRmNmNjZQ;
+            this.pictureBox1.BackgroundImage = global::PhuongNamCompany.Properties.Resources.AAEAAQAAAAAAAALjAAAAJDVlZDJmMDYwLTQyNjMtNDc5ZS1hOWJhLTA5Mzk0OWRmNmNjZQ1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(574, 52);
             this.pictureBox1.Name = "pictureBox1";
@@ -122,7 +122,7 @@
             // btn_NhaCungCap
             // 
             this.btn_NhaCungCap.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_NhaCungCap.Image = global::PhuongNamCompany.Properties.Resources.vendors_icon;
+            this.btn_NhaCungCap.Image = global::PhuongNamCompany.Properties.Resources.vendors_icon1;
             this.btn_NhaCungCap.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_NhaCungCap.Location = new System.Drawing.Point(62, 186);
             this.btn_NhaCungCap.Name = "btn_NhaCungCap";
