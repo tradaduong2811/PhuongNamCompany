@@ -22,7 +22,7 @@ namespace PhuongNam_Data
         {
             DataTable Product = new DataTable();
             string strSQL;
-            strSQL = "Select * From SanPham"; // Chuỗi SQL
+            strSQL = "Select GiaSanPham.MaSP,TenSP,HangSX,Gia,SoLuong,Ngay From SanPham,GiaSanPham,NhaCungCap Where NhaCungCap.MaNhaCungCap = GiaSanPham.NhaCungCap and NhaCungCap.MaNhaCungCap = 1 and GiaSanPham.MaSP = SanPham.MaSP"; // Chuỗi SQL
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
             da_header.Fill(Product);
             return Product; // trả ra dữ liệu tương ứng với DataTable
