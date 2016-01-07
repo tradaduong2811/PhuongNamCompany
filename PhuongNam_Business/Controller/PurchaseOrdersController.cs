@@ -12,7 +12,7 @@ namespace PhuongNam_Business.Controller
     public class PurchaseOrdersController
     {
         public DonDatHang_Data data = new DonDatHang_Data();
-        public List<DonDatHang> displayVendors()
+        public List<DonDatHang> displayPurchaseOrders()
         {
             List<DonDatHang> listOrders = new List<DonDatHang>();
             DataTable dt = new DataTable();
@@ -28,6 +28,7 @@ namespace PhuongNam_Business.Controller
                 order.NgayGiao.ToString("dd/MM/yyyy");
                 order.TongTien = (decimal)dr["TongTien"];
                 order.TongTienVAT = (decimal)dr["TongTienVAT"];
+                order.SDT = (string)dr["SDT"];
                 order.XacNhan = dr["XacNhan"].ToString();
                 if (order.XacNhan == "True")
                     order.XacNhan = "Đã xác nhận";
@@ -43,10 +44,36 @@ namespace PhuongNam_Business.Controller
             return data.approvePurchaseOrder(id);
         }
 
-        public string removePurchaseOrder(string id, string approve)
+        public int removePurchaseOrder(string id)
         {
-            int result = data.removePurchaseOrder(id, approve);
-            return "gi do";
+            int result = data.removePurchaseOrder(id);
+            return result;
+        }
+
+        public DonDatHang displayPurchaseOrder(string id)
+        {
+            DonDatHang PurOrder = new DonDatHang();
+            DataTable dt = new DataTable();
+            dt = data.displayPurchaseOrder(id);
+            foreach (DataRow dr in dt.Rows)
+            {
+                PurOrder.MaDDH = (int)dr["MaDDH"];
+                PurOrder.NhaCungCap = (string)dr["TenCongTy"];
+                PurOrder.DiaChi = (string)dr["DiaChi"];
+                PurOrder.NguoiDaiDien = (string)dr["NguoiDaiDien"];
+                PurOrder.NgayGiao = (DateTime)dr["NgayGiao"];
+                PurOrder.NgayGiao.ToString("dd/MM/yyyy");
+                PurOrder.TongTien = (decimal)dr["TongTien"];
+                PurOrder.SDT = (string)dr["SDT"];
+                PurOrder.TongTienVAT = (decimal)dr["TongTienVAT"];
+                PurOrder.XacNhan = dr["XacNhan"].ToString();
+                if (PurOrder.XacNhan == "True")
+                    PurOrder.XacNhan = "Đã xác nhận";
+                else
+                    PurOrder.XacNhan = "Chưa xác nhận";
+                PurOrder.MaNCC = (int)dr["MaNhaCungCap"];
+            }
+            return PurOrder;
         }
     }
 }

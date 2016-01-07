@@ -11,7 +11,9 @@ namespace PhuongNam_Business.Models
         private int _MaDDH;
         private string _NhaCungCap;
         private string _DiaChi;
+        private string _SDT;
         private string _NguoiDaiDien;
+        private int _MaNCC;
 
         public int MaDDH
         {
@@ -28,6 +30,12 @@ namespace PhuongNam_Business.Models
             get { return _DiaChi; }
             set { _DiaChi = value; }
         }
+        public string SDT
+        {
+            get { return _SDT; }
+            set { _SDT = value; }
+        }
+
         public string NguoiDaiDien
         {
             get { return _NguoiDaiDien; }
@@ -71,6 +79,10 @@ namespace PhuongNam_Business.Models
             set { _XacNhan = value; }
         }
 
-
+        public int MaNCC
+        {
+            get { return _MaNCC; }
+            set { _MaNCC = value; }
+        }
     }
 }

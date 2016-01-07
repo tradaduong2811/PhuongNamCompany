@@ -53,3 +53,14 @@ E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống th
 E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.csproj.GenerateResource.Cache
 E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.exe
 E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\bin\Debug\BusinessSalesManagement.exe.config
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\bin\Debug\BusinessSalesManagement.exe
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\bin\Debug\BusinessSalesManagement.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\bin\Debug\DataAccessSalesManagement.exe
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\bin\Debug\DataAccessSalesManagement.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.csprojResolveAssemblyReference.cache
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.Form1.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.Properties.Resources.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.csproj.GenerateResource.Cache
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.exe
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\BusinessSalesManagement\obj\Debug\BusinessSalesManagement.pdb

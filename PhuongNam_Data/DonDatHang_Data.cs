@@ -23,17 +23,17 @@ namespace PhuongNam_Data
         /// <returns></returns>
         public DataTable displayPurchaseOrders()
         {
-            DataTable Vendors = new DataTable();
+            DataTable PurOrders = new DataTable();
             string strSQL;
 
-            strSQL = "select ddh.MaDDH, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT, ddh.XacNhan " +
+            strSQL = "select ddh.MaDDH, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT, ddh.XacNhan, ncc.SDT " +
                         " from DonDatHang ddh, NhaCungCap ncc " +
                         " where ncc.MaNhaCungCap = ddh.NhaCungCap";
             
 
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
-            da_header.Fill(Vendors);
-            return Vendors; // trả ra dữ liệu tương ứng với DataTable
+            da_header.Fill(PurOrders);
+            return PurOrders; // trả ra dữ liệu tương ứng với DataTable
         }
 
 
@@ -64,32 +64,59 @@ namespace PhuongNam_Data
             return true;
         }
 
-        public int removePurchaseOrder(string id, string approve)
+        public int removePurchaseOrder(string id)
         {
-            string strSQL;
+            DataTable tbApprove = new DataTable();
             int OrderId;
             int.TryParse(id, out OrderId);
-            bool checkApprove = bool.Parse(approve);
 
-            strSQL = "UPDATE DonDatHang " +
-                     "SET XacNhan = 'True' " +
-                     "WHERE MaDDH = @IdDDH and XacNhan = 'False'";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = dc.con;
-            if (dc.con.State == ConnectionState.Closed)
-                dc.con.Open(); // mở kết nối
-            cmd.Parameters.AddWithValue("@IdDDH", OrderId);
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = strSQL;
-            try
+            // kiểm tra đơn đặt hàng đã được xác nhận chưa?
+            string checkSQL = "SELECT XacNhan From DonDatHang WHERE MaDDH = " + OrderId + " and XacNhan = 'False'";
+            SqlDataAdapter da_header = new SqlDataAdapter(checkSQL, dc.con);
+            da_header.Fill(tbApprove);
+            if (tbApprove.Rows.Count == 0)
             {
-                cmd.ExecuteNonQuery();
+                return 0;
             }
-            catch (SqlException e)
+            else
             {
-                return 1;
+                string strSQL = "DELELE From DonDatHang WHERE MaDDH = @IdDDH" +
+                       " DELETE From ChiTietDonHang Where MaDDH = @IdDDH";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = dc.con;
+                if (dc.con.State == ConnectionState.Closed)
+                    dc.con.Open(); // mở kết nối
+                cmd.Parameters.AddWithValue("@IdDDH", OrderId);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = strSQL;
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    return 1;
+                }
+                catch (SqlException e)
+                {
+                    return -1;
+                }
             }
-            return 2;
+        }
+
+
+
+        public DataTable displayPurchaseOrder(string id)
+        {
+            int PurOrderId = int.Parse(id);
+            DataTable PurOrders = new DataTable();
+            string strSQL;
+
+            strSQL = "select ddh.MaDDH, ncc.MaNhaCungCap, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT, ddh.XacNhan, ncc.SDT " +
+                        " from DonDatHang ddh, NhaCungCap ncc " +
+                        " where ncc.MaNhaCungCap = ddh.NhaCungCap and ddh.MaDDH = " + PurOrderId;
+
+
+            SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
+            da_header.Fill(PurOrders);
+            return PurOrders; // trả ra dữ liệu tương ứng với DataTab
         }
     }
 }

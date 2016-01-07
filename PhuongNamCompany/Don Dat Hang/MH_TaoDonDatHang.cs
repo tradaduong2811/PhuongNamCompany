@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PhuongNam_Business;
+using PhuongNam_Business.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +19,15 @@ namespace PhuongNamCompany
             InitializeComponent();
         }
 
+
+        PurchaseOrdersController PurchaseOrdersConroller = new PurchaseOrdersController();
+        VendorsController VendorsController = new VendorsController();        
+
         private void MH_TaoDonDatHang_Load(object sender, EventArgs e)
         {
-
+            CbbMaNhaCungCap.DataSource = VendorsController.displayVendors().ToList();
+            CbbMaNhaCungCap.DisplayMember = "MaNCC";
+            CbbMaNhaCungCap.ValueMember = "TenCongTy";
         }
 
         private void SBtnLamMoi_Click(object sender, EventArgs e)
@@ -41,6 +49,17 @@ namespace PhuongNamCompany
         {
             MH_ChonSanPham MH_ChonSanPham = new MH_ChonSanPham();
             MH_ChonSanPham.ShowDialog();
+        }
+
+        private void CbbMaNhaCungCap_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //TBTenCongTy.Text = PurchaseOrdersConroller.generateName(int.Parse(CBCustomerNo.Text));
+            
+
+            //if (CBCustomerNo.Text != "" && CheckReset == true && TBNo.Text != "")
+            //{
+                //BTCreateSalesLine.Enabled = true;
+            //}
         }
     }
 }

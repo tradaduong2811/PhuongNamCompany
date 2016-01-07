@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhuongNam_Business
+namespace PhuongNam_Business.Controller
 {
     public class VendorsController
     {
@@ -23,8 +23,9 @@ namespace PhuongNam_Business
                 vendor.MaNCC = (int)dr["MaNhaCungCap"];
                 vendor.TenCongTy = (string)dr["TenCongTy"];
                 vendor.DiaChi = (string)dr["DiaChi"];
+                vendor.SDT = (string)dr["SDT"];
             }
-            return listVendors;
+            return listVendors.ToList();
         }
     }
 }

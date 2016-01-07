@@ -176,6 +176,7 @@
             this.SBtnInBaoCao.Name = "SBtnInBaoCao";
             this.SBtnInBaoCao.Size = new System.Drawing.Size(101, 39);
             this.SBtnInBaoCao.Text = "In Báo cáo";
+            this.SBtnInBaoCao.Click += new System.EventHandler(this.SBtnInBaoCao_Click);
             // 
             // toolStripSeparator2
             // 

@@ -44,10 +44,11 @@
   <ItemGroup>
     <Compile Include="Controller\ProductsController.cs" />
     <Compile Include="Controller\PurchaseOrdersController.cs" />
+    <Compile Include="Models\ChiTietDonDatHang.cs" />
     <Compile Include="Models\DonDatHang.cs" />
     <Compile Include="Models\NhaCungCap.cs" />
     <Compile Include="Models\SanPham.cs" />
-    <Compile Include="NhanVien.cs" />
+    <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controller\VendorsController.cs" />
