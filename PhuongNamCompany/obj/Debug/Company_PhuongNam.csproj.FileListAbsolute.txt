@@ -74,3 +74,4 @@ D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\D
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Properties.Resources.resources
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_BoPhanMuaHang.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_BoPhanMuaHang.resources

@@ -34,7 +34,8 @@ namespace PhuongNamCompany
 
         private void btn_BoPhanMuaHang_Click(object sender, EventArgs e)
         {
-            
+            MH_BoPhanMuaHang MH_BoPhanMuaHang = new MH_BoPhanMuaHang();
+            MH_BoPhanMuaHang.ShowDialog();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
