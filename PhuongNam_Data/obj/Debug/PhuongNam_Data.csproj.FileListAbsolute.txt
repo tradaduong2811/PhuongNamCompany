@@ -7,7 +7,6 @@ E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_D
 D:\Learning\PhuongNamCompany\PhuongNam_Data\bin\Debug\PhuongNam_Data.exe.config
 D:\Learning\PhuongNamCompany\PhuongNam_Data\bin\Debug\PhuongNam_Data.exe
 D:\Learning\PhuongNamCompany\PhuongNam_Data\bin\Debug\PhuongNam_Data.pdb
-D:\Learning\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_Data.csprojResolveAssemblyReference.cache
 D:\Learning\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_Data.exe
 D:\Learning\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_Data.pdb
 D:\Study\4th year\PTTK HTTT\Project\PhuongNamCompany\PhuongNam_Data\bin\Debug\PhuongNam_Data.exe.config

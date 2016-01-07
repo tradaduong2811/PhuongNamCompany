@@ -36,7 +36,6 @@ D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Data.pdb
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csprojResolveAssemblyReference.cache
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_Chinh.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietDonDatHang.resources
-D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_BoPhanMuaHang.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietNhaCungCap.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DanhSachNhaCungCap.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoNhaCungCap.resources

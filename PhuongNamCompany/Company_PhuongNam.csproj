@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -63,12 +62,6 @@
     <Compile Include="Don Dat Hang\MH_ChiTietDonDatHang.Designer.cs">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nha Cung Cap\MH_BoPhanMuaHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_BoPhanMuaHang.Designer.cs">
-      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Nha Cung Cap\MH_ChiTietNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +85,11 @@
     </Compile>
     <Compile Include="Nha Cung Cap\MH_XemSanPham.Designer.cs">
       <DependentUpon>MH_XemSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="San Pham\MH_ChiTietSanPham.cs">
       <SubType>Form</SubType>
@@ -143,9 +141,6 @@
     <EmbeddedResource Include="Don Dat Hang\MH_ChiTietDonDatHang.resx">
       <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nha Cung Cap\MH_BoPhanMuaHang.resx">
-      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Nha Cung Cap\MH_ChiTietNhaCungCap.resx">
       <DependentUpon>MH_ChiTietNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,14 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -288,287 +278,5 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
-  -->
-=======
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E311BE36-7026-4C6B-9C74-7AC9490E6E4B}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PhuongNamCompany</RootNamespace>
-    <AssemblyName>PhuongNamCompany</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="MH_BoPhanMuaHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MH_BoPhanMuaHang.Designer.cs">
-      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MH_Chinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MH_Chinh.Designer.cs">
-      <DependentUpon>MH_Chinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_ChiTietDonDatHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_ChiTietDonDatHang.Designer.cs">
-      <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_ChiTietNhaCungCap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_ChiTietNhaCungCap.Designer.cs">
-      <DependentUpon>MH_ChiTietNhaCungCap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_DanhSachNhaCungCap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_DanhSachNhaCungCap.Designer.cs">
-      <DependentUpon>MH_DanhSachNhaCungCap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_TaoNhaCungCap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_TaoNhaCungCap.Designer.cs">
-      <DependentUpon>MH_TaoNhaCungCap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_XemSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nha Cung Cap\MH_XemSanPham.Designer.cs">
-      <DependentUpon>MH_XemSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="San Pham\MH_ChiTietSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="San Pham\MH_ChiTietSanPham.Designer.cs">
-      <DependentUpon>MH_ChiTietSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_ChonSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_ChonSanPham.Designer.cs">
-      <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="San Pham\MH_DanhSachSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="San Pham\MH_DanhSachSanPham.Designer.cs">
-      <DependentUpon>MH_DanhSachSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_DSDonDatHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_DSDonDatHang.Designer.cs">
-      <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="San Pham\MH_GiaSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="San Pham\MH_GiaSanPham.Designer.cs">
-      <DependentUpon>MH_GiaSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_TaoDonDatHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Don Dat Hang\MH_TaoDonDatHang.Designer.cs">
-      <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="San Pham\MH_TaoSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="San Pham\MH_TaoSanPham.Designer.cs">
-      <DependentUpon>MH_TaoSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MH_BoPhanMuaHang.resx">
-      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MH_Chinh.resx">
-      <DependentUpon>MH_Chinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Don Dat Hang\MH_ChiTietDonDatHang.resx">
-      <DependentUpon>MH_ChiTietDonDatHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nha Cung Cap\MH_ChiTietNhaCungCap.resx">
-      <DependentUpon>MH_ChiTietNhaCungCap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nha Cung Cap\MH_DanhSachNhaCungCap.resx">
-      <DependentUpon>MH_DanhSachNhaCungCap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nha Cung Cap\MH_TaoNhaCungCap.resx">
-      <DependentUpon>MH_TaoNhaCungCap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nha Cung Cap\MH_XemSanPham.resx">
-      <DependentUpon>MH_XemSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="San Pham\MH_ChiTietSanPham.resx">
-      <DependentUpon>MH_ChiTietSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Don Dat Hang\MH_ChonSanPham.resx">
-      <DependentUpon>MH_ChonSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="San Pham\MH_DanhSachSanPham.resx">
-      <DependentUpon>MH_DanhSachSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Don Dat Hang\MH_DSDonDatHang.resx">
-      <DependentUpon>MH_DSDonDatHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="San Pham\MH_GiaSanPham.resx">
-      <DependentUpon>MH_GiaSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Don Dat Hang\MH_TaoDonDatHang.resx">
-      <DependentUpon>MH_TaoDonDatHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="San Pham\MH_TaoSanPham.resx">
-      <DependentUpon>MH_TaoSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Image\chart.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\report.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\add-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\edit-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\approve-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\remove-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\view-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\refresh-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\ICON.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Icon\product-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\product.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PhuongNam_Business\PhuongNam_Business.csproj">
-      <Project>{72d9f3e0-1d7b-41f3-800a-bed46db919f3}</Project>
-      <Name>PhuongNam_Business</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PhuongNam_Data\PhuongNam_Data.csproj">
-      <Project>{b04c1a7d-7681-4faa-a3f4-d367bc7cd42b}</Project>
-      <Name>PhuongNam_Data</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Coin_stack_icon_GOLD-01.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\AAEAAQAAAAAAAALjAAAAJDVlZDJmMDYwLTQyNjMtNDc5ZS1hOWJhLTA5Mzk0OWRmNmNjZQ.png" />
-    <None Include="Resources\AAEAAQAAAAAAAALjAAAAJDVlZDJmMDYwLTQyNjMtNDc5ZS1hOWJhLTA5Mzk0OWRmNmNjZQ1.png" />
-    <Content Include="Resources\checklist_todo-512.png" />
-    <Content Include="Resources\checklist_todo-5121.png" />
-    <Content Include="Resources\images %281%29.jpg" />
-    <Content Include="Resources\images.jpg" />
-    <Content Include="Resources\images.png" />
-    <Content Include="Resources\iStock_000006459776XSmall.jpg" />
-    <Content Include="Resources\pie.png" />
-    <Content Include="Resources\Product-Icon-100x100.png" />
-    <Content Include="Resources\product-icon.png" />
-    <None Include="Resources\product-icon1.png" />
-    <Content Include="Resources\resource-icon-case-studies.png" />
-    <None Include="Resources\vendors-icon2.jpg" />
-    <None Include="Resources\resource-icon-case-studies2.png" />
-    <None Include="Resources\resource-icon-case-studies1.png" />
-    <Content Include="Resources\vendors-icon %281%29.jpg" />
-    <Content Include="Resources\vendors-icon %282%29.jpg" />
-    <Content Include="Resources\vendors-icon.jpg" />
-    <Content Include="Resources\vendors-icon1.jpg" />
-    <Content Include="Resources\越南-4.jpg" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
->>>>>>> 6b162ad6c24788ff792a79b5497b304506b2819c
+   -->
 </Project>
