@@ -26,5 +26,56 @@ namespace PhuongNam_Business
             }
             return listProducts;
         }
+
+        //NAM
+        public List<SanPham> getProducts()
+        {
+            List<SanPham> listProducts = new List<SanPham>();
+            DataTable dtProducts = new DataTable();
+            dtProducts = data.getProducts();
+            foreach (DataRow dtrow in dtProducts.Rows)
+            {
+                SanPham sp = new SanPham();
+                sp.MaSP = (int)dtrow["MaSP"];              
+                sp.TenSP = (string)dtrow["TenSP"];
+                sp.HangSX = (string)dtrow["TenHSX"];
+                sp.LoaiSP = (string)dtrow["Ten"];
+                sp.DonGia = (decimal)dtrow["DonGia"];
+
+                sp.MoTa = 
+                (dtrow["MoTa"] == DBNull.Value) ? string.Empty : (string)dtrow["MoTa"].ToString();
+                //if (string.IsNullOrEmpty(sp.MoTa))
+                //{
+                //    sp.MoTa = "Chưa xác định";
+                //}
+                
+                sp.HeDieuHanh =
+              (dtrow["HeDieuHanh"] == DBNull.Value) ? string.Empty : (string)dtrow["HeDieuHanh"].ToString();
+                if (string.IsNullOrEmpty(sp.HeDieuHanh))
+                {
+                    sp.HeDieuHanh = "Chưa xác định";
+                }
+
+                sp.TrongLuong = (int)dtrow["TrongLuong"];
+                int ?a = sp.TrongLuong;
+                if (!a.HasValue)
+                {
+                    sp.TrongLuong = 0;
+                }
+                sp.TGBaoHanh = (int)dtrow["TGBaoHanh"];
+
+                sp.KichThuoc =
+              (dtrow["KichThuoc"] == DBNull.Value) ? string.Empty : (string)dtrow["KichThuoc"].ToString();
+                if (string.IsNullOrEmpty(sp.KichThuoc))
+                {
+                    sp.KichThuoc = "Chưa xác định";
+                }
+
+                sp.XuatXu = (string)dtrow["XuatXu"];
+                listProducts.Add(sp);
+            }
+
+            return listProducts;
+        }
     }
 }

@@ -8,12 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PhuongNam_Business;
 
 namespace PhuongNamCompany
 {
     public partial class MH_DanhSachSanPham : Form
     {
         private BindingSource bindingSource1 = new BindingSource();
+        ProductsController proController = new ProductsController();
         public MH_DanhSachSanPham()
         {
             InitializeComponent();
@@ -22,54 +24,55 @@ namespace PhuongNamCompany
 
         private void InitializeDataGridView()
         {
-            try
-            {
-                // Set up the DataGridView.
-                dataGridView1.Dock = DockStyle.Fill;
+            //try
+            //{
+                //// Set up the DataGridView.
+                //dgv_DSSP.Dock = DockStyle.Fill;
 
-                // Automatically generate the DataGridView columns.
-                dataGridView1.AutoGenerateColumns = true;
+                //// Automatically generate the DataGridView columns.
+                //dgv_DSSP.AutoGenerateColumns = true;
 
-                // Set up the data source.
-                bindingSource1.DataSource = GetData("Select * From SanPham");
-                dataGridView1.DataSource = bindingSource1;
+                //// Set up the data source.
+                //bindingSource1.DataSource = proController.getProducts(); ;
+                //dgv_DSSP.DataSource = bindingSource1;
 
-                // Automatically resize the visible rows.
-                dataGridView1.AutoSizeRowsMode =
-                    DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+                //// Automatically resize the visible rows.
+                //dgv_DSSP.AutoSizeRowsMode =
+                //    DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
 
-                // Set the DataGridView control's border.
-                dataGridView1.BorderStyle = BorderStyle.Fixed3D;
+                //// Set the DataGridView control's border.
+                //dgv_DSSP.BorderStyle = BorderStyle.Fixed3D;
 
-                // Put the cells in edit mode when user enters them.
-                dataGridView1.EditMode = DataGridViewEditMode.EditOnEnter;
-            }
-            catch (SqlException)
-            {
-                MessageBox.Show("To run this sample replace connection.ConnectionString" +
-                    " with a valid connection string to a Northwind" +
-                    " database accessible to your system.", "ERROR",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                System.Threading.Thread.CurrentThread.Abort();
-            }
+                //// Put the cells in edit mode when user enters them.
+            
+                dgv_DSSP.DataSource = proController.getProducts();
+            //}
+            //catch (SqlException)
+            //{
+            //    MessageBox.Show("To run this sample replace connection.ConnectionString" +
+            //        " with a valid connection string to a Northwind" +
+            //        " database accessible to your system.", "ERROR",
+            //        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //    System.Threading.Thread.CurrentThread.Abort();
+            //}
         }
 
-        private static DataTable GetData(string sqlCommand)
-        {
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|PhuongNamDB.mdf; Integrated Security=True";
+        //private static DataTable GetData(string sqlCommand)
+        //{
+        //    string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|PhuongNamDB.mdf; Integrated Security=True";
 
-            SqlConnection northwindConnection = new SqlConnection(connectionString);
+        //    SqlConnection northwindConnection = new SqlConnection(connectionString);
 
-            SqlCommand command = new SqlCommand(sqlCommand, northwindConnection);
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = command;
+        //    SqlCommand command = new SqlCommand(sqlCommand, northwindConnection);
+        //    SqlDataAdapter adapter = new SqlDataAdapter();
+        //    adapter.SelectCommand = command;
 
-            DataTable table = new DataTable();
-            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
-            adapter.Fill(table);
+        //    DataTable table = new DataTable();
+        //    table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+        //    adapter.Fill(table);
 
-            return table;
-        }
+        //    return table;
+        //}
 
 
         private void btn_ThemMoi_Click(object sender, EventArgs e)

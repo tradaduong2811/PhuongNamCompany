@@ -9,7 +9,7 @@ namespace PhuongNam_Business.Models
     public class SanPham
     {
         private int _MaSP;
-        private int _HangSX;
+        private string _HangSX;
         private string _TenSP;
         private int _TGBaoHanh;
         private string _XuatXu;
@@ -17,11 +17,39 @@ namespace PhuongNam_Business.Models
         private string _KichThuoc;
         private string _MoTa;
         private int _TrongLuong;
+        private decimal _DonGia;
+        private string _LoaiSP;
 
-        public int TrongLuong
+      
+
+       
+        public int MaSP
         {
-            get { return _TrongLuong; }
-            set { _TrongLuong = value; }
+            get { return _MaSP; }
+            set { _MaSP = value; }
+        }
+
+        public string TenSP
+        {
+            get { return _TenSP; }
+            set { _TenSP = value; }
+        }
+        public string HangSX
+        {
+            get { return _HangSX; }
+            set { _HangSX = value; }
+        }
+
+        public string LoaiSP
+        {
+            get { return _LoaiSP; }
+            set { _LoaiSP = value; }
+        }
+
+        public decimal DonGia
+        {
+            get { return _DonGia; }
+            set { _DonGia = value; }
         }
 
         public string MoTa
@@ -30,22 +58,15 @@ namespace PhuongNam_Business.Models
             set { _MoTa = value; }
         }
 
-        public string KichThuoc
-        {
-            get { return _KichThuoc; }
-            set { _KichThuoc = value; }
-        }
-
         public string HeDieuHanh
         {
             get { return _HeDieuHanh; }
             set { _HeDieuHanh = value; }
         }
-
-        public string XuatXu
+        public int TrongLuong
         {
-            get { return _XuatXu; }
-            set { _XuatXu = value; }
+            get { return _TrongLuong; }
+            set { _TrongLuong = value; }
         }
 
         public int TGBaoHanh
@@ -54,22 +75,20 @@ namespace PhuongNam_Business.Models
             set { _TGBaoHanh = value; }
         }
 
-        public string TenSP
+        public string KichThuoc
         {
-            get { return _TenSP; }
-            set { _TenSP = value; }
+            get { return _KichThuoc; }
+            set { _KichThuoc = value; }
         }
 
-        public int HangSX
+
+        public string XuatXu
         {
-            get { return _HangSX; }
-            set { _HangSX = value; }
+            get { return _XuatXu; }
+            set { _XuatXu = value; }
         }
 
-        public int MaSP
-        {
-            get { return _MaSP; }
-            set { _MaSP = value; }
-        }
+
+
     }
 }

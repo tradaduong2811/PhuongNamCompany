@@ -21,3 +21,4 @@ D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Data\bin\Deb
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_Data.csprojResolveAssemblyReference.cache
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_Data.exe
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_Data.pdb
+D:\Learning\PhuongNamCompany\PhuongNam_Data\obj\Debug\PhuongNam_Data.csprojResolveAssemblyReference.cache
