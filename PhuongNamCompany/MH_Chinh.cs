@@ -34,7 +34,7 @@ namespace PhuongNamCompany
 
         private void btn_BoPhanMuaHang_Click(object sender, EventArgs e)
         {
-            //Màn hình Bộ phận mua hàng
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

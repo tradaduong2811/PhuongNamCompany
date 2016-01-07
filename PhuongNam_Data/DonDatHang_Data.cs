@@ -63,5 +63,33 @@ namespace PhuongNam_Data
             }
             return true;
         }
+
+        public int removePurchaseOrder(string id, string approve)
+        {
+            string strSQL;
+            int OrderId;
+            int.TryParse(id, out OrderId);
+            bool checkApprove = bool.Parse(approve);
+
+            strSQL = "UPDATE DonDatHang " +
+                     "SET XacNhan = 'True' " +
+                     "WHERE MaDDH = @IdDDH and XacNhan = 'False'";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = dc.con;
+            if (dc.con.State == ConnectionState.Closed)
+                dc.con.Open(); // mở kết nối
+            cmd.Parameters.AddWithValue("@IdDDH", OrderId);
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = strSQL;
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                return 1;
+            }
+            return 2;
+        }
     }
 }

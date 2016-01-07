@@ -42,5 +42,11 @@ namespace PhuongNam_Business.Controller
         {
             return data.approvePurchaseOrder(id);
         }
+
+        public string removePurchaseOrder(string id, string approve)
+        {
+            int result = data.removePurchaseOrder(id, approve);
+            return "gi do";
+        }
     }
 }

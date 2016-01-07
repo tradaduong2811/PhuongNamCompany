@@ -16,7 +16,7 @@ namespace PhuongNamCompany
         public MH_DSDonDatHang()
         {
             InitializeComponent();
-            initPurchaseOrders();
+            refreshPurchaseOrders();
         }
 
         /// <summary>
@@ -35,13 +35,19 @@ namespace PhuongNamCompany
 
         private void SBtnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult dialogresult = MessageBox.Show("Bạn có muốn xóa đơn hàng " + "Mã đơn hàng" + "không?",
+            string OrderId = null;
+            for (int i = 0; i < DGVDonHang.SelectedRows.Count; i++)
+            {
+                OrderId = DGVDonHang.SelectedRows[i].Cells[0].Value.ToString();
+            }
+            DialogResult dialogresult = MessageBox.Show("Bạn có muốn xóa đơn hàng Mã số " + OrderId + " không?",
                                                "Xóa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
                                                MessageBoxDefaultButton.Button2);
             if (dialogresult == DialogResult.OK)
             {
                 MessageBox.Show("Đã xóa.");
                 // cập nhật lại đơn hàng
+                refreshPurchaseOrders();
             }
         }
 
@@ -59,7 +65,7 @@ namespace PhuongNamCompany
         }
 
 
-        public void initPurchaseOrders()
+        public void refreshPurchaseOrders()
         {
             // ganws
             if (PurchaseOrdersController.displayVendors() == null)
@@ -111,7 +117,7 @@ namespace PhuongNamCompany
                 PurchaseOrdersController.approvePurchaseOrder(OrderId);
                 MessageBox.Show("Đã xác nhận đơn hàng Mã số " + OrderId + ".");
                 // cập nhật lại đơn hàng
-                initPurchaseOrders();
+                refreshPurchaseOrders();
             }
         }
     }
