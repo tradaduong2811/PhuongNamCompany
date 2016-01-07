@@ -26,5 +26,20 @@ namespace PhuongNam_Business
             }
             return listProducts;
         }
+
+        public List<SanPham> displayProduct(string VendorId)
+        {
+            List<SanPham> listProducts = new List<SanPham>();
+            DataTable dt = new DataTable();
+            dt = data.displayProduct(VendorId);
+            foreach (DataRow dr in dt.Rows)
+            {
+                SanPham product = new SanPham();
+                product.MaSP = (int)dr["MaSP"];
+                product.MoTaThem = product.MaSP + " | " + (string)dr["TenSP"];
+                listProducts.Add(product);
+            }
+            return listProducts;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using PhuongNam_Business;
 using PhuongNam_Business.Controller;
+using PhuongNam_Business.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,17 +18,40 @@ namespace PhuongNamCompany
         public MH_TaoDonDatHang()
         {
             InitializeComponent();
+            initPurchaseOrder();
         }
+        public static string VendorIdTransition = string.Empty;
 
 
+        /// <summary>
+        /// Controller
+        /// </summary>
         PurchaseOrdersController PurchaseOrdersConroller = new PurchaseOrdersController();
-        VendorsController VendorsController = new VendorsController();        
+        VendorsController VendorsController = new VendorsController();
+        EmployeesController EmployeesController = new EmployeesController();
+
+        private void resetMode(bool mode = true)
+        {
+            CbbMaNhaCungCap.Text = "";
+            CBBNhanVien.Text = "";
+        }
 
         private void MH_TaoDonDatHang_Load(object sender, EventArgs e)
         {
+            resetMode();
+        }
+
+        private void initPurchaseOrder()
+        {
             CbbMaNhaCungCap.DataSource = VendorsController.displayVendors().ToList();
-            CbbMaNhaCungCap.DisplayMember = "MaNCC";
-            CbbMaNhaCungCap.ValueMember = "TenCongTy";
+            CbbMaNhaCungCap.DisplayMember = "MoTaThem";
+            CbbMaNhaCungCap.ValueMember = "MaNCC";
+
+            CBBNhanVien.DataSource = EmployeesController.displayEmployees();
+            CBBNhanVien.DisplayMember = "MoTaThem";
+            CBBNhanVien.ValueMember = "MaNV";
+
+            
         }
 
         private void SBtnLamMoi_Click(object sender, EventArgs e)
@@ -53,13 +77,19 @@ namespace PhuongNamCompany
 
         private void CbbMaNhaCungCap_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //TBTenCongTy.Text = PurchaseOrdersConroller.generateName(int.Parse(CBCustomerNo.Text));
-            
-
-            //if (CBCustomerNo.Text != "" && CheckReset == true && TBNo.Text != "")
-            //{
-                //BTCreateSalesLine.Enabled = true;
-            //}
+            NhaCungCap vendor = new NhaCungCap();
+            vendor = VendorsController.autosetCompanyName(int.Parse(CbbMaNhaCungCap.SelectedValue.ToString()));
+            VendorIdTransition = CbbMaNhaCungCap.SelectedValue.ToString();
+            TBTenCongTy.Text = vendor.TenCongTy;
+            TBDiaChi.Text = vendor.DiaChi;
+            TBSoDienThoai.Text = vendor.SDT;
         }
+
+        private void CBBNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

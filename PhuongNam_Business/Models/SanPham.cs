@@ -17,6 +17,14 @@ namespace PhuongNam_Business.Models
         private string _KichThuoc;
         private string _MoTa;
         private int _TrongLuong;
+        private decimal _GiaTien;
+        private string _MoTaThem;
+
+        public string MoTaThem
+        {
+            get { return _MoTaThem; }
+            set { _MoTaThem = value; }
+        }
 
         public int TrongLuong
         {
@@ -71,5 +79,12 @@ namespace PhuongNam_Business.Models
             get { return _MaSP; }
             set { _MaSP = value; }
         }
+
+        public decimal GiaTien
+        {
+            get { return _GiaTien; }
+            set { _GiaTien = value; }
+        }
+
     }
 }

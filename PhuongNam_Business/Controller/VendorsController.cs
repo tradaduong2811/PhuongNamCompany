@@ -24,8 +24,17 @@ namespace PhuongNam_Business.Controller
                 vendor.TenCongTy = (string)dr["TenCongTy"];
                 vendor.DiaChi = (string)dr["DiaChi"];
                 vendor.SDT = (string)dr["SDT"];
+                vendor.MoTaThem = vendor.MaNCC + " | " + vendor.TenCongTy + " | " + vendor.DiaChi;
+                listVendors.Add(vendor);
             }
-            return listVendors.ToList();
+            return listVendors;
+        }
+
+        public NhaCungCap autosetCompanyName(int VendorId)
+        {
+            NhaCungCap vendor = new NhaCungCap();
+            vendor = displayVendors().SingleOrDefault(s => s.MaNCC == VendorId);
+            return vendor;
         }
     }
 }

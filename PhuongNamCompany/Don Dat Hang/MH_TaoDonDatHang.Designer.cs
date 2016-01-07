@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CbbMaNhaCungCap = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CBBNhanVien = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -100,7 +100,7 @@
             // 
             this.groupBox1.Controls.Add(this.CbbMaNhaCungCap);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.CBBNhanVien);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -140,13 +140,14 @@
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // CBBNhanVien
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(671, 87);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 15;
+            this.CBBNhanVien.FormattingEnabled = true;
+            this.CBBNhanVien.Location = new System.Drawing.Point(671, 87);
+            this.CBBNhanVien.Name = "CBBNhanVien";
+            this.CBBNhanVien.Size = new System.Drawing.Size(121, 21);
+            this.CBBNhanVien.TabIndex = 15;
+            this.CBBNhanVien.SelectedIndexChanged += new System.EventHandler(this.CBBNhanVien_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -160,6 +161,9 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Chưa xác nhận",
+            "Đã xác nhận"});
             this.comboBox1.Location = new System.Drawing.Point(671, 61);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -648,7 +652,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CBBNhanVien;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;

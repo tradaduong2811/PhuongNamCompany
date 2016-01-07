@@ -15,7 +15,13 @@ namespace PhuongNam_Business.Models
         private string _NguoiDaiDien;
         private string _MaSoThue;
         private string _TKNganHang;
+        private string _MoTaThem;
 
+        public string MoTaThem
+        {
+            get { return _MoTaThem; }
+            set { _MoTaThem = value; }
+        }
         public string TKNganHang
         {
             get { return _TKNganHang; }

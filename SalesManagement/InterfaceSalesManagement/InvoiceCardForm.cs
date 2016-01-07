@@ -68,6 +68,8 @@ namespace InterfaceSalesManagement
             }
         }
 
+
+
         private void disableAllElement()
         {
             BTOK.Enabled = false;

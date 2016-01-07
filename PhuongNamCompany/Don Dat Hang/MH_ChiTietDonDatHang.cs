@@ -32,7 +32,11 @@ namespace PhuongNamCompany
             CBBTinhTrang.Enabled = !mode;
             dtNgayGiaoHang.Enabled = !mode;
             BtnXacNhan.Enabled = mode;
-            
+            TBTongTien.ReadOnly = mode;
+            TBTongTienVAT.ReadOnly = mode;
+            DGVPSanPham.ReadOnly = mode;
+            SBtnSanPham.Enabled = !mode;
+
         }
 
         MH_DSDonDatHang DSDonDatHang = new MH_DSDonDatHang();
@@ -92,8 +96,17 @@ namespace PhuongNamCompany
                 TBTongTienVAT.Text = PurOrder.TongTienVAT.ToString();
                 lbMaDon.Text = "Mã số " + PurOrder.MaDDH;
                 toggleEditMode(true);
-                
             }
+
+            List<ChiTietDonDatHang> tbOrderLines = new List<ChiTietDonDatHang>();
+            tbOrderLines = PurchaseOrdersController.displayOrderLines(id);
+            DGVPSanPham.DataSource = tbOrderLines;
+            DGVPSanPham.Columns[0].HeaderText = "Mã sản phẩm";
+            DGVPSanPham.Columns[0].Width = 100;
+            DGVPSanPham.Columns[1].HeaderText = "Tên sản phẩm";
+            DGVPSanPham.Columns[2].HeaderText = "Số lượng";
+            DGVPSanPham.Columns[3].HeaderText = "Đơn giá";
+            DGVPSanPham.Columns[4].HeaderText = "Thành tiền";
             
             //DGVPSanPham.DataSource = PurchaseOrdersController.displayPurchaseOrder(id);
         }

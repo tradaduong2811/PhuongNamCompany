@@ -26,7 +26,7 @@ namespace PhuongNam_Data
             DataTable PurOrders = new DataTable();
             string strSQL;
 
-            strSQL = "select ddh.MaDDH, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT, ddh.XacNhan, ncc.SDT " +
+            strSQL = "select ddh.MaDDH, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.MaNV, ddh.TongTienVAT, ddh.XacNhan, ncc.SDT " +
                         " from DonDatHang ddh, NhaCungCap ncc " +
                         " where ncc.MaNhaCungCap = ddh.NhaCungCap";
             
@@ -117,6 +117,24 @@ namespace PhuongNam_Data
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
             da_header.Fill(PurOrders);
             return PurOrders; // trả ra dữ liệu tương ứng với DataTab
+        }
+
+        public DataTable displayOrderLines(string id)
+        {
+            int PurOrderId = int.Parse(id);
+            DataTable PurOrderLines = new DataTable();
+            string strSQL;
+
+            strSQL =    "select * " +
+                        " from DonDatHang ddh, ChiTietDonHang ct, SanPham sp " +
+                        " where ddh.MaDDH = ct.MaDonDatHang " +
+                        " and sp.MaSP = ct.MaSP " +
+                        " and ct.MaDonDatHang = " + PurOrderId;
+
+
+            SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
+            da_header.Fill(PurOrderLines);
+            return PurOrderLines; // trả ra dữ liệu tương ứng với DataTabe
         }
     }
 }

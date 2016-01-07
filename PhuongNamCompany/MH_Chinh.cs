@@ -19,17 +19,17 @@ namespace PhuongNamCompany
 
         private void btn_BoPhanBanHang_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sản phẩm đang trong quá trình hoàn thiện, vui lòng quay lại sau.");
+            MessageBox.Show("Phần mềm đang trong quá trình hoàn thiện, vui lòng quay lại sau.");
         }
 
         private void btn_BoPhanKho_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sản phẩm đang trong quá trình hoàn thiện, vui lòng quay lại sau.");
+            MessageBox.Show("Phần mềm đang trong quá trình hoàn thiện, vui lòng quay lại sau.");
         }
 
         private void btn_Marketing_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sản phẩm đang trong quá trình hoàn thiện, vui lòng quay lại sau.");
+            MessageBox.Show("Phần mềm đang trong quá trình hoàn thiện, vui lòng quay lại sau.");
         }
 
         private void btn_BoPhanMuaHang_Click(object sender, EventArgs e)

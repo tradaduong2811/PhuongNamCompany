@@ -4,14 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhuongNam_Business
+namespace PhuongNam_Business.Models
 {
     public class NhanVien
     {
         // Nhập dòng này xong và Encapsulate (Phím tắt CTR+R, CTR+E)
-        private int _HoTen;
+        private int _MaNV;
 
-        public int HoTen
+        public int MaNV
+        {
+            get { return _MaNV; }
+            set { _MaNV = value; }
+        }
+
+        private string _MoTaThem;
+
+        public string MoTaThem
+        {
+            get { return _MoTaThem; }
+            set { _MoTaThem = value; }
+        }
+
+        private string _HoTen;
+
+        public string HoTen
         {
             get { return _HoTen; }
             set { _HoTen = value; }

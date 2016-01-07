@@ -8,5 +8,44 @@ namespace PhuongNam_Business.Models
 {
     public class ChiTietDonDatHang
     {
+        private int _MaSP;
+        private decimal _DonGia;
+        private int _SoLuong;
+        private string _TenSP;
+        private decimal? _ThanhTien;
+
+
+
+
+        public int MaSP
+        {
+            get { return _MaSP; }
+            set { _MaSP = value; }
+        }
+
+        public string TenSP
+        {
+            get { return _TenSP; }
+            set { _TenSP = value; }
+        }
+
+        public int SoLuong
+        {
+            get { return _SoLuong; }
+            set { _SoLuong = value; }
+        }
+
+        public decimal DonGia
+        {
+            get { return _DonGia; }
+            set { _DonGia = value; }
+        }
+
+
+        public decimal? ThanhTien
+        {
+            get { return _ThanhTien; }
+            set { _ThanhTien = value; }
+        }
     }
 }

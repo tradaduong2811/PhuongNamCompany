@@ -8,7 +8,7 @@ namespace PhuongNam_Business.Models
 {
     public class DonDatHang
     {
-        private int _MaDDH;
+        private int _MaDDH;        
         private string _NhaCungCap;
         private string _DiaChi;
         private string _SDT;
