@@ -60,7 +60,6 @@ D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\bin\D
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csprojResolveAssemblyReference.cache
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_Chinh.resources
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietDonDatHang.resources
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_BoPhanMuaHang.resources
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietNhaCungCap.resources
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_DanhSachNhaCungCap.resources
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoNhaCungCap.resources
@@ -74,3 +73,4 @@ D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\D
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoSanPham.resources
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Properties.Resources.resources
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache
+D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_BoPhanMuaHang.resources

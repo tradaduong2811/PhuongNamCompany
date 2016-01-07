@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MH_BoPhanMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MH_BoPhanMuaHang.Designer.cs">
+      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="MH_Chinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MH_BoPhanMuaHang.resx">
+      <DependentUpon>MH_BoPhanMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MH_Chinh.resx">
       <DependentUpon>MH_Chinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +279,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendors-icon3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resource-icon-case-studies3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resource-icon-case-studies4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendors-icon4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAEAAQAAAAAAAALjAAAAJDVlZDJmMDYwLTQyNjMtNDc5ZS1hOWJhLTA5Mzk0OWRmNmNjZQ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAEAAQAAAAAAAALjAAAAJDVlZDJmMDYwLTQyNjMtNDc5ZS1hOWJhLTA5Mzk0OWRmNmNjZQ3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
