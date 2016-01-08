@@ -62,15 +62,10 @@ namespace PhuongNamCompany
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            txt_MaNhaCungCap.Text = VendorsController.generateVendorId().ToString();
-        }
 
         private bool createVendor()
         {
             NhaCungCap vendor = new NhaCungCap();
-            vendor.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
             vendor.TenCongTy = txt_TenCongTy.Text;
             vendor.DiaChi = txt_DiaChi.Text;
             vendor.SDT = txt_SDT.Text;
@@ -81,7 +76,7 @@ namespace PhuongNamCompany
         }
         private bool checkVendor()
         {
-            if (txt_MaNhaCungCap.Text == "" || txt_TenCongTy.Text == "" || txt_DiaChi.Text == "" || txt_SDT.Text == "" || txt_NguoiDaiDien.Text == "" || txt_MaSoThue.Text == "" || txt_TaiKhoanNganHang.Text == "")
+            if (txt_TenCongTy.Text == "" || txt_DiaChi.Text == "" || txt_SDT.Text == "" || txt_NguoiDaiDien.Text == "" || txt_MaSoThue.Text == "" || txt_TaiKhoanNganHang.Text == "")
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin cho Nhà Cung Cấp",
                      "Cảnh báo",

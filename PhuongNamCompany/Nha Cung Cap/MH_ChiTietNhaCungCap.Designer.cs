@@ -45,7 +45,6 @@
             this.txt_MaNhaCungCap = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_NguoiDaiDien = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_TaiKhoanNganHang = new System.Windows.Forms.TextBox();
             this.txt_MaSoThue = new System.Windows.Forms.TextBox();
@@ -187,7 +186,6 @@
             this.groupBox1.Controls.Add(this.txt_MaNhaCungCap);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_NguoiDaiDien);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txt_TaiKhoanNganHang);
             this.groupBox1.Controls.Add(this.txt_MaSoThue);
@@ -230,17 +228,6 @@
             this.txt_NguoiDaiDien.ReadOnly = true;
             this.txt_NguoiDaiDien.Size = new System.Drawing.Size(177, 20);
             this.txt_NguoiDaiDien.TabIndex = 17;
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(364, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -475,7 +462,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btn_CapNhat;
         private System.Windows.Forms.TextBox txt_NguoiDaiDien;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_TaiKhoanNganHang;
         private System.Windows.Forms.TextBox txt_MaSoThue;

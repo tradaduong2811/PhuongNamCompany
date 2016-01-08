@@ -42,8 +42,6 @@ namespace PhuongNamCompany
 
         private void SBtnChinhSua_Click(object sender, EventArgs e)
         {
-            button1.Enabled = true;
-            txt_MaNhaCungCap.ReadOnly = false;
             txt_DiaChi.ReadOnly = false;
             txt_MaSoThue.ReadOnly = false;
             txt_NguoiDaiDien.ReadOnly = false;
@@ -85,7 +83,6 @@ namespace PhuongNamCompany
             vendor = VendorsController.displayVendors(id);
             if (vendor != null)
             {
-                
                 txt_MaNhaCungCap.Text = vendor.MaNCC.ToString();
                 txt_TenCongTy.Text = vendor.TenCongTy.ToString();
                 txt_SDT.Text = vendor.SDT;
@@ -116,14 +113,6 @@ namespace PhuongNamCompany
                 DialogResult dialogresult = MessageBox.Show("Bạn muốn chỉnh sửa nhà cung cấp Mã số " + MH_DanhSachNhaCungCap.VenderIdTransition + " không?",
                                                       "Chỉnh sửa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
                                                       MessageBoxDefaultButton.Button2);
-                NhaCungCap nhacungcap = new NhaCungCap();
-                nhacungcap.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
-                nhacungcap.TenCongTy = txt_TenCongTy.Text;
-                nhacungcap.DiaChi = txt_DiaChi.Text;
-                nhacungcap.SDT = txt_SDT.Text;
-                nhacungcap.NguoiDaiDien = txt_NguoiDaiDien.Text;
-                nhacungcap.MaSoThue = txt_MaSoThue.Text;
-                nhacungcap.TKNganHang = txt_TaiKhoanNganHang.Text;
                 string VendorId = null;
                 VendorId = txt_MaNhaCungCap.Text;
                 int result = VendorsController.removeVendor(VendorId);
@@ -140,12 +129,12 @@ namespace PhuongNamCompany
                 {
                     if (createVendor() == true)
                     {
-                        MessageBox.Show("Tạo nhà cung cấp thành công!");
+                        MessageBox.Show("Chỉnh sửa nhà cung cấp thành công!");
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Tạo nhà cung cấp không thành công. Xin thử lại!",
+                        MessageBox.Show("Chỉnh sửa nhà cung cấp không thành công. Xin thử lại!",
                              "Cảnh báo",
                              MessageBoxButtons.OK,
                              MessageBoxIcon.Warning);
@@ -155,14 +144,9 @@ namespace PhuongNamCompany
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            txt_MaNhaCungCap.Text = VendorsController.generateVendorId().ToString();
-        }
-
         private bool checkVendor()
         {
-            if (txt_MaNhaCungCap.Text == "" || txt_TenCongTy.Text == "" || txt_DiaChi.Text == "" || txt_SDT.Text == "" || txt_NguoiDaiDien.Text == "" || txt_MaSoThue.Text == "" || txt_TaiKhoanNganHang.Text == "")
+            if (txt_TenCongTy.Text == "" || txt_DiaChi.Text == "" || txt_SDT.Text == "" || txt_NguoiDaiDien.Text == "" || txt_MaSoThue.Text == "" || txt_TaiKhoanNganHang.Text == "")
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin cho Nhà Cung Cấp",
                      "Cảnh báo",
@@ -175,7 +159,6 @@ namespace PhuongNamCompany
         private bool createVendor()
         {
             NhaCungCap vendor = new NhaCungCap();
-            vendor.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
             vendor.TenCongTy = txt_TenCongTy.Text;
             vendor.DiaChi = txt_DiaChi.Text;
             vendor.SDT = txt_SDT.Text;

@@ -62,16 +62,15 @@ namespace PhuongNam_Data
             }
             return LastId;
         }
-        public bool createVendor(int MaNhaCungCap, string TenCongTy, string DiaChi, string SDT, string NguoiDaiDien, string MaSoThue, string TKNganHang)
+        public bool createVendor(string TenCongTy, string DiaChi, string SDT, string NguoiDaiDien, string MaSoThue, string TKNganHang)
         {
             bool result = false;
             if (dc.con.State == ConnectionState.Closed)
                 dc.con.Open();
             string strSQL;
-            strSQL = "Insert into NhaCungCap(MaNhaCungCap,TenCongTy,DiaChi,SDT,NguoiDaiDien,MaSoThue,TKNganHang) Values(@MaNhaCungCap,@TenCongTy,@DiaChi,@SDT,@NguoiDaiDien,@MaSoThue,@TKNganHang) ";
+            strSQL = "Insert into NhaCungCap(TenCongTy,DiaChi,SDT,NguoiDaiDien,MaSoThue,TKNganHang) Values(@TenCongTy,@DiaChi,@SDT,@NguoiDaiDien,@MaSoThue,@TKNganHang) ";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = dc.con;
-            cmd.Parameters.Add(new SqlParameter("@MaNhaCungCap", MaNhaCungCap));
             cmd.Parameters.Add(new SqlParameter("@TenCongTy", TenCongTy));
             cmd.Parameters.Add(new SqlParameter("@DiaChi", DiaChi));
             cmd.Parameters.Add(new SqlParameter("@SDT", SDT));

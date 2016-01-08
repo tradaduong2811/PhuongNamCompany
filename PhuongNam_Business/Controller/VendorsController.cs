@@ -62,7 +62,7 @@ namespace PhuongNam_Business.Controller
         }
         public bool insertVendor(NhaCungCap vendor)
         {
-            return data.createVendor(vendor.MaNCC, vendor.TenCongTy, vendor.DiaChi, vendor.SDT, vendor.NguoiDaiDien, vendor.MaSoThue, vendor.TKNganHang);
+            return data.createVendor(vendor.TenCongTy, vendor.DiaChi, vendor.SDT, vendor.NguoiDaiDien, vendor.MaSoThue, vendor.TKNganHang);
         }
         public int removeVendor(string id)
         {
