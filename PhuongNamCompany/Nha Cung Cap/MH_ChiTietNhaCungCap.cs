@@ -111,46 +111,78 @@ namespace PhuongNamCompany
 
         private void btn_CapNhat_Click(object sender, EventArgs e)
         {
-            //DialogResult dialogresult = MessageBox.Show("Bạn muốn chỉnh sửa nhà cung cấp Mã số " + MH_DanhSachNhaCungCap.VenderIdTransition + " không?",
-            //                                      "Chỉnh sửa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
-            //                                      MessageBoxDefaultButton.Button2);
-            NhaCungCap nhacungcap = new NhaCungCap();
-            nhacungcap.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
-            nhacungcap.TenCongTy = txt_TenCongTy.Text;
-            nhacungcap.DiaChi = txt_DiaChi.Text;
-            nhacungcap.SDT = txt_SDT.Text;
-            nhacungcap.NguoiDaiDien = txt_NguoiDaiDien.Text;
-            nhacungcap.MaSoThue = txt_MaSoThue.Text;
-            nhacungcap.TKNganHang = txt_TaiKhoanNganHang.Text;
-            string VendorId = null;
-            VendorId = txt_MaNhaCungCap.Text;
-            int result = VendorsController.removeVendor(VendorId);
-            if (result == 0)
+            if (checkVendor() == true)
             {
-                MessageBox.Show("Nhà cung cấp Mã số " + VendorId + " không thể chỉnh sửa.",
-                "Cảnh cáo",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Warning);
+                DialogResult dialogresult = MessageBox.Show("Bạn muốn chỉnh sửa nhà cung cấp Mã số " + MH_DanhSachNhaCungCap.VenderIdTransition + " không?",
+                                                      "Chỉnh sửa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
+                                                      MessageBoxDefaultButton.Button2);
+                NhaCungCap nhacungcap = new NhaCungCap();
+                nhacungcap.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
+                nhacungcap.TenCongTy = txt_TenCongTy.Text;
+                nhacungcap.DiaChi = txt_DiaChi.Text;
+                nhacungcap.SDT = txt_SDT.Text;
+                nhacungcap.NguoiDaiDien = txt_NguoiDaiDien.Text;
+                nhacungcap.MaSoThue = txt_MaSoThue.Text;
+                nhacungcap.TKNganHang = txt_TaiKhoanNganHang.Text;
+                string VendorId = null;
+                VendorId = txt_MaNhaCungCap.Text;
+                int result = VendorsController.removeVendor(VendorId);
 
-            }
-            else
-            {
-                try
+                if (result == 0)
                 {
-                    VendorsController.insertVendor(nhacungcap);
+                    MessageBox.Show("Nhà cung cấp Mã số " + VendorId + " không thể chỉnh sửa.",
+                    "Cảnh cáo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
                 }
-                catch (Exception)
+                else
                 {
-                    MessageBox.Show("Vui lòng kiểm tra lại các thông tin cần nhập.");
+                    if (createVendor() == true)
+                    {
+                        MessageBox.Show("Tạo nhà cung cấp thành công!");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tạo nhà cung cấp không thành công. Xin thử lại!",
+                             "Cảnh báo",
+                             MessageBoxButtons.OK,
+                             MessageBoxIcon.Warning);
+                    }
                 }
-                MessageBox.Show("Chỉnh Sửa Nhà Cung Cấp thành công.");
             }
-            this.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             txt_MaNhaCungCap.Text = VendorsController.generateVendorId().ToString();
+        }
+
+        private bool checkVendor()
+        {
+            if (txt_MaNhaCungCap.Text == "" || txt_TenCongTy.Text == "" || txt_DiaChi.Text == "" || txt_SDT.Text == "" || txt_NguoiDaiDien.Text == "" || txt_MaSoThue.Text == "" || txt_TaiKhoanNganHang.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin cho Nhà Cung Cấp",
+                     "Cảnh báo",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Warning);
+                return false;
+            }
+            return true;
+        }
+        private bool createVendor()
+        {
+            NhaCungCap vendor = new NhaCungCap();
+            vendor.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
+            vendor.TenCongTy = txt_TenCongTy.Text;
+            vendor.DiaChi = txt_DiaChi.Text;
+            vendor.SDT = txt_SDT.Text;
+            vendor.NguoiDaiDien = txt_NguoiDaiDien.Text;
+            vendor.MaSoThue = txt_MaSoThue.Text;
+            vendor.TKNganHang = txt_TaiKhoanNganHang.Text;
+            return VendorsController.insertVendor(vendor);
         }
     }
 }

@@ -54,8 +54,7 @@ namespace PhuongNamCompany
                         MessageBox.Show("Tạo nhà cung cấp không thành công. Xin thử lại!",
                              "Cảnh báo",
                              MessageBoxButtons.OK,
-                             MessageBoxIcon.Warning);
-                        this.Close();
+                             MessageBoxIcon.Warning);                        
                     }
                 }
 
