@@ -1,4 +1,4 @@
-D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csprojResolveAssemblyReference.cache
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.exe.config
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_BoPhanMuaHang.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_Chinh.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_ChiTietDonDatHang.resources
@@ -15,4 +15,12 @@ D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoD
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.MH_TaoSanPham.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.Properties.Resources.resources
 D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csproj.GenerateResource.Cache
-D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.exe.config
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNamCompany.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Business.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Data.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Business.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\bin\Debug\PhuongNam_Data.pdb
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\Company_PhuongNam.csprojResolveAssemblyReference.cache
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.exe
+D:\Learning\PhuongNamCompany\PhuongNamCompany\obj\Debug\PhuongNamCompany.pdb

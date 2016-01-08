@@ -1,24 +1,8 @@
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe.config
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.pdb
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.exe
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.pdb
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.csprojResolveAssemblyReference.cache
 D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe.config
 D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe
 D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.pdb
+D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.exe
+D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.pdb
 D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.csprojResolveAssemblyReference.cache
 D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.exe
 D:\Learning\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.pdb
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.exe
-E:\Project KNSer\PTTK HTTT\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.pdb
-D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.exe
-D:\Learning\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.pdb
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe.config
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.exe
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Business.pdb
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.exe
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\bin\Debug\PhuongNam_Data.pdb
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.csprojResolveAssemblyReference.cache
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.exe
-D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\PhuongNam_Business\obj\Debug\PhuongNam_Business.pdb
