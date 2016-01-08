@@ -21,7 +21,11 @@ namespace PhuongNam_Business.Models
         private string _LoaiSP;
         private decimal _GiaTien;
         private string _MoTaThem;
+        private string _Xoa;
 
+  
+
+      
 
         public string MoTaThem
         {
@@ -103,6 +107,12 @@ namespace PhuongNam_Business.Models
         {
             get { return _GiaTien; }
             set { _GiaTien = value; }
+        }
+
+        public string Xoa
+        {
+            get { return _Xoa; }
+            set { _Xoa = value; }
         }
 
     }

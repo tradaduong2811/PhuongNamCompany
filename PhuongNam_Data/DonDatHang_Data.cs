@@ -42,7 +42,6 @@ namespace PhuongNam_Data
             string strSQL;
             int OrderId;
             int.TryParse(id, out OrderId);
-
             strSQL = "UPDATE DonDatHang " +
                      "SET XacNhan = 'True' " +
                      "WHERE MaDDH = @IdDDH and XacNhan = 'False'";

@@ -53,16 +53,24 @@ namespace PhuongNamCompany
                 {
                     int result = PurchaseOrdersController.removePurchaseOrder(OrderId);
                     if (result == 0)
-                        MessageBox.Show("Đơn hàng Mã số " + OrderId + " đã được xác nhận. Không thể xóa.");
+                        MessageBox.Show("Đơn hàng Mã số " + OrderId + " đã được xác nhận. Không thể xóa.",
+                        "Cảnh cáo",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
                     if (result == 1)
                     {
                         MessageBox.Show("Đã xóa đơn hàng Mã số " + OrderId + ".");
                         // cập nhật lại đơn hàng
                         refreshPurchaseOrders();
+                        DGVDonHang.Update();
+                        DGVDonHang.Refresh();
                     }
                     if (result == -1)
                     {
-                        MessageBox.Show("Xảy ra lỗi trong quá trình xóa đơn hàng");
+                        MessageBox.Show("Xảy ra lỗi trong quá trình xóa đơn hàng",
+                        "Lỗi",
+                      MessageBoxButtons.OK,
+                      MessageBoxIcon.Error);
                     }
                 }
             }

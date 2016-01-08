@@ -19,10 +19,9 @@ namespace PhuongNamCompany
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MH_TaoDonDatHang());
 
-            //Application.Run(new MH_DanhSachSanPham());
+            //Application.Run(new MH_DanhSachNhaCungCap());
 
-            Application.Run(new MH_DanhSachSanPham());
-
+            Application.Run(new MH_ChiTietSanPham());
         }
     }
 }

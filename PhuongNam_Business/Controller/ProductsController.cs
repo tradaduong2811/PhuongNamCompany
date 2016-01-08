@@ -43,39 +43,43 @@ namespace PhuongNam_Business
                 sp.LoaiSP = (string)dtrow["Ten"];
                 sp.DonGia = (decimal)dtrow["DonGia"];
 
-                sp.MoTa =
-                (dtrow["MoTa"] == DBNull.Value) ? string.Empty : (string)dtrow["MoTa"].ToString();
-                //if (string.IsNullOrEmpty(sp.MoTa))
-                //{
-                //    sp.MoTa = "Chưa xác định";
-                //}
+                sp.MoTa = (string)dtrow["MoTa"];
+                //sp.MoTa =
+                //(dtrow["MoTa"] == DBNull.Value) ? string.Empty : (string)dtrow["MoTa"].ToString();
 
-                sp.HeDieuHanh =
-              (dtrow["HeDieuHanh"] == DBNull.Value) ? string.Empty : (string)dtrow["HeDieuHanh"].ToString();
-                if (string.IsNullOrEmpty(sp.HeDieuHanh))
-                {
-                    sp.HeDieuHanh = "Chưa xác định";
-                }
+                sp.HeDieuHanh = (string)dtrow["HeDieuHanh"];
+            
 
                 sp.TrongLuong = (int)dtrow["TrongLuong"];
-                int? a = sp.TrongLuong;
-                if (!a.HasValue)
-                {
-                    sp.TrongLuong = 0;
-                }
+                //int? a = sp.TrongLuong;
+                //if (!a.HasValue)
+                //{
+                //    sp.TrongLuong = 0;
+                //}
                 sp.TGBaoHanh = (int)dtrow["TGBaoHanh"];
-
-                sp.KichThuoc =
-              (dtrow["KichThuoc"] == DBNull.Value) ? string.Empty : (string)dtrow["KichThuoc"].ToString();
-                if (string.IsNullOrEmpty(sp.KichThuoc))
-                {
-                    sp.KichThuoc = "Chưa xác định";
-                }
-
+                sp.KichThuoc = (string)dtrow["KichThuoc"];
+              //  sp.KichThuoc =
+              //(dtrow["KichThuoc"] == DBNull.Value) ? string.Empty : (string)dtrow["KichThuoc"].ToString();
                 sp.XuatXu = (string)dtrow["XuatXu"];
+                sp.Xoa = dtrow["Xoa"].ToString();
+                //if (sp.Xoa == "true")
+                //{
+                //    sp.Xoa = "a";
+                //}
+                //else
+                //{
+                //    sp.Xoa = "b";
+                //}
                 listProducts.Add(sp);
             }
             return listProducts;
+        }
+
+        //NAM
+        public int removeProduct(string id)
+        {
+            int result = data.removeProduct(id);
+            return result;
         }
         public List<SanPham> displayProduct(string VendorId)
         {

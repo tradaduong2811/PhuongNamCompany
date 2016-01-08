@@ -28,13 +28,39 @@ namespace PhuongNam_Data
         {
             DataTable dtProducts = new DataTable();
             string strSQL;
-            strSQL = " SELECT sp.MaSP, sp.TenSP, hsx.TenHSX, lsp.Ten, sp.DonGia, sp.MoTa, hdh.HeDieuHanh, sp.TrongLuong,  sp.TGBaoHanh, sp.KichThuoc, sp.XuatXu " +
+            strSQL = " SELECT sp.MaSP, sp.TenSP, hsx.TenHSX, lsp.Ten, sp.DonGia, ISNULL(sp.MoTa, 'Không') as [MoTa], hdh.HeDieuHanh, ISNULL (sp.TrongLuong, '0') as [TrongLuong], sp.TGBaoHanh, ISNULL(sp.KichThuoc, 'Không') as [KichThuoc], sp.XuatXu, sp.Xoa " +
                 " FROM SanPham sp, LoaiSanPham lsp, HangSanXuat hsx, HeDieuHanh hdh " +
-                " WHERE sp.HangSX = hsx.MaHSX AND sp.LoaiSP = lsp.MaLoaiSP AND sp.HeDieuHanh = hdh.MaHDH";
+                " WHERE sp.HangSX = hsx.MaHSX AND sp.LoaiSP = lsp.MaLoaiSP AND sp.HeDieuHanh = hdh.MaHDH AND sp.Xoa = 'False' ";
 
             SqlDataAdapter adapter = new SqlDataAdapter(strSQL, dc.con);
             adapter.Fill(dtProducts);
             return dtProducts;
+        }
+        public int removeProduct(string id)
+        {
+            int OrderId = 0;
+            int.TryParse(id, out OrderId);
+            string strSQL = "UPDATE SanPham " +
+                    " SET Xoa = 'True' " +
+                    " WHERE MaSP = @IDSP";
+           // OrderId = 10;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = dc.con;
+            if (dc.con.State == ConnectionState.Closed)
+                dc.con.Open(); // mở kết nối
+            cmd.Parameters.AddWithValue("@IDSP", OrderId);
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = strSQL;
+            try
+            {
+                cmd.ExecuteNonQuery();
+           
+            }
+            catch (SqlException)
+            {
+                return 0;
+            }
+            return 1;
         }
         public DataTable displayProduct(string VendorId)
         {

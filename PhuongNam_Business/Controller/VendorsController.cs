@@ -30,10 +30,30 @@ namespace PhuongNam_Business.Controller
             return listVendors;
         }
 
-        public NhaCungCap autosetCompanyName(int VendorId)
+
+        // Tự động tạo dữ liệu ở fields
+        public NhaCungCap autoset(int VendorId)
         {
             NhaCungCap vendor = new NhaCungCap();
             vendor = displayVendors().SingleOrDefault(s => s.MaNCC == VendorId);
+            return vendor;
+        }
+
+        public NhaCungCap displayVendors(string id)
+        {
+            NhaCungCap vendor = new NhaCungCap();
+            DataTable dt = new DataTable();
+            dt = data.displayVendors(id);
+            foreach (DataRow dr in dt.Rows)
+            {
+                vendor.TenCongTy = (string)dr["TenCongTy"];
+                vendor.DiaChi = (string)dr["DiaChi"];
+                vendor.NguoiDaiDien = (string)dr["NguoiDaiDien"];
+                vendor.SDT = (string)dr["SDT"];
+                vendor.MaNCC = (int)dr["MaNhaCungCap"];
+                vendor.MaSoThue = (string)dr["MaSoThue"];
+                vendor.TKNganHang = (string)dr["TKNganHang"];
+            }
             return vendor;
         }
     }

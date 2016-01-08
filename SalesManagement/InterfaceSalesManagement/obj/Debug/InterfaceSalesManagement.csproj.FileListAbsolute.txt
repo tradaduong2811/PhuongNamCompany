@@ -91,3 +91,4 @@ E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManage
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.Properties.Resources.resources
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
+D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config

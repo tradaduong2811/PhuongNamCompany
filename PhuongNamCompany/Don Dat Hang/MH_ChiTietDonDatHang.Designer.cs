@@ -181,12 +181,13 @@
             this.BtnXacNhan.Name = "BtnXacNhan";
             this.BtnXacNhan.Size = new System.Drawing.Size(103, 23);
             this.BtnXacNhan.TabIndex = 22;
-            this.BtnXacNhan.Text = "Xác nhận";
+            this.BtnXacNhan.Text = "Cập nhật";
             this.BtnXacNhan.UseVisualStyleBackColor = true;
             // 
             // TBTongTienVAT
             // 
             this.TBTongTienVAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBTongTienVAT.ForeColor = System.Drawing.Color.DarkRed;
             this.TBTongTienVAT.Location = new System.Drawing.Point(780, 591);
             this.TBTongTienVAT.Name = "TBTongTienVAT";
             this.TBTongTienVAT.Size = new System.Drawing.Size(192, 22);

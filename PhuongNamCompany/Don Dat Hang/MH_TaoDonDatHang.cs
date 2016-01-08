@@ -21,6 +21,7 @@ namespace PhuongNamCompany
             initPurchaseOrder();
         }
         public static string VendorIdTransition = string.Empty;
+        public static string VendorNameTransition = string.Empty;
 
 
         /// <summary>
@@ -34,6 +35,7 @@ namespace PhuongNamCompany
         {
             CbbMaNhaCungCap.Text = "";
             CBBNhanVien.Text = "";
+            SBtnSanPham.Enabled = false;
         }
 
         private void MH_TaoDonDatHang_Load(object sender, EventArgs e)
@@ -72,17 +74,38 @@ namespace PhuongNamCompany
         private void SBtnSanPham_Click(object sender, EventArgs e)
         {
             MH_ChonSanPham MH_ChonSanPham = new MH_ChonSanPham();
+            MH_ChonSanPham.EventCreatingItem += MH_ChonSanPham_EventCreatingItem;
             MH_ChonSanPham.ShowDialog();
+        }
+
+        void MH_ChonSanPham_EventCreatingItem(object sender, PurchaseLineLineEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(e.MaSP))
+            {
+                DataGridViewRow row = (DataGridViewRow)DGVSanPham.Rows[0].Clone();
+                row.Cells[0].Value = e.MaSP;
+                row.Cells[1].Value = e.TenSP;
+                row.Cells[2].Value = e.MoTa;
+                row.Cells[3].Value = e.SoLuong;
+                row.Cells[4].Value = e.GiaTien;
+                row.Cells[5].Value = e.TongTien;
+                DGVSanPham.Rows.Add(row);
+                calculateTotalAmount();
+            }
         }
 
         private void CbbMaNhaCungCap_SelectedIndexChanged(object sender, EventArgs e)
         {
             NhaCungCap vendor = new NhaCungCap();
-            vendor = VendorsController.autosetCompanyName(int.Parse(CbbMaNhaCungCap.SelectedValue.ToString()));
+            vendor = VendorsController.autoset(int.Parse(CbbMaNhaCungCap.SelectedValue.ToString()));
             VendorIdTransition = CbbMaNhaCungCap.SelectedValue.ToString();
+            VendorNameTransition = vendor.TenCongTy;
             TBTenCongTy.Text = vendor.TenCongTy;
             TBDiaChi.Text = vendor.DiaChi;
             TBSoDienThoai.Text = vendor.SDT;
+            
+            // enable nút sản phẩm.
+            SBtnSanPham.Enabled = true;
         }
 
         private void CBBNhanVien_SelectedIndexChanged(object sender, EventArgs e)
@@ -90,6 +113,57 @@ namespace PhuongNamCompany
 
         }
 
+        private void BtnMaDonHang_Click(object sender, EventArgs e)
+        {
+            TBMaDonDatHang.Text = PurchaseOrdersConroller.generatePurchaseId().ToString();
+        }
 
+
+
+        // Tinh toan
+        private void calculateTotalAmount()
+        {
+            decimal TotalAmount = 0;
+            for (int i = 0; i < DGVSanPham.Rows.Count - 1; i++)
+            {
+                TotalAmount = TotalAmount + decimal.Parse(DGVSanPham.Rows[i].Cells[5].Value.ToString());
+            }
+            TBTongDonHangVAT.Text = (TotalAmount + TotalAmount * 10 / 100).ToString();
+            TBTongDonHang.Text = TotalAmount.ToString();
+        }
+
+        private void BtnXacNhan_Click(object sender, EventArgs e)
+        {
+            if (checkOrder() == true)
+            {
+                if (createOrder() == true)
+                {
+                    createPurchaseLine();
+                }
+            }
+        }
+
+        private void createPurchaseLine()
+        {
+            
+        }
+
+        private bool checkOrder()
+        {
+            if (CBBNhanVien.Text == "" || TBNgayGiao.Value == null || CbbMaNhaCungCap.Text == "")
+                return false;
+            return true;
+        }
+
+        private bool createOrder()
+        {
+            DonDatHang Order = new DonDatHang();
+            Order.MaNCC = int.Parse(VendorIdTransition);
+            Order.MaNV = int.Parse(CBBNhanVien.SelectedValue.ToString());
+            Order.NgayGiao = TBNgayGiao.Value;
+            Order.TongTien = decimal.Parse(TBTongDonHang.Text);
+            Order.TongTienVAT = decimal.Parse(TBTongDonHangVAT.Text);
+            return PurchaseOrdersConroller.createPurchaseOrder(Order);
+        }
     }
 }
