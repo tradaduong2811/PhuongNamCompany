@@ -17,10 +17,10 @@ namespace PhuongNamCompany
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MH_DSDonDatHang());
+            //Application.Run(new MH_DSDonDatHang());
 
 
-            //Application.Run(new MH_DanhSachNhaCungCap());
+            Application.Run(new MH_DanhSachNhaCungCap());
 
             //Application.Run(new MH_DanhSachSanPham());
 

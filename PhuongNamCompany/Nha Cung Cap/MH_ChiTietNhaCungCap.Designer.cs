@@ -213,7 +213,6 @@
             this.txt_MaNhaCungCap.ReadOnly = true;
             this.txt_MaNhaCungCap.Size = new System.Drawing.Size(197, 20);
             this.txt_MaNhaCungCap.TabIndex = 23;
-            this.txt_MaNhaCungCap.Text = "1";
             // 
             // label7
             // 
@@ -231,16 +230,17 @@
             this.txt_NguoiDaiDien.ReadOnly = true;
             this.txt_NguoiDaiDien.Size = new System.Drawing.Size(177, 20);
             this.txt_NguoiDaiDien.TabIndex = 17;
-            this.txt_NguoiDaiDien.Text = "Cheryl Stanley";
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(364, 32);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 23);
             this.button1.TabIndex = 16;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -258,7 +258,6 @@
             this.txt_TaiKhoanNganHang.ReadOnly = true;
             this.txt_TaiKhoanNganHang.Size = new System.Drawing.Size(177, 20);
             this.txt_TaiKhoanNganHang.TabIndex = 7;
-            this.txt_TaiKhoanNganHang.Text = "3583394188153825";
             // 
             // txt_MaSoThue
             // 
@@ -267,7 +266,6 @@
             this.txt_MaSoThue.ReadOnly = true;
             this.txt_MaSoThue.Size = new System.Drawing.Size(177, 20);
             this.txt_MaSoThue.TabIndex = 7;
-            this.txt_MaSoThue.Text = "3583394188153825";
             // 
             // txt_DiaChi
             // 
@@ -276,7 +274,6 @@
             this.txt_DiaChi.ReadOnly = true;
             this.txt_DiaChi.Size = new System.Drawing.Size(237, 20);
             this.txt_DiaChi.TabIndex = 6;
-            this.txt_DiaChi.Text = "79 Portage Road";
             // 
             // txt_SDT
             // 
@@ -285,7 +282,6 @@
             this.txt_SDT.ReadOnly = true;
             this.txt_SDT.Size = new System.Drawing.Size(197, 20);
             this.txt_SDT.TabIndex = 5;
-            this.txt_SDT.Text = "420-(170)194-6813";
             // 
             // txt_TenCongTy
             // 
@@ -294,7 +290,6 @@
             this.txt_TenCongTy.ReadOnly = true;
             this.txt_TenCongTy.Size = new System.Drawing.Size(197, 20);
             this.txt_TenCongTy.TabIndex = 4;
-            this.txt_TenCongTy.Text = "Viettel";
             // 
             // label5
             // 

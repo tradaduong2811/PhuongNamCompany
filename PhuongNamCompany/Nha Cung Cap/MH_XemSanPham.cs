@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PhuongNam_Data;
+using PhuongNam_Business.Controller;
+using PhuongNam_Business.Models;
 
 namespace PhuongNamCompany
 {
@@ -18,11 +20,29 @@ namespace PhuongNamCompany
             InitializeComponent();
         }
 
+        VendorsController VendorsController = new VendorsController();
+
         private void MH_XemSanPham_Load(object sender, EventArgs e)
         {
-
-            SanPham_Data sanpham = new SanPham_Data();
-            dataGridView1.DataSource = sanpham.displayProduct();
+            if (MH_DanhSachNhaCungCap.OrderIdTransition == null)
+            {
+                MessageBox.Show("Lỗi lấy dữ liệu");
+            }
+            else
+            {
+                loadVendors(MH_DanhSachNhaCungCap.OrderIdTransition);
+            }
+            NhaCungCap_Data sanpham = new NhaCungCap_Data();
+            dataGridView1.DataSource = sanpham.displayProduct(MH_DanhSachNhaCungCap.OrderIdTransition);
+        }
+        private void loadVendors(string id)
+        {
+            NhaCungCap vendor = new NhaCungCap();
+            vendor = VendorsController.displayVendors(id);
+            if (vendor != null)
+            {
+                txt_TenCongTy.Text = vendor.TenCongTy;
+            }
         }
 
     }

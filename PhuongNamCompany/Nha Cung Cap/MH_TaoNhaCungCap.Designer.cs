@@ -36,6 +36,7 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.SBtnLamMoi = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -55,7 +56,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Them = new System.Windows.Forms.Button();
-            this.SBtnLamMoi = new System.Windows.Forms.ToolStripButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -135,6 +135,15 @@
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // SBtnLamMoi
+            // 
+            this.SBtnLamMoi.Image = global::PhuongNamCompany.Properties.Resources.refresh_icon1;
+            this.SBtnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SBtnLamMoi.Name = "SBtnLamMoi";
+            this.SBtnLamMoi.Size = new System.Drawing.Size(93, 39);
+            this.SBtnLamMoi.Text = "Làm mới";
+            this.SBtnLamMoi.Click += new System.EventHandler(this.SBtnLamMoi_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
@@ -206,6 +215,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -305,15 +315,7 @@
             this.btn_Them.TabIndex = 19;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.UseVisualStyleBackColor = true;
-            // 
-            // SBtnLamMoi
-            // 
-            this.SBtnLamMoi.Image = global::PhuongNamCompany.Properties.Resources.refresh_icon1;
-            this.SBtnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SBtnLamMoi.Name = "SBtnLamMoi";
-            this.SBtnLamMoi.Size = new System.Drawing.Size(93, 39);
-            this.SBtnLamMoi.Text = "Làm mới";
-            this.SBtnLamMoi.Click += new System.EventHandler(this.SBtnLamMoi_Click);
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // groupBox3
             // 

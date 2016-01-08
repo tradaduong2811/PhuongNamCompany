@@ -42,6 +42,7 @@ namespace PhuongNamCompany
 
         private void SBtnChinhSua_Click(object sender, EventArgs e)
         {
+            button1.Enabled = true;
             txt_MaNhaCungCap.ReadOnly = false;
             txt_DiaChi.ReadOnly = false;
             txt_MaSoThue.ReadOnly = false;
@@ -49,20 +50,42 @@ namespace PhuongNamCompany
             txt_SDT.ReadOnly = false;
             txt_TaiKhoanNganHang.ReadOnly = false;
             txt_TenCongTy.ReadOnly = false;
-
+           
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
-        }
-
+            string VendorId = null;
+            VendorId = txt_MaNhaCungCap.Text;
+            DialogResult dialogresult = MessageBox.Show("Bạn có muốn xóa nhà cung cấp " + VendorId + " không?",
+                                            "Xóa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
+                                            MessageBoxDefaultButton.Button2);
+            if (dialogresult == DialogResult.OK)
+            {
+                int result = VendorsController.removeVendor(VendorId);
+                if (result == 0)
+                {
+                    MessageBox.Show("Nhà cung cấp Mã số " + VendorId + " đã có đơn hàng. Không thể xóa.",
+                    "Cảnh cáo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+                if (result == 1)
+                {
+                    MessageBox.Show("Đã xóa Nhà Cung Cấp Mã số " + VendorId + ".");
+                }
+            }
+            this.Close();
+            
+        } 
+       
         private void loadVendors(string id)
         {
             NhaCungCap vendor = new NhaCungCap();
             vendor = VendorsController.displayVendors(id);
             if (vendor != null)
             {
+                
                 txt_MaNhaCungCap.Text = vendor.MaNCC.ToString();
                 txt_TenCongTy.Text = vendor.TenCongTy.ToString();
                 txt_SDT.Text = vendor.SDT;
@@ -89,6 +112,35 @@ namespace PhuongNamCompany
         private void btn_CapNhat_Click(object sender, EventArgs e)
         {
 
+            string VendorId = null;
+            VendorId = txt_MaNhaCungCap.Text;
+            int result = VendorsController.removeVendor(VendorId);
+            if (result == 0)
+            {
+                MessageBox.Show("Nhà cung cấp Mã số " + VendorId + " không thể chỉnh sửa.",
+                "Cảnh cáo",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                try
+                {
+                    VendorsController.insertVendor(txt_MaNhaCungCap.Text, txt_TenCongTy.Text, txt_DiaChi.Text, txt_SDT.Text, txt_NguoiDaiDien.Text, txt_MaSoThue.Text, txt_TaiKhoanNganHang.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Vui lòng kiểm tra lại các thông tin cần nhập.");
+                }
+                MessageBox.Show("Chỉnh Sửa Nhà Cung Cấp thành công.");
+            }
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt_MaNhaCungCap.Text = VendorsController.generateVendorId().ToString();
         }
     }
 }

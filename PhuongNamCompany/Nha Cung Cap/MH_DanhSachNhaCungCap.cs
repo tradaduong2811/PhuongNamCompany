@@ -25,6 +25,7 @@ namespace PhuongNamCompany
         public static string OrderIdTransition = string.Empty;
         
         VendorsController VendorsController = new VendorsController();
+        NhaCungCap_Data NCCdata = new NhaCungCap_Data();
 
         private void btn_ThemMoi_Click(object sender, EventArgs e)
         {
@@ -34,14 +35,40 @@ namespace PhuongNamCompany
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            DialogResult dialogresult = MessageBox.Show("Bạn có muốn xóa nhà cung cấp " + "Mã nhà cung cấp " + "không?",
+            string VendorId = null;
+            for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+            {
+                VendorId = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
+            }
+            if (VendorId == null)
+            {
+                MessageBox.Show("Xin chọn Nhà Cung Cấp.");
+            }
+            else
+            {
+                DialogResult dialogresult = MessageBox.Show("Bạn có muốn xóa nhà cung cấp " + VendorId + " không?",
                                                "Xóa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
                                                MessageBoxDefaultButton.Button2);
-            if (dialogresult == DialogResult.OK)
-            {
-                MessageBox.Show("Đã xóa.");
-                // cập nhật lại danh sách nhà cung cấp
-            }
+                if (dialogresult == DialogResult.OK)
+                {
+                    int result = VendorsController.removeVendor(VendorId);
+                    if (result == 0)
+                    {
+                        MessageBox.Show("Nhà cung cấp Mã số " + VendorId + " đã có đơn hàng. Không thể xóa.",
+                        "Cảnh cáo",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    }
+                    if (result == 1)
+                    {
+                        MessageBox.Show("Đã xóa Nhà Cung Cấp Mã số " + VendorId + ".");
+                        // cập nhật lại danh sách nhà cung cấp
+                        refreshVendors();
+                        dataGridView1.Update();
+                        dataGridView1.Refresh();
+                    }
+                }
+            } 
         }
 
         private void btn_ChinhSua_Click(object sender, EventArgs e)
@@ -73,8 +100,23 @@ namespace PhuongNamCompany
 
         private void btn_XemGia_Click(object sender, EventArgs e)
         {
-            MH_XemSanPham MH_XemSanPham = new MH_XemSanPham();
-            MH_XemSanPham.Show();
+            string OrderId = null;
+            for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+            {
+                OrderId = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
+            }
+            if (OrderId == null)
+            {
+                MessageBox.Show("Xin chọn Nhà Cung Cấp.");
+            }
+            else
+            {
+                MH_XemSanPham MH_XemSanPham = new MH_XemSanPham();
+                // Chuyển Id sang Màn hình Xem chi tiết
+                OrderIdTransition = OrderId;
+                MH_XemSanPham.ShowDialog();
+            }
+
         }
 
         private void MH_DanhSachNhaCungCap_Load(object sender, EventArgs e)
@@ -85,30 +127,39 @@ namespace PhuongNamCompany
 
         public void refreshVendors()
         {
-            if (VendorsController.displayVendors() == null)
+            if (NCCdata.displayVendor() == null)
             {
                 MessageBox.Show("Lỗi lấy dữ liệu từ hệ thống");
             }
             else
             {
-                dataGridView1.DataSource = VendorsController.displayVendors();
+                dataGridView1.DataSource = NCCdata.displayVendor();
                 // Thay đổi header trên bảng
                 dataGridView1.Columns[0].HeaderText = "Mã Nhà Cung Cấp";
                 dataGridView1.Columns[0].Width = 100;
-                dataGridView1.Columns[1].HeaderText = "Tài Khoản Ngân Hàng";
+                dataGridView1.Columns[1].HeaderText = "Tên Công Ty";
                 dataGridView1.Columns[1].Width = 150;
-                dataGridView1.Columns[2].HeaderText = "Mã Số Thuế";
+                dataGridView1.Columns[2].HeaderText = "Địa Chỉ";
                 dataGridView1.Columns[2].Width = 180;
-                dataGridView1.Columns[3].HeaderText = "Người Đại Diện";
+                dataGridView1.Columns[3].HeaderText = "Số Điện Thoại";
                 dataGridView1.Columns[3].Width = 100;
-                dataGridView1.Columns[4].HeaderText = "Số Điện Thoại";
+                dataGridView1.Columns[4].HeaderText = "Người Đại Diện";
                 dataGridView1.Columns[4].Width = 120;
-                dataGridView1.Columns[5].HeaderText = "Địa Chỉ";
+                dataGridView1.Columns[5].HeaderText = "Mã Số Thuế";
                 dataGridView1.Columns[5].Width = 100;
-                dataGridView1.Columns[6].HeaderText = "Tên Công Ty";
+                dataGridView1.Columns[6].HeaderText = "Tài Khoản Ngân Hàng";
                 dataGridView1.Columns[6].Width = 100;
+                dataGridView1.Update();
+                dataGridView1.Refresh();
             }
 
+        }
+
+        private void SBtnTaiLai_Click(object sender, EventArgs e)
+        {
+            refreshVendors();
+            dataGridView1.Update();
+            dataGridView1.Refresh();
         }
 
 

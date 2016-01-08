@@ -56,5 +56,27 @@ namespace PhuongNam_Business.Controller
             }
             return vendor;
         }
+        public int generateVendorId()
+        {
+            return data.getLastVendorId() + 1;
+        }
+        public void insertVendor(string MaNhaCungCap, string TenCongTy, string DiaChi, string SDT, string NguoiDaiDien, string MaSoThue, string TKNganHang)
+        {
+            NhaCungCap vendor = new NhaCungCap();
+            vendor.MaNCC = int.Parse(MaNhaCungCap);
+            vendor.TenCongTy = TenCongTy;
+            vendor.DiaChi = DiaChi;
+            vendor.SDT = SDT;
+            vendor.NguoiDaiDien = NguoiDaiDien;
+            vendor.MaSoThue = MaSoThue;
+            vendor.TKNganHang = TKNganHang;
+            data.createVendor(vendor.MaNCC, vendor.TenCongTy, vendor.DiaChi, vendor.SDT, vendor.NguoiDaiDien, vendor.MaSoThue, vendor.TKNganHang);
+        }
+        public int removeVendor(string id)
+        {
+            int result = data.removeVendor(id);
+            return result;
+        }
+
     }
 }
