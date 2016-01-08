@@ -36,6 +36,7 @@ namespace PhuongNam_Data
             adapter.Fill(dtProducts);
             return dtProducts;
         }
+<<<<<<< HEAD
         public int removeProduct(string id)
         {
             int OrderId = 0;
@@ -62,12 +63,14 @@ namespace PhuongNam_Data
             }
             return 1;
         }
+=======
+>>>>>>> origin/master
         public DataTable displayProduct(string VendorId)
         {
             int Id = int.Parse(VendorId);
             DataTable Product = new DataTable();
             string strSQL;
-            strSQL = "Select GiaSanPham.MaSP,TenSP,HangSX,Gia,Ngay From SanPham,GiaSanPham " +
+            strSQL = "Select GiaSanPham.MaSP,TenSP,HangSX,Gia,Ngay, MoTa From SanPham,GiaSanPham " +
                      "Where GiaSanPham.MaSP = SanPham.MaSP " +
                      "and GiaSanPham.NhaCungCap = " + Id;// Chuỗi SQL
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);

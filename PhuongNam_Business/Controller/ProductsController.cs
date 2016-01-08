@@ -74,6 +74,7 @@ namespace PhuongNam_Business
             }
             return listProducts;
         }
+<<<<<<< HEAD
 
         //NAM
         public int removeProduct(string id)
@@ -81,6 +82,8 @@ namespace PhuongNam_Business
             int result = data.removeProduct(id);
             return result;
         }
+=======
+>>>>>>> origin/master
         public List<SanPham> displayProduct(string VendorId)
         {
             List<SanPham> listProducts = new List<SanPham>();
@@ -91,9 +94,23 @@ namespace PhuongNam_Business
                 SanPham product = new SanPham();
                 product.MaSP = (int)dr["MaSP"];
                 product.MoTaThem = product.MaSP + " | " + (string)dr["TenSP"];
+                product.TenSP = (string)dr["TenSP"];
+                product.MoTa = dr["MoTa"] == DBNull.Value ? "Không có" : ((string)dr["MoTa"]);
+
+                product.DonGia = (decimal)dr["Gia"];
                 listProducts.Add(product);
             }
             return listProducts;
+        }
+
+
+        public SanPham autoset(int ProductId, string VendorId)
+        {
+            SanPham product = new SanPham();
+            product = displayProduct(VendorId).SingleOrDefault(s => s.MaSP == ProductId);
+            if (product == null)
+                return null;
+            return product;
         }
     }
 }

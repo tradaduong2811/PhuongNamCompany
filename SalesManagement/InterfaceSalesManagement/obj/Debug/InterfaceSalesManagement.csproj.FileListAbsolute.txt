@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
 C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe
 C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.exe
@@ -92,3 +93,99 @@ E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManage
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
 E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
 D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+=======
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.exe
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.exe
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.pdb
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.pdb
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csprojResolveAssemblyReference.cache
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceCard.resources
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceForm.resources
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.Properties.Resources.resources
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.exe
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.pdb
+C:\Users\nampham7394\Desktop\Luan 05-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.pdb
+C:\Users\GloryZhang\Google Drive\KHTN\PTTK HTTT\Bài tập nhóm\Sources\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+C:\Users\GloryZhang\Google Drive\KHTN\PTTK HTTT\Bài tập nhóm\Sources\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.exe
+C:\Users\GloryZhang\Google Drive\KHTN\PTTK HTTT\Bài tập nhóm\Sources\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.exe
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.exe
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.exe
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csprojResolveAssemblyReference.cache
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceCard.resources
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceForm.resources
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.Properties.Resources.resources
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
+C:\Users\GloryZhang\Desktop\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
+D:\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.exe
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.pdb
+D:\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe
+D:\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.pdb
+D:\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.exe
+D:\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.exe
+D:\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.pdb
+D:\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.pdb
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csprojResolveAssemblyReference.cache
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceCard.resources
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceForm.resources
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.Properties.Resources.resources
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
+D:\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.exe
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.exe
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.exe
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.pdb
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csprojResolveAssemblyReference.cache
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceCard.resources
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceForm.resources
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.Properties.Resources.resources
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
+C:\Users\GloryZhang\Desktop\Nam-10-10-2015\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.exe
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.exe
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.exe
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.pdb
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csprojResolveAssemblyReference.cache
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceCard.resources
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceForm.resources
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.Properties.Resources.resources
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
+E:\Lunat Tea\University\HK1 2015-2016\Phân tích thiết kế - Hệ thống thông tin\BTTH\BT01-Tìm hiểu công nghệ\1212031_1212219_1212250\Source\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.exe
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.exe
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.exe
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\BusinessSalesManagement.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\DataAccessSalesManagement.pdb
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csprojResolveAssemblyReference.cache
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceCard.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.InvoiceForm.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.Properties.Resources.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.SalesInvoiceLineCard.resources
+E:\Project KNSer\PTTK HTTT\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\obj\Debug\InterfaceSalesManagement.csproj.GenerateResource.Cache
+D:\Study\4th year\PTTK HTTT\Project\pttk\PhuongNamCompany\SalesManagement\InterfaceSalesManagement\bin\Debug\InterfaceSalesManagement.exe.config
+>>>>>>> origin/master
