@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PhuongNam_Data;
 using PhuongNam_Business.Controller;
-using PhuongNam_Business.Models;
 
 namespace PhuongNamCompany
 {
@@ -40,53 +39,23 @@ namespace PhuongNamCompany
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
-        {
-            if (checkVendor() == true)
+        {          
+            try
             {
-                if (createVendor() == true)
-                {
-                    MessageBox.Show("Tạo nhà cung cấp thành công!");
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Tạo nhà cung cấp không thành công. Xin thử lại!",
-                         "Cảnh báo",
-                         MessageBoxButtons.OK,
-                         MessageBoxIcon.Warning);
-                    this.Close();
-                }
+                VendorsController.insertVendor(txt_MaNhaCungCap.Text, txt_TenCongTy.Text, txt_DiaChi.Text, txt_SDT.Text, txt_NguoiDaiDien.Text, txt_MaSoThue.Text, txt_TaiKhoanNganHang.Text);
             }
-            
+            catch (Exception)
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại các thông tin cần nhập.");
+            }
+            MessageBox.Show("Tạo Nhà Cung Cấp thành công.");
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             txt_MaNhaCungCap.Text = VendorsController.generateVendorId().ToString();
         }
-        private bool createVendor()
-        {
-            NhaCungCap vendor = new NhaCungCap();
-            vendor.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
-            vendor.TenCongTy = txt_TenCongTy.Text;
-            vendor.DiaChi = txt_DiaChi.Text;
-            vendor.SDT = txt_SDT.Text;
-            vendor.NguoiDaiDien = txt_NguoiDaiDien.Text;
-            vendor.MaSoThue = txt_MaSoThue.Text;
-            vendor.TKNganHang = txt_TaiKhoanNganHang.Text;
-            return VendorsController.insertVendor(vendor);
-        }
-        private bool checkVendor()
-        {
-            if (txt_MaNhaCungCap.Text == "" || txt_TenCongTy.Text == "" || txt_DiaChi.Text == "" || txt_SDT.Text == "" || txt_NguoiDaiDien.Text == "" || txt_MaSoThue.Text == "" || txt_TaiKhoanNganHang.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin cho Nhà Cung Cấp",
-                     "Cảnh báo",
-                     MessageBoxButtons.OK,
-                     MessageBoxIcon.Warning);
-                return false;
-            }
-            return true;
-        }
+
     }
 }

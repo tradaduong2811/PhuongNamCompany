@@ -24,28 +24,16 @@ namespace PhuongNamCompany
 
         private void MH_XemSanPham_Load(object sender, EventArgs e)
         {
-            if (MH_DanhSachNhaCungCap.VendorIdTransition == null)
+            if (MH_DanhSachNhaCungCap.OrderIdTransition == null)
             {
                 MessageBox.Show("Lỗi lấy dữ liệu");
             }
             else
             {
-                loadVendors(MH_DanhSachNhaCungCap.VendorIdTransition);
+                loadVendors(MH_DanhSachNhaCungCap.OrderIdTransition);
             }
             NhaCungCap_Data sanpham = new NhaCungCap_Data();
-            dataGridView1.DataSource = sanpham.displayProduct(MH_DanhSachNhaCungCap.VendorIdTransition);
-            dataGridView1.Columns[0].HeaderText = "Mã Sản Phẩm";
-            dataGridView1.Columns[0].Width = 100;
-            dataGridView1.Columns[1].HeaderText = "Tên Sản Phẩm";
-            dataGridView1.Columns[1].Width = 150;
-            dataGridView1.Columns[2].HeaderText = "Hãng Sản Xuất";
-            dataGridView1.Columns[2].Width = 180;
-            dataGridView1.Columns[3].HeaderText = "Giá";
-            dataGridView1.Columns[3].Width = 100;
-            dataGridView1.Columns[4].HeaderText = "Số Lượng";
-            dataGridView1.Columns[4].Width = 120;
-            dataGridView1.Columns[5].HeaderText = "Ngày";
-            dataGridView1.Columns[5].Width = 100;
+            dataGridView1.DataSource = sanpham.displayProduct(MH_DanhSachNhaCungCap.OrderIdTransition);
         }
         private void loadVendors(string id)
         {

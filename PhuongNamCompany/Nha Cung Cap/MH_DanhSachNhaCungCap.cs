@@ -22,7 +22,7 @@ namespace PhuongNamCompany
             refreshVendors();
         }
 
-        public static string VendorIdTransition = string.Empty;
+        public static string OrderIdTransition = string.Empty;
         
         VendorsController VendorsController = new VendorsController();
         NhaCungCap_Data NCCdata = new NhaCungCap_Data();
@@ -79,12 +79,12 @@ namespace PhuongNamCompany
 
         private void btn_XemChiTiet_Click(object sender, EventArgs e)
         {
-            string VendorId = null;
+            string OrderId = null;
             for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
             {
-                VendorId = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
+                OrderId = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
             }
-            if (VendorId == null)
+            if (OrderId == null)
             {
                 MessageBox.Show("Xin chọn Nhà Cung Cấp.");
             }
@@ -93,19 +93,19 @@ namespace PhuongNamCompany
                 MH_ChiTietNhaCungCap MH_XemChiTiet = new MH_ChiTietNhaCungCap();
 
                 // Chuyển Id sang Màn hình Xem chi tiết
-                VendorIdTransition = VendorId;
+                OrderIdTransition = OrderId;
                 MH_XemChiTiet.ShowDialog();
             }
         }
 
         private void btn_XemGia_Click(object sender, EventArgs e)
         {
-            string VendorId = null;
+            string OrderId = null;
             for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
             {
-                VendorId = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
+                OrderId = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
             }
-            if (VendorId == null)
+            if (OrderId == null)
             {
                 MessageBox.Show("Xin chọn Nhà Cung Cấp.");
             }
@@ -113,7 +113,7 @@ namespace PhuongNamCompany
             {
                 MH_XemSanPham MH_XemSanPham = new MH_XemSanPham();
                 // Chuyển Id sang Màn hình Xem chi tiết
-                VendorIdTransition = VendorId;
+                OrderIdTransition = OrderId;
                 MH_XemSanPham.ShowDialog();
             }
 
