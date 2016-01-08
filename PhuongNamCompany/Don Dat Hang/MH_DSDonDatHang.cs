@@ -172,7 +172,7 @@ namespace PhuongNamCompany
                                                   MessageBoxDefaultButton.Button2);
                 if (dialogresult == DialogResult.OK)
                 {
-                    PurchaseOrdersController.approvePurchaseOrder(OrderId, true);
+                    ;
                     MessageBox.Show("Đã xác nhận đơn hàng Mã số " + OrderId + ".");
                     // cập nhật lại đơn hàng
                     refreshPurchaseOrders();
