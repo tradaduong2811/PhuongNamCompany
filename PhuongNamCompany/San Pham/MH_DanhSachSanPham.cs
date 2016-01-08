@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PhuongNam_Business;
+using PhuongNam_Business.Models;
 
 namespace PhuongNamCompany
 {
@@ -17,6 +18,7 @@ namespace PhuongNamCompany
         private BindingSource bindingSource1 = new BindingSource();
         ProductsController proController = new ProductsController();
         public static string idProduct = string.Empty;
+        public static SanPham stProduct = new SanPham();
         public MH_DanhSachSanPham()
         {
             InitializeComponent();
@@ -58,21 +60,21 @@ namespace PhuongNamCompany
                 //dgv_DSSP.Columns[2].Width = 150;
                 dgv_DSSP.Columns[3].HeaderText = "Hãng Sản Xuất";
                 //dgv_DSSP.Columns[2].Width = 180;
-                dgv_DSSP.Columns[3].HeaderText = "Loại";
+                dgv_DSSP.Columns[4].HeaderText = "Loại";
                // dgv_DSSP.Columns[3].Width = 100;
-                dgv_DSSP.Columns[4].HeaderText = "Đơn Giá";
+                dgv_DSSP.Columns[5].HeaderText = "Đơn Giá";
                 //dgv_DSSP.Columns[4].Width = 120;
-                dgv_DSSP.Columns[5].HeaderText = "Mô Tả";
+                dgv_DSSP.Columns[6].HeaderText = "Mô Tả";
                 //dgv_DSSP.Columns[5].Width = 100;
-                dgv_DSSP.Columns[6].HeaderText = "Hệ Điều Hành";
+                dgv_DSSP.Columns[7].HeaderText = "Hệ Điều Hành";
                // dgv_DSSP.Columns[6].Width = 100;
-                dgv_DSSP.Columns[7].HeaderText = "Trọng Lượng";
+                dgv_DSSP.Columns[8].HeaderText = "Trọng Lượng";
                // dgv_DSSP.Columns[7].Width = 100;
-                dgv_DSSP.Columns[8].HeaderText = "Thời Gian Bảo Hành";
+                dgv_DSSP.Columns[9].HeaderText = "Thời Gian Bảo Hành";
                // dgv_DSSP.Columns[8].Width = 100;
-                dgv_DSSP.Columns[9].HeaderText = "Kích Thước";
+                dgv_DSSP.Columns[10].HeaderText = "Kích Thước";
                // dgv_DSSP.Columns[9].Width = 100;
-                dgv_DSSP.Columns[10].HeaderText = "Xuất Xứ";
+                dgv_DSSP.Columns[11].HeaderText = "Xuất Xứ";
              
         }
 
@@ -86,21 +88,33 @@ namespace PhuongNamCompany
         private void btn_XemChiTiet_Click(object sender, EventArgs e)
         {
             string idPro = "";
+            
         
             for (int i = 0; i < dgv_DSSP.SelectedRows.Count; i++)
             {
-                idPro = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();
+
+                stProduct.MaSP = int.Parse(dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString());
+                stProduct.TenSP = dgv_DSSP.SelectedRows[i].Cells[2].Value.ToString();
+                stProduct.HangSX = dgv_DSSP.SelectedRows[i].Cells[3].Value.ToString();
+                stProduct.LoaiSP = dgv_DSSP.SelectedRows[i].Cells[4].Value.ToString();
+                stProduct.DonGia = decimal.Parse(dgv_DSSP.SelectedRows[i].Cells[5].Value.ToString());
+                stProduct.MoTa = dgv_DSSP.SelectedRows[i].Cells[6].Value.ToString();
+                stProduct.HeDieuHanh = dgv_DSSP.SelectedRows[i].Cells[7].Value.ToString();
+                stProduct.TrongLuong = int.Parse(dgv_DSSP.SelectedRows[i].Cells[8].Value.ToString());
+                stProduct.TGBaoHanh = int.Parse(dgv_DSSP.SelectedRows[i].Cells[9].Value.ToString());
+                stProduct.KichThuoc = dgv_DSSP.SelectedRows[i].Cells[10].Value.ToString();
+                stProduct.XuatXu = dgv_DSSP.SelectedRows[i].Cells[11].Value.ToString();  
             }
-            if (string.IsNullOrEmpty(idPro))
+            int? a = stProduct.MaSP;
+            if (!a.HasValue)
             {
                 MessageBox.Show("Bạn Hãy Chọn Sản Phẩm Để Xem.");
             }
             else
             {
                 MH_ChiTietSanPham MH_XemChiTiet = new MH_ChiTietSanPham();
-
+          
                 // Chuyển Id sang Màn hình Xem chi tiết
-                idProduct = idPro;
                 MH_XemChiTiet.ShowDialog();
             }
         }
@@ -111,15 +125,27 @@ namespace PhuongNamCompany
 
             for (int i = 0; i < dgv_DSSP.SelectedRows.Count; i++)
             {
-                idPro = dgv_DSSP.SelectedRows[i].ToString();
+                stProduct.MaSP = int.Parse(dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString());
+                stProduct.TenSP = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();
+                stProduct.HangSX = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();
+                stProduct.LoaiSP = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();
+                stProduct.DonGia = decimal.Parse(dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString());
+                stProduct.MoTa = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();
+                stProduct.HeDieuHanh = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();
+                stProduct.TrongLuong = int.Parse(dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString());
+                stProduct.TGBaoHanh = int.Parse(dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString());
+                stProduct.KichThuoc = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();
+                stProduct.XuatXu = dgv_DSSP.SelectedRows[i].Cells[1].Value.ToString();  
             }
-            if (idPro == null)
+            //SanPham
+            if (stProduct.MaSP == null)
             {
                 MessageBox.Show("Bạn Hãy Chọn Sản Phẩm Để Xem.");
             }
             else
             {
-                MH_GiaSanPham mh_gsp = new MH_GiaSanPham();
+
+                MH_GiaSanPham  mh_gsp = new MH_GiaSanPham();
 
                 // Chuyển Id sang Màn hình Xem chi tiết
                 idProduct = idPro;

@@ -17,11 +17,7 @@ namespace PhuongNamCompany
             InitializeComponent();
             //dgvGia.BackgroundColor = System.Drawing.SystemColors.Control;
             //dgvGia.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dgvGia.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dgvGia.BackgroundColor = SystemColors.ControlLightLight;
-            dgvGia.BorderStyle = BorderStyle.None;
-            dgvGia.Rows[0].Cells[0].Value = "Viettel";
-            dgvGia.Rows[0].Cells[1].Value = "4590000";
+            
             
 
             //dgvGia.Rows[1].Cells[0].Value = "FPT";

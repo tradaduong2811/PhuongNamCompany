@@ -36,6 +36,7 @@ namespace PhuongNam_Data
             adapter.Fill(dtProducts);
             return dtProducts;
         }
+        //NAM
         public int removeProduct(string id)
         {
             int OrderId = 0;
@@ -61,6 +62,16 @@ namespace PhuongNam_Data
                 return 0;
             }
             return 1;
+        }
+        //NAM
+        public DataTable getProduct(string id)
+        {
+            DataTable dt = new DataTable();
+            string strSQL = " SELECT sp.MaSP, sp.TenSP, hsx.TenHSX, lsp.Ten, sp.DonGia, ISNULL(sp.MoTa, 'Không') as [MoTa], hdh.HeDieuHanh, ISNULL (sp.TrongLuong, '0') as [TrongLuong], sp.TGBaoHanh, ISNULL(sp.KichThuoc, 'Không') as [KichThuoc], sp.XuatXu, sp.Xoa " +
+                " FROM SanPham sp, LoaiSanPham lsp, HangSanXuat hsx, HeDieuHanh hdh " +
+                " WHERE sp.HangSX = hsx.MaHSX AND sp.LoaiSP = lsp.MaLoaiSP AND sp.HeDieuHanh = hdh.MaHDH AND sp.Xoa = 'False' ";
+
+            return dt;
         }
 
         public DataTable displayProduct(string VendorId)

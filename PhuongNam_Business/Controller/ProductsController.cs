@@ -75,12 +75,66 @@ namespace PhuongNam_Business
             return listProducts;
         }
 
+        public SanPham getProduct(string id)
+        {
+
+            SanPham sp = new SanPham();
+            DataTable dtProducts = new DataTable();
+            dtProducts = data.getProduct(id);
+            foreach (DataRow dtrow in dtProducts.Rows)
+            {
+               
+                sp.MaSP = (int)dtrow["MaSP"];
+                sp.TenSP = (string)dtrow["TenSP"];
+                sp.HangSX = (string)dtrow["TenHSX"];
+                sp.LoaiSP = (string)dtrow["Ten"];
+                sp.DonGia = (decimal)dtrow["DonGia"];
+
+                sp.MoTa = (string)dtrow["MoTa"];
+                //sp.MoTa =
+                //(dtrow["MoTa"] == DBNull.Value) ? string.Empty : (string)dtrow["MoTa"].ToString();
+
+                sp.HeDieuHanh = (string)dtrow["HeDieuHanh"];
+
+
+                sp.TrongLuong = (int)dtrow["TrongLuong"];
+                //int? a = sp.TrongLuong;
+                //if (!a.HasValue)
+                //{
+                //    sp.TrongLuong = 0;
+                //}
+                sp.TGBaoHanh = (int)dtrow["TGBaoHanh"];
+                sp.KichThuoc = (string)dtrow["KichThuoc"];
+                //  sp.KichThuoc =
+                //(dtrow["KichThuoc"] == DBNull.Value) ? string.Empty : (string)dtrow["KichThuoc"].ToString();
+                sp.XuatXu = (string)dtrow["XuatXu"];
+                sp.Xoa = dtrow["Xoa"].ToString();   
+            }
+            return sp;
+        }
 
         //NAM
         public int removeProduct(string id)
         {
             int result = data.removeProduct(id);
             return result;
+        }
+
+        //NAM
+        public SanPham pushSanPhamToXemChiTiet(SanPham spp)
+        {
+            SanPham sp = new SanPham();
+            sp.MaSP = spp.MaSP;
+            sp.LoaiSP = spp.LoaiSP;
+            sp.TenSP = spp.TenSP;
+            sp.HangSX = spp.HangSX;
+            sp.HeDieuHanh = spp.HeDieuHanh;
+            sp.MoTa = spp.MoTa;
+            sp.TGBaoHanh = spp.TGBaoHanh;
+            sp.KichThuoc = spp.KichThuoc;
+            sp.XuatXu = spp.XuatXu;
+            sp.DonGia = spp.DonGia;
+            return sp;
         }
 
         public List<SanPham> displayProduct(string VendorId)
