@@ -40,9 +40,9 @@ namespace PhuongNam_Business.Controller
             return listOrders;
         }
 
-        public bool approvePurchaseOrder(string id)
+        public bool approvePurchaseOrder(string id, bool open)
         {
-            return data.approvePurchaseOrder(id);
+            return data.approvePurchaseOrder(id, open);
         }
 
         public int removePurchaseOrder(string id)
@@ -65,6 +65,7 @@ namespace PhuongNam_Business.Controller
                 PurOrder.NgayGiao = (DateTime)dr["NgayGiao"];
                 PurOrder.NgayGiao.ToString("dd/MM/yyyy");
                 PurOrder.TongTien = (decimal)dr["TongTien"];
+                PurOrder.MaNV = (int)dr["MaNV"];
                 PurOrder.SDT = (string)dr["SDT"];
                 PurOrder.TongTienVAT = (decimal)dr["TongTienVAT"];
                 PurOrder.XacNhan = dr["XacNhan"].ToString();
@@ -106,5 +107,13 @@ namespace PhuongNam_Business.Controller
             return data.createPurchaseOrder(ddh.MaNV, ddh.MaNCC, ddh.NgayGiao, ddh.TongTien, ddh.TongTienVAT);
         }
 
+
+        public void createPurchaseLines(List<ChiTietDonDatHang> PurchaseLines)
+        {
+            foreach (ChiTietDonDatHang item in PurchaseLines)
+            {
+                data.createPurchaseLines(item.MaDDH, item.MaSP, item.DonGia, item.SoLuong, item.ThanhTien);
+            }
+        }
     }
 }

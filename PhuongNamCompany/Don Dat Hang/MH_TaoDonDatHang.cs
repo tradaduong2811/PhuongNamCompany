@@ -52,8 +52,6 @@ namespace PhuongNamCompany
             CBBNhanVien.DataSource = EmployeesController.displayEmployees();
             CBBNhanVien.DisplayMember = "MoTaThem";
             CBBNhanVien.ValueMember = "MaNV";
-
-            
         }
 
         private void SBtnLamMoi_Click(object sender, EventArgs e)
@@ -138,22 +136,63 @@ namespace PhuongNamCompany
             {
                 if (createOrder() == true)
                 {
-                    createPurchaseLine();
+                    if (createPurchaseLine() == true)
+                    {
+                        MessageBox.Show("Tạo đơn hàng thành công!");
+                        this.Close();
+                    }
                 }
             }
         }
 
-        private void createPurchaseLine()
+        private bool createPurchaseLine()
         {
-            
+            List<ChiTietDonDatHang> PurchaseLines = new List<ChiTietDonDatHang>();
+            for (int i = 0; i < DGVSanPham.Rows.Count - 1; i++)
+            {
+
+                ChiTietDonDatHang Line = new ChiTietDonDatHang();
+                Line.MaDDH = PurchaseOrdersConroller.generatePurchaseId() - 10;
+                Line.MaSP = int.Parse(DGVSanPham.Rows[i].Cells[0].Value.ToString());
+                Line.SoLuong = int.Parse(DGVSanPham.Rows[i].Cells[3].Value.ToString());
+                Line.DonGia = decimal.Parse(DGVSanPham.Rows[i].Cells[4].Value.ToString());
+                Line.ThanhTien = decimal.Parse(DGVSanPham.Rows[i].Cells[5].Value.ToString());
+                PurchaseLines.Add(Line);
+            }
+            PurchaseOrdersConroller.createPurchaseLines(PurchaseLines);
+            return true;
         }
 
         private bool checkOrder()
         {
             if (CBBNhanVien.Text == "" || TBNgayGiao.Value == null || CbbMaNhaCungCap.Text == "")
+            {
+                MessageBox.Show("Điền đầy đủ thông tin của đơn hàng này",
+                     "Cảnh báo",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Warning);
                 return false;
+            }
+            if (CBBNhanVien.Text == "")
+            {
+                MessageBox.Show("Xin chọn nhân viên tạo đơn hàng này.",
+                     "Cảnh báo",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Warning);
+                return false;
+            }
+            if (DGVSanPham.Rows.Count == 0)
+            {
+                MessageBox.Show("Hãy tạo sản phẩm cho đơn hàng này.",
+                     "Cảnh báo",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Warning);
+                return false;
+            }
             return true;
         }
+
+
 
         private bool createOrder()
         {

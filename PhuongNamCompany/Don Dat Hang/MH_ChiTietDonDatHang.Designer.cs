@@ -551,6 +551,7 @@
             this.SBtnXoa.Name = "SBtnXoa";
             this.SBtnXoa.Size = new System.Drawing.Size(66, 39);
             this.SBtnXoa.Text = "Xóa";
+            this.SBtnXoa.Click += new System.EventHandler(this.SBtnXoa_Click);
             // 
             // toolStripSeparator2
             // 
