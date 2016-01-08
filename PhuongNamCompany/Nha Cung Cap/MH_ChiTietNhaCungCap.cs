@@ -99,19 +99,29 @@ namespace PhuongNamCompany
 
         private void MH_ChiTietNhaCungCap_Load(object sender, EventArgs e)
         {
-            if (MH_DanhSachNhaCungCap.OrderIdTransition == null)
+            if (MH_DanhSachNhaCungCap.VenderIdTransition == null)
             {
                 MessageBox.Show("Lỗi lấy dữ liệu");
             }
             else
             {
-                loadVendors(MH_DanhSachNhaCungCap.OrderIdTransition);
+                loadVendors(MH_DanhSachNhaCungCap.VenderIdTransition);
             }
         }
 
         private void btn_CapNhat_Click(object sender, EventArgs e)
         {
-
+            //DialogResult dialogresult = MessageBox.Show("Bạn muốn chỉnh sửa nhà cung cấp Mã số " + MH_DanhSachNhaCungCap.VenderIdTransition + " không?",
+            //                                      "Chỉnh sửa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
+            //                                      MessageBoxDefaultButton.Button2);
+            NhaCungCap nhacungcap = new NhaCungCap();
+            nhacungcap.MaNCC = int.Parse(txt_MaNhaCungCap.Text);
+            nhacungcap.TenCongTy = txt_TenCongTy.Text;
+            nhacungcap.DiaChi = txt_DiaChi.Text;
+            nhacungcap.SDT = txt_SDT.Text;
+            nhacungcap.NguoiDaiDien = txt_NguoiDaiDien.Text;
+            nhacungcap.MaSoThue = txt_MaSoThue.Text;
+            nhacungcap.TKNganHang = txt_TaiKhoanNganHang.Text;
             string VendorId = null;
             VendorId = txt_MaNhaCungCap.Text;
             int result = VendorsController.removeVendor(VendorId);
@@ -127,7 +137,7 @@ namespace PhuongNamCompany
             {
                 try
                 {
-                    VendorsController.insertVendor(txt_MaNhaCungCap.Text, txt_TenCongTy.Text, txt_DiaChi.Text, txt_SDT.Text, txt_NguoiDaiDien.Text, txt_MaSoThue.Text, txt_TaiKhoanNganHang.Text);
+                    VendorsController.insertVendor(nhacungcap);
                 }
                 catch (Exception)
                 {
