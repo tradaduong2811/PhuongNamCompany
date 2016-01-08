@@ -350,6 +350,7 @@
             this.btn_CapNhat.TabIndex = 20;
             this.btn_CapNhat.Text = "Cập Nhật";
             this.btn_CapNhat.UseVisualStyleBackColor = true;
+            this.btn_CapNhat.Click += new System.EventHandler(this.btn_CapNhat_Click);
             // 
             // label16
             // 
@@ -446,6 +447,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "MH_ChiTietNhaCungCap";
             this.Text = "Chi Tiết Nhà Cung Cấp";
+            this.Load += new System.EventHandler(this.MH_ChiTietNhaCungCap_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
