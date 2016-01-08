@@ -31,11 +31,18 @@ namespace PhuongNamCompany
             CBBNhanVien.Enabled = !mode;
             CBBTinhTrang.Enabled = !mode;
             dtNgayGiaoHang.Enabled = !mode;
+            BtnXacNhan.Enabled = !mode;
             BtnXacNhan.Enabled = mode;
+            if (CBBTinhTrang.Text == "Đã xác nhận")
+            {
+                SBtnChinhSua.Enabled = !mode;
+                SBtnXoa.Enabled = !mode;
+            }
             TBTongTien.ReadOnly = mode;
             TBTongTienVAT.ReadOnly = mode;
             DGVPSanPham.ReadOnly = mode;
             SBtnSanPham.Enabled = !mode;
+            BtnXacNhan.Enabled = !mode;
 
         }
 
@@ -107,13 +114,52 @@ namespace PhuongNamCompany
             DGVPSanPham.Columns[2].HeaderText = "Số lượng";
             DGVPSanPham.Columns[3].HeaderText = "Đơn giá";
             DGVPSanPham.Columns[4].HeaderText = "Thành tiền";
+            DGVPSanPham.Columns[5].Visible = false;
             
             //DGVPSanPham.DataSource = PurchaseOrdersController.displayPurchaseOrder(id);
         }
 
         private void SBtnChinhSua_Click(object sender, EventArgs e)
         {
-            toggleEditMode(false);
+            DialogResult dialogresult = MessageBox.Show("Bạn muốn chỉnh sửa đơn hàng Mã số " + MH_DSDonDatHang.OrderIdTransition + " không?",
+                                                   "Chỉnh sửa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
+                                                   MessageBoxDefaultButton.Button2);
+            if (dialogresult == DialogResult.OK)
+            {
+                toggleEditMode(false);
+            }
+            
+        }
+
+        private void SBtnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogresult = MessageBox.Show("Bạn có muốn xóa đơn hàng Mã số " + MH_DSDonDatHang.OrderIdTransition + " không?",
+                                                   "Xóa?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
+                                                   MessageBoxDefaultButton.Button2);
+            if (dialogresult == DialogResult.OK)
+            {
+                int result = PurchaseOrdersController.removePurchaseOrder(MH_DSDonDatHang.OrderIdTransition);
+                if (result == 0)
+                    MessageBox.Show("Đơn hàng Mã số " + MH_DSDonDatHang.OrderIdTransition + " đã được xác nhận. Không thể xóa.",
+                    "Cảnh báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                if (result == 1)
+                {
+                    MessageBox.Show("Đã xóa đơn hàng Mã số " + MH_DSDonDatHang.OrderIdTransition + ".",
+                   "Thông báo",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // cập nhật lại đơn hàng
+                    this.Close();
+                }
+                if (result == -1)
+                {
+                    MessageBox.Show("Xảy ra lỗi trong quá trình xóa đơn hàng",
+                    "Lỗi",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Error);
+                }
+            }
         }
 
     }

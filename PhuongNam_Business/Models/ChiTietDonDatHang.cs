@@ -8,11 +8,12 @@ namespace PhuongNam_Business.Models
 {
     public class ChiTietDonDatHang
     {
+        private int _MaDDH;
         private int _MaSP;
         private decimal _DonGia;
         private int _SoLuong;
         private string _TenSP;
-        private decimal? _ThanhTien;
+        private decimal _ThanhTien;
 
 
 
@@ -42,10 +43,16 @@ namespace PhuongNam_Business.Models
         }
 
 
-        public decimal? ThanhTien
+        public decimal ThanhTien
         {
             get { return _ThanhTien; }
             set { _ThanhTien = value; }
+        }
+
+        public int MaDDH
+        {
+            get { return _MaDDH; }
+            set { _MaDDH = value; }
         }
     }
 }

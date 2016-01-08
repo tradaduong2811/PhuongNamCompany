@@ -37,18 +37,19 @@ namespace PhuongNam_Data
         }
 
 
-        public bool approvePurchaseOrder(string id)
+        public bool approvePurchaseOrder(string id, bool open)
         {
             string strSQL;
             int OrderId;
             int.TryParse(id, out OrderId);
             strSQL = "UPDATE DonDatHang " +
-                     "SET XacNhan = 'True' " +
-                     "WHERE MaDDH = @IdDDH and XacNhan = 'False'";
+                     "SET XacNhan = @Open " + 
+                     " WHERE MaDDH = @IdDDH";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = dc.con;
             if (dc.con.State == ConnectionState.Closed)
                 dc.con.Open(); // mở kết nối
+            cmd.Parameters.AddWithValue("@Open", open);
             cmd.Parameters.AddWithValue("@IdDDH", OrderId);
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = strSQL;
@@ -79,7 +80,8 @@ namespace PhuongNam_Data
             }
             else
             {
-                string strSQL = "Delete From DonDatHang WHERE MaDDH = @IdDDH "; 
+                string strSQL = "Delete From DonDatHang WHERE MaDDH = @IdDDH " +
+                                "Delete From ChiTietDonHang WHERE MaDonDatHang = @IdDDH"; 
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = dc.con;
                 if (dc.con.State == ConnectionState.Closed)
@@ -100,7 +102,7 @@ namespace PhuongNam_Data
             DataTable PurOrders = new DataTable();
             string strSQL;
 
-            strSQL = "select ddh.MaDDH, ncc.MaNhaCungCap, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT, ddh.XacNhan, ncc.SDT " +
+            strSQL = "select ddh.MaDDH, ncc.MaNhaCungCap, ncc.TenCongTy, ncc.DiaChi, ddh.NgayGiao, ncc.NguoiDaiDien, ddh.TongTien, ddh.TongTienVAT, ddh.XacNhan, ncc.SDT, ddh.MaNV " +
                         " from DonDatHang ddh, NhaCungCap ncc " +
                         " where ncc.MaNhaCungCap = ddh.NhaCungCap and ddh.MaDDH = " + PurOrderId;
 
@@ -159,6 +161,33 @@ namespace PhuongNam_Data
             cmd.Parameters.Add(new SqlParameter("@MaNV", _MaNV));
             cmd.Parameters.Add(new SqlParameter("@TongTien", _TongTien));
             cmd.Parameters.Add(new SqlParameter("@TongTienVAT", _TongTienVAT));
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = strSQL;
+            try
+            {
+                result = Convert.ToBoolean(cmd.ExecuteNonQuery());
+                return result;
+            }
+            catch (SqlException)
+            {
+                return false;
+            }
+        }
+
+        public bool createPurchaseLines(int _MaDDH, int _MaSP, decimal _Gia, int _SoLuongDat, decimal _ThanhTien)
+        {
+            bool result = false;
+            if (dc.con.State == ConnectionState.Closed)
+                dc.con.Open(); // mở kết nối
+            string strSQL;
+            strSQL = "Insert into ChiTietDonHang(MaDonDatHang, MaSP, Gia, SoLuongDat, ThanhTien) Values(@MaDDH, @MaSP, @Gia, @SoLuongDat, @ThanhTien)";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = dc.con;
+            cmd.Parameters.Add(new SqlParameter("@MaDDH", _MaDDH));
+            cmd.Parameters.Add(new SqlParameter("@MaSP", _MaSP));
+            cmd.Parameters.Add(new SqlParameter("@Gia", _Gia));
+            cmd.Parameters.Add(new SqlParameter("@ThanhTien", _ThanhTien));
+            cmd.Parameters.Add(new SqlParameter("@SoLuongDat", _SoLuongDat));
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = strSQL;
             try

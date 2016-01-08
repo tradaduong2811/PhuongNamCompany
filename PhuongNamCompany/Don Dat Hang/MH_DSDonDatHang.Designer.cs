@@ -45,6 +45,7 @@
             this.SBtnInBaoCao = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.SBtnXacNhan = new System.Windows.Forms.ToolStripButton();
+            this.SBtnMoDonHang = new System.Windows.Forms.ToolStripButton();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,6 +55,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DGVDonHang = new System.Windows.Forms.DataGridView();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.SBtnLamMoi = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -124,8 +127,11 @@
             this.SBtnXoa,
             this.toolStripSeparator1,
             this.SBtnInBaoCao,
+            this.toolStripSeparator4,
+            this.SBtnXacNhan,
+            this.SBtnMoDonHang,
             this.toolStripSeparator2,
-            this.SBtnXacNhan});
+            this.SBtnLamMoi});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1284, 42);
@@ -191,6 +197,15 @@
             this.SBtnXacNhan.Size = new System.Drawing.Size(95, 39);
             this.SBtnXacNhan.Text = "Xác nhận";
             this.SBtnXacNhan.Click += new System.EventHandler(this.SBtnXacNhan_Click);
+            // 
+            // SBtnMoDonHang
+            // 
+            this.SBtnMoDonHang.Image = ((System.Drawing.Image)(resources.GetObject("SBtnMoDonHang.Image")));
+            this.SBtnMoDonHang.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SBtnMoDonHang.Name = "SBtnMoDonHang";
+            this.SBtnMoDonHang.Size = new System.Drawing.Size(118, 39);
+            this.SBtnMoDonHang.Text = "Mở đơn hàng";
+            this.SBtnMoDonHang.Click += new System.EventHandler(this.SBtnMoDonHang_Click);
             // 
             // label16
             // 
@@ -280,6 +295,20 @@
             this.DGVDonHang.Size = new System.Drawing.Size(927, 492);
             this.DGVDonHang.TabIndex = 0;
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 42);
+            // 
+            // SBtnLamMoi
+            // 
+            this.SBtnLamMoi.Image = global::PhuongNamCompany.Properties.Resources.refresh_icon1;
+            this.SBtnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SBtnLamMoi.Name = "SBtnLamMoi";
+            this.SBtnLamMoi.Size = new System.Drawing.Size(109, 39);
+            this.SBtnLamMoi.Text = "Cập nhật lại";
+            this.SBtnLamMoi.Click += new System.EventHandler(this.SBtnLamMoi_Click);
+            // 
             // MH_DSDonDatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,5 +364,8 @@
         private System.Windows.Forms.DataGridView DGVDonHang;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton SBtnXemChiTiet;
+        private System.Windows.Forms.ToolStripButton SBtnMoDonHang;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton SBtnLamMoi;
     }
 }

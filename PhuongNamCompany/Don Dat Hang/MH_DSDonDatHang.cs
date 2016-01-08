@@ -54,12 +54,14 @@ namespace PhuongNamCompany
                     int result = PurchaseOrdersController.removePurchaseOrder(OrderId);
                     if (result == 0)
                         MessageBox.Show("Đơn hàng Mã số " + OrderId + " đã được xác nhận. Không thể xóa.",
-                        "Cảnh cáo",
+                        "Cảnh báo",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
                     if (result == 1)
                     {
-                        MessageBox.Show("Đã xóa đơn hàng Mã số " + OrderId + ".");
+                        MessageBox.Show("Đã xóa đơn hàng Mã số " + OrderId + ".",
+                       "Thông báo",
+                       MessageBoxButtons.OK, MessageBoxIcon.Information);
                         // cập nhật lại đơn hàng
                         refreshPurchaseOrders();
                         DGVDonHang.Update();
@@ -93,7 +95,10 @@ namespace PhuongNamCompany
             }
             if (OrderId == null)
             {
-                MessageBox.Show("Xin chọn Đơn đặt hàng.");
+                MessageBox.Show("Xin chọn đơn đặt hàng.",
+                     "Yêu cầu",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Information);
             }
             else
             {
@@ -111,7 +116,10 @@ namespace PhuongNamCompany
             // ganws
             if (PurchaseOrdersController.displayPurchaseOrders() == null)
             {
-                MessageBox.Show("Lỗi lấy dữ liệu từ hệ thống");
+                MessageBox.Show("Xảy ra lỗi lấy dữ liệu từ hệ thống",
+                       "Lỗi",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Error);
             }
             else
             {
@@ -164,7 +172,7 @@ namespace PhuongNamCompany
                                                   MessageBoxDefaultButton.Button2);
                 if (dialogresult == DialogResult.OK)
                 {
-                    PurchaseOrdersController.approvePurchaseOrder(OrderId);
+                    PurchaseOrdersController.approvePurchaseOrder(OrderId, true);
                     MessageBox.Show("Đã xác nhận đơn hàng Mã số " + OrderId + ".");
                     // cập nhật lại đơn hàng
                     refreshPurchaseOrders();
@@ -191,6 +199,39 @@ namespace PhuongNamCompany
                 if (dialogresult == DialogResult.OK)
                 {
                     MessageBox.Show("Đã in đơn hàng Mã số " + OrderId + ".");
+                }
+            }
+        }
+
+        private void SBtnLamMoi_Click(object sender, EventArgs e)
+        {
+            refreshPurchaseOrders();
+            DGVDonHang.Update();
+            DGVDonHang.Refresh();
+        }
+
+        private void SBtnMoDonHang_Click(object sender, EventArgs e)
+        {
+            string OrderId = null;
+            for (int i = 0; i < DGVDonHang.SelectedRows.Count; i++)
+            {
+                OrderId = DGVDonHang.SelectedRows[i].Cells[0].Value.ToString();
+            }
+            if (OrderId == null)
+            {
+                MessageBox.Show("Xin chọn Đơn đặt hàng.");
+            }
+            else
+            {
+                DialogResult dialogresult = MessageBox.Show("Bạn muốn mở lại đơn đặt hàng Mã số " + OrderId,
+                                                  "Xác nhận?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
+                                                  MessageBoxDefaultButton.Button2);
+                if (dialogresult == DialogResult.OK)
+                {
+                    PurchaseOrdersController.approvePurchaseOrder(OrderId, false);
+                    MessageBox.Show("Đã mở đơn hàng Mã số " + OrderId + ".");
+                    // cập nhật lại đơn hàng
+                    refreshPurchaseOrders();
                 }
             }
         }
