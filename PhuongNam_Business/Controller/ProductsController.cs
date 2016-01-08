@@ -74,7 +74,7 @@ namespace PhuongNam_Business
             }
             return listProducts;
         }
-<<<<<<< HEAD
+
 
         //NAM
         public int removeProduct(string id)
@@ -82,8 +82,7 @@ namespace PhuongNam_Business
             int result = data.removeProduct(id);
             return result;
         }
-=======
->>>>>>> origin/master
+
         public List<SanPham> displayProduct(string VendorId)
         {
             List<SanPham> listProducts = new List<SanPham>();

@@ -36,7 +36,6 @@ namespace PhuongNam_Data
             adapter.Fill(dtProducts);
             return dtProducts;
         }
-<<<<<<< HEAD
         public int removeProduct(string id)
         {
             int OrderId = 0;
@@ -63,8 +62,7 @@ namespace PhuongNam_Data
             }
             return 1;
         }
-=======
->>>>>>> origin/master
+
         public DataTable displayProduct(string VendorId)
         {
             int Id = int.Parse(VendorId);

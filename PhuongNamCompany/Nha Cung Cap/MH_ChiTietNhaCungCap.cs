@@ -19,15 +19,14 @@ namespace PhuongNamCompany
             InitializeComponent();
         }
 
-<<<<<<< HEAD
+
         MH_DanhSachNhaCungCap DanhSachNhaCungCap = new MH_DanhSachNhaCungCap();
 
         VendorsController VendorsController = new VendorsController();
-=======
-        MH_DanhSachNhaCungCap DanhSachNhaCungCap = new MH_DanhSachNhaCungCap();
 
-        VendorsController VendorsController = new VendorsController();
->>>>>>> origin/master
+      
+
+
 
         private void btn_XemSanPham_Click(object sender, EventArgs e)
         {
