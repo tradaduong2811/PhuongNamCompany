@@ -41,7 +41,7 @@ namespace PhuongNam_Data
             int Id = int.Parse(VendorId);
             DataTable Product = new DataTable();
             string strSQL;
-            strSQL = "Select GiaSanPham.MaSP,TenSP,HangSX,Gia,Ngay From SanPham,GiaSanPham " +
+            strSQL = "Select GiaSanPham.MaSP,TenSP,HangSX,Gia,Ngay, MoTa From SanPham,GiaSanPham " +
                      "Where GiaSanPham.MaSP = SanPham.MaSP " +
                      "and GiaSanPham.NhaCungCap = " + Id;// Chuỗi SQL
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);

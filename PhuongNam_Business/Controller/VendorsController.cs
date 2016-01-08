@@ -30,7 +30,9 @@ namespace PhuongNam_Business.Controller
             return listVendors;
         }
 
-        public NhaCungCap autosetCompanyName(int VendorId)
+
+        // Tự động tạo dữ liệu ở fields
+        public NhaCungCap autoset(int VendorId)
         {
             NhaCungCap vendor = new NhaCungCap();
             vendor = displayVendors().SingleOrDefault(s => s.MaNCC == VendorId);

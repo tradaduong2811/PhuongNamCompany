@@ -96,5 +96,15 @@ namespace PhuongNam_Business.Controller
             return listOrderLines;
         }
 
+        public int generatePurchaseId()
+        {
+            return data.getLastPurchaseOrderId() + 10 ;
+        }
+
+        public bool createPurchaseOrder(DonDatHang ddh)
+        {
+            return data.createPurchaseOrder(ddh.MaNV, ddh.MaNCC, ddh.NgayGiao, ddh.TongTien, ddh.TongTienVAT);
+        }
+
     }
 }

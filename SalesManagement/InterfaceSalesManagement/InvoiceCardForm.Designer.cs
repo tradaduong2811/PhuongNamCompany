@@ -42,17 +42,17 @@
             this.TBNo = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SalesLineGrid = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TBTotalAmount = new System.Windows.Forms.TextBox();
-            this.TBTotalVAT = new System.Windows.Forms.TextBox();
-            this.BTOK = new System.Windows.Forms.Button();
             this.ItemNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TBTotalAmount = new System.Windows.Forms.TextBox();
+            this.TBTotalVAT = new System.Windows.Forms.TextBox();
+            this.BTOK = new System.Windows.Forms.Button();
             this.InvoiceHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SalesLineGrid)).BeginInit();
@@ -194,6 +194,37 @@
             this.SalesLineGrid.TabIndex = 2;
             this.SalesLineGrid.RowValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalesLineGrid_RowValidated);
             // 
+            // ItemNo
+            // 
+            this.ItemNo.HeaderText = "Item No";
+            this.ItemNo.Name = "ItemNo";
+            // 
+            // Desc
+            // 
+            this.Desc.HeaderText = "Description";
+            this.Desc.Name = "Desc";
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            // 
+            // Amount
+            // 
+            this.Amount.HeaderText = "Amount";
+            this.Amount.Name = "Amount";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Stock";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -242,37 +273,6 @@
             this.BTOK.Text = "OK";
             this.BTOK.UseVisualStyleBackColor = true;
             this.BTOK.Click += new System.EventHandler(this.BTOK_Click);
-            // 
-            // ItemNo
-            // 
-            this.ItemNo.HeaderText = "Item No";
-            this.ItemNo.Name = "ItemNo";
-            // 
-            // Desc
-            // 
-            this.Desc.HeaderText = "Description";
-            this.Desc.Name = "Desc";
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
-            // Amount
-            // 
-            this.Amount.HeaderText = "Amount";
-            this.Amount.Name = "Amount";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Stock";
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
             // 
             // InvoiceCard
             // 

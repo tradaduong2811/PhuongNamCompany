@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data_Delegate.cs" />
     <Compile Include="MH_BoPhanMuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
