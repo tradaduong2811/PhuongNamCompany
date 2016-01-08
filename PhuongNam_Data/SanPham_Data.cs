@@ -23,20 +23,19 @@ namespace PhuongNam_Data
             return Product; // trả ra dữ liệu tương ứng với DataTable
         }
 
-<<<<<<< HEAD
         // NAM
         public DataTable getProducts()
         {
             DataTable dtProducts = new DataTable();
             string strSQL;
-            strSQL = " SELECT sp.MaSP, sp.TenSP, hsx.TenHSX, lsp.Ten, sp.DonGia, sp.MoTa, hdh.HeDieuHanh, sp.TrongLuong,  sp.TGBaoHanh, sp.KichThuoc, sp.XuatXu " + 
+            strSQL = " SELECT sp.MaSP, sp.TenSP, hsx.TenHSX, lsp.Ten, sp.DonGia, sp.MoTa, hdh.HeDieuHanh, sp.TrongLuong,  sp.TGBaoHanh, sp.KichThuoc, sp.XuatXu " +
                 " FROM SanPham sp, LoaiSanPham lsp, HangSanXuat hsx, HeDieuHanh hdh " +
                 " WHERE sp.HangSX = hsx.MaHSX AND sp.LoaiSP = lsp.MaLoaiSP AND sp.HeDieuHanh = hdh.MaHDH";
 
             SqlDataAdapter adapter = new SqlDataAdapter(strSQL, dc.con);
             adapter.Fill(dtProducts);
             return dtProducts;
-=======
+        }
         public DataTable displayProduct(string VendorId)
         {
             int Id = int.Parse(VendorId);
@@ -48,7 +47,7 @@ namespace PhuongNam_Data
             SqlDataAdapter da_header = new SqlDataAdapter(strSQL, dc.con);
             da_header.Fill(Product);
             return Product;
->>>>>>> origin/master
+
         }
     }
 }

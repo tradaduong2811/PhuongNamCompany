@@ -27,7 +27,7 @@ namespace PhuongNam_Business
             return listProducts;
         }
 
-<<<<<<< HEAD
+
         //NAM
         public List<SanPham> getProducts()
         {
@@ -37,19 +37,19 @@ namespace PhuongNam_Business
             foreach (DataRow dtrow in dtProducts.Rows)
             {
                 SanPham sp = new SanPham();
-                sp.MaSP = (int)dtrow["MaSP"];              
+                sp.MaSP = (int)dtrow["MaSP"];
                 sp.TenSP = (string)dtrow["TenSP"];
                 sp.HangSX = (string)dtrow["TenHSX"];
                 sp.LoaiSP = (string)dtrow["Ten"];
                 sp.DonGia = (decimal)dtrow["DonGia"];
 
-                sp.MoTa = 
+                sp.MoTa =
                 (dtrow["MoTa"] == DBNull.Value) ? string.Empty : (string)dtrow["MoTa"].ToString();
                 //if (string.IsNullOrEmpty(sp.MoTa))
                 //{
                 //    sp.MoTa = "Chưa xác định";
                 //}
-                
+
                 sp.HeDieuHanh =
               (dtrow["HeDieuHanh"] == DBNull.Value) ? string.Empty : (string)dtrow["HeDieuHanh"].ToString();
                 if (string.IsNullOrEmpty(sp.HeDieuHanh))
@@ -58,7 +58,7 @@ namespace PhuongNam_Business
                 }
 
                 sp.TrongLuong = (int)dtrow["TrongLuong"];
-                int ?a = sp.TrongLuong;
+                int? a = sp.TrongLuong;
                 if (!a.HasValue)
                 {
                     sp.TrongLuong = 0;
@@ -75,8 +75,8 @@ namespace PhuongNam_Business
                 sp.XuatXu = (string)dtrow["XuatXu"];
                 listProducts.Add(sp);
             }
-
-=======
+            return listProducts;
+        }
         public List<SanPham> displayProduct(string VendorId)
         {
             List<SanPham> listProducts = new List<SanPham>();
@@ -89,7 +89,6 @@ namespace PhuongNam_Business
                 product.MoTaThem = product.MaSP + " | " + (string)dr["TenSP"];
                 listProducts.Add(product);
             }
->>>>>>> origin/master
             return listProducts;
         }
     }
