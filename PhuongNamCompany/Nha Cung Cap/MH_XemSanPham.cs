@@ -20,6 +20,7 @@ namespace PhuongNamCompany
 
         private void MH_XemSanPham_Load(object sender, EventArgs e)
         {
+
             SanPham_Data sanpham = new SanPham_Data();
             dataGridView1.DataSource = sanpham.displayProduct();
         }

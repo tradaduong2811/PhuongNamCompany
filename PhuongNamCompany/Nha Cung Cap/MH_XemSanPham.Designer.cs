@@ -134,7 +134,6 @@
             this.txt_TenCongTy.ReadOnly = true;
             this.txt_TenCongTy.Size = new System.Drawing.Size(306, 29);
             this.txt_TenCongTy.TabIndex = 21;
-            this.txt_TenCongTy.Text = "Viettel";
             this.txt_TenCongTy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MH_XemSanPham

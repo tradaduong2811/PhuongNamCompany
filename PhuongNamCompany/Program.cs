@@ -21,7 +21,7 @@ namespace PhuongNamCompany
 
             //Application.Run(new MH_DanhSachSanPham());
 
-            Application.Run(new MH_DanhSachSanPham());
+            Application.Run(new MH_BoPhanMuaHang());
 
         }
     }
